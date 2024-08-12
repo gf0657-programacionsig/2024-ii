@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introducción a la ciencia de datos &#8212; PF-0907 Programación de aplicaciones en SIG 2024-II</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/introduccion-ciencia-datos';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Introducción a la programación de computadoras" href="introduccion-programacion-computadoras.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    GF-0657 Programación en SIG 2024-II
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LA PROGRAMACIÓN DE COMPUTADORAS Y A LA CIENCIA DE DATOS GEOESPACIALES</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion-programacion-computadoras.html">Introducción a la programación de computadoras</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción a la ciencia de datos</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/introduccion-ciencia-datos.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/contenido/1/introduccion-ciencia-datos.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción a la ciencia de datos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecturas">Lecturas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observaciones-y-variables">Observaciones y variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables">Tipos de variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numericas">Numéricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#discretas">Discretas</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuas">Continuas</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#categoricas">Categóricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#nominales">Nominales</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinales">Ordinales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos">Ciencia de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-la-ciencia-de-datos">
+<h1>Introducción a la ciencia de datos<a class="headerlink" href="#introduccion-a-la-ciencia-de-datos" title="Link to this heading">#</a></h1>
+<section id="trabajo-previo">
+<h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
+<section id="lecturas">
+<h3>Lecturas<a class="headerlink" href="#lecturas" title="Link to this heading">#</a></h3>
+<p>Çetinkaya-Rundel, Mine, &amp; Hardin, Johanna (2021). <em>Chapter 1: Hello data</em> en <em>Introduction to Modern Statistics</em> (1st ed.). OpenIntro, Inc. <a class="reference external" href="https://openintro-ims.netlify.app/data-hello">https://openintro-ims.netlify.app/data-hello</a></p>
+<p>Wickham, Hadley; Çetinkaya-Rundel, Mirne; &amp; Grolemund, Garret (2023). <em>Introduction</em> en <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em> (2nd ed.). O’Reilly Media. <a class="reference external" href="https://r4ds.hadley.nz/intro">https://r4ds.hadley.nz/intro</a></p>
+</section>
+</section>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
+<p>Una investigación estadística se basa en <strong>datos</strong>. Los datos acostumbran representarse en tablas, en las cuales cada fila es una <strong>observación</strong> y cada columna es una <strong>variable</strong>. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento de datos. Las variables pueden ser <strong>numéricas</strong> o <strong>categóricas</strong>. Las numéricas se subdividen en <strong>discretas</strong> y <strong>continuas</strong> y las categóricas en <strong>nominales</strong> y <strong>ordinales</strong>.</p>
+<p>La <strong>ciencia de datos</strong> es una disciplina que permite convertir datos “crudos” en comprensión y conocimiento. Incluye los procesos <strong>importar</strong>, <strong>ordenar</strong>, <strong>transformar</strong>, <strong>visualizar</strong>, <strong>modelar</strong> y <strong>comunicar</strong>.</p>
+</section>
+<section id="datos">
+<h2>Datos<a class="headerlink" href="#datos" title="Link to this heading">#</a></h2>
+<p>Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación estadística y se denominan <strong>datos</strong>. La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis <span id="id1">[<a class="reference internal" href="#id6" title="Mine Çetinkaya-Rundel and Johanna Hardin. Introduction to Modern Statistics. OpenIntro, Inc., 1st edition, June 2021. URL: https://openintro-ims.netlify.app/ (visited on 2024-03-01).">CRH21</a>]</span>. Esta sección introduce una estructura para organizar los datos, así como alguna terminología que se utilizará a lo largo de este curso.</p>
+<section id="observaciones-y-variables">
+<h3>Observaciones y variables<a class="headerlink" href="#observaciones-y-variables" title="Link to this heading">#</a></h3>
+<p>La tabla 1 contiene 10 filas de un <strong>conjunto de datos</strong>. Cada fila representa una persona. En términos estadísticos, cada fila corresponde a una <strong>observación</strong>. Las columnas representan características de las personas. Cada columna corresponde a una <strong>variable</strong>.</p>
+<table border="0" cellspacing="10" class="dataframe">
+  <style>
+    .dataframe {
+        border-spacing: 10px 10px;
+    }
+    .dataframe td, .dataframe th {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+  </style>
+  <caption><strong>Tabla 1. Datos de personas.</strong></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th>cedula</th>
+      <th>provincia</th>
+      <th>equipo</th>
+      <th>peso</th>
+      <th>estatura</th>
+      <th>sexo</th>
+      <th>cantidad_hermanos</th>
+      <th>nivel_guitarra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>709880238</td>
+      <td>Limón</td>
+      <td>Saprissa</td>
+      <td>51.0</td>
+      <td>1.51</td>
+      <td>desconocido</td>
+      <td>0</td>
+      <td>nulo</td>
+    </tr>
+    <tr>
+      <td>400680168</td>
+      <td>Heredia</td>
+      <td>Herediano</td>
+      <td>98.5</td>
+      <td>1.87</td>
+      <td>hombre</td>
+      <td>1</td>
+      <td>alto</td>
+    </tr>
+    <tr>
+      <td>509210285</td>
+      <td>Guanacaste</td>
+      <td>Liberia</td>
+      <td>91.6</td>
+      <td>1.65</td>
+      <td>mujer</td>
+      <td>4</td>
+      <td>bajo</td>
+    </tr>
+    <tr>
+      <td>701950272</td>
+      <td>Limón</td>
+      <td>Liberia</td>
+      <td>60.6</td>
+      <td>1.68</td>
+      <td>mujer</td>
+      <td>1</td>
+      <td>alto</td>
+    </tr>
+    <tr>
+      <td>309880238</td>
+      <td>Cartago</td>
+      <td>Cartaginés</td>
+      <td>59.1</td>
+      <td>1.73</td>
+      <td>mujer</td>
+      <td>3</td>
+      <td>bajo</td>
+    </tr>
+    <tr>
+      <td>908280708</td>
+      <td>Desconocida</td>
+      <td>San Carlos</td>
+      <td>59.2</td>
+      <td>1.89</td>
+      <td>hombre</td>
+      <td>3</td>
+      <td>bajo</td>
+    </tr>
+    <tr>
+      <td>505580938</td>
+      <td>Guanacaste</td>
+      <td>Cartaginés</td>
+      <td>65.2</td>
+      <td>1.70</td>
+      <td>mujer</td>
+      <td>3</td>
+      <td>alto</td>
+    </tr>
+    <tr>
+      <td>504080488</td>
+      <td>Guanacaste</td>
+      <td>Sporting</td>
+      <td>76.2</td>
+      <td>1.76</td>
+      <td>hombre</td>
+      <td>3</td>
+      <td>experto</td>
+    </tr>
+    <tr>
+      <td>709950244</td>
+      <td>Limón</td>
+      <td>Alajuelense</td>
+      <td>71.6</td>
+      <td>1.80</td>
+      <td>hombre</td>
+      <td>4</td>
+      <td>bajo</td>
+    </tr>
+    <tr>
+      <td>206080825</td>
+      <td>Alajuela</td>
+      <td>Alajuelense</td>
+      <td>64.6</td>
+      <td>1.52</td>
+      <td>hombre</td>
+      <td>2</td>
+      <td>bajo</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section id="tipos-de-variables">
+<h3>Tipos de variables<a class="headerlink" href="#tipos-de-variables" title="Link to this heading">#</a></h3>
+<p>Las variables de los datos de la tabla 1 son de varios tipos, cuya jerarquía se muestra en la <a class="reference internal" href="#figure-tipos-variables-estadisticas"><span class="std std-numref">Fig. 10</span></a>.</p>
+<figure class="align-default" id="figure-tipos-variables-estadisticas">
+<img alt="../../_images/tipos-variables-estadisticas.png" src="../../_images/tipos-variables-estadisticas.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Tipos de variables estadísticas. Imagen de <a class="reference external" href="https://openintro-ims.netlify.app/">Introduction to Modern Statistics</a>.</span><a class="headerlink" href="#figure-tipos-variables-estadisticas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Seguidamente, se describen estos tipos de datos de las variables.</p>
+<section id="numericas">
+<h4>Numéricas<a class="headerlink" href="#numericas" title="Link to this heading">#</a></h4>
+<p>Corresponden a números a los cuales se les pueden aplicar operaciones como suma, resta, multiplicación, división y otras similares. Las variables numéricas puden ser discretas o continuas.</p>
+<section id="discretas">
+<h5>Discretas<a class="headerlink" href="#discretas" title="Link to this heading">#</a></h5>
+<p>Toman valores específicos que se pueden contar. La variable <code class="docutils literal notranslate"><span class="pre">cantidad_hermanos</span></code> es discreta. Existe una separación clara entre sus posibles valores. Por ejemplo, es posible tener 1, 2 o 3 hermanos, pero no es posible tener 2.5 hermanos.</p>
+</section>
+<section id="continuas">
+<h5>Continuas<a class="headerlink" href="#continuas" title="Link to this heading">#</a></h5>
+<p>Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables <code class="docutils literal notranslate"><span class="pre">peso</span></code> y <code class="docutils literal notranslate"><span class="pre">estatura</span></code> son continuas.</p>
+</section>
+</section>
+<section id="categoricas">
+<h4>Categóricas<a class="headerlink" href="#categoricas" title="Link to this heading">#</a></h4>
+<p>Las variables categóricas (también llamadas cualitativas), son aquellas que describen una característica o cualidad de una observación y clasifican las observaciones en grupos o categorías. A diferencia de las variables numéricas, que expresan cantidades numéricas, las variables categóricas expresan atributos no numéricos. Las variables categóricas pueden ser nominales u ordinales.</p>
+<section id="nominales">
+<h5>Nominales<a class="headerlink" href="#nominales" title="Link to this heading">#</a></h5>
+<p>No existe un orden inherente o jerarquía entre las categorías. Las variables <code class="docutils literal notranslate"><span class="pre">provincia</span></code>, <code class="docutils literal notranslate"><span class="pre">equipo</span></code> y <code class="docutils literal notranslate"><span class="pre">sexo</span></code> son nominales.</p>
+</section>
+<section id="ordinales">
+<h5>Ordinales<a class="headerlink" href="#ordinales" title="Link to this heading">#</a></h5>
+<p>Hay un orden o jerarquía clara entre las categorías. La variable <code class="docutils literal notranslate"><span class="pre">nivel_guitarra</span></code> es categórica.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="ciencia-de-datos">
+<h2>Ciencia de datos<a class="headerlink" href="#ciencia-de-datos" title="Link to this heading">#</a></h2>
+<p>La ciencia de datos es una disciplina que permite convertir datos “crudos” en comprensión y conocimiento <span id="id2">[<a class="reference internal" href="#id7" title="Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media, 2nd ed. edition, July 2023. URL: https://r4ds.hadley.nz/ (visited on 2022-10-16).">WCRG23</a>]</span>. Utiliza estadística y ciencias de la computación, entre otras disciplinas.</p>
+<p>La <a class="reference internal" href="#figure-modelo-ciencia-datos"><span class="std std-numref">Fig. 11</span></a> ilustra el modelo de un proyecto típico de ciencia de datos, el cual incluye los procesos de importar, ordenar, transformar, visualizar, modelar y comunicar. Todos se articulan mediante <strong>programación</strong> de computadoras.</p>
+<figure class="align-default" id="figure-modelo-ciencia-datos">
+<img alt="../../_images/modelo-ciencia-datos.svg" src="../../_images/modelo-ciencia-datos.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Modelo de ciencia de datos. Imagen de <a class="reference external" href="https://r4ds.had.co.nz/">R for Data Science</a>.</span><a class="headerlink" href="#figure-modelo-ciencia-datos" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Importar</strong> los datos típicamente implica leerlos de un archivo, una base de datos o una interfaz de programación de aplicaciones (API) y cargarlos en estructuras apropiadas para este propósito en un lenguaje de programación.</p>
+<p><strong>Ordenar</strong> u organizar los datos significa colocarlos en estructuras rectangulares de filas y columnas, similares a tablas, de manera que cada fila sea una observación y cada columna una variable.</p>
+<p><strong>Transformar</strong> los datos implica la generación de algún subconjunto de filas y columnas, la creación de nuevas variables o el cálculo de estadísticas (ej. conteos, promedios, mínimos, máximos).</p>
+<p><strong>Visualizar</strong> los datos (en tablas, gráficos, mapas, etc.) permite encontrar patrones inesperados o formular nuevas preguntas.</p>
+<p><strong>Modelar</strong> es crear una representación abstracta y estructurada de los datos, con el fin de facilitar su análisis y realizar predicciones.</p>
+<p><strong>Comunicar</strong> es el último paso y es una actividad crítica de cualquier proyecto de análisis de datos o de ciencia en general.</p>
+</section>
+<section id="referencias-bibliograficas">
+<h2>Referencias bibliográficas<a class="headerlink" href="#referencias-bibliograficas" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id3">
+<div role="list" class="citation-list">
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">WCRG23</a><span class="fn-bracket">]</span></span>
+<p>Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. O'Reilly Media, 2nd ed. edition, July 2023. URL: <a class="reference external" href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a> (visited on 2022-10-16).</p>
+</div>
+<div class="citation" id="id6" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">CRH21</a><span class="fn-bracket">]</span></span>
+<p>Mine Çetinkaya-Rundel and Johanna Hardin. <em>Introduction to Modern Statistics</em>. OpenIntro, Inc., 1st edition, June 2021. URL: <a class="reference external" href="https://openintro-ims.netlify.app/">https://openintro-ims.netlify.app/</a> (visited on 2024-03-01).</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./contenido/1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="introduccion-programacion-computadoras.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introducción a la programación de computadoras</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecturas">Lecturas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observaciones-y-variables">Observaciones y variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables">Tipos de variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numericas">Numéricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#discretas">Discretas</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuas">Continuas</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#categoricas">Categóricas</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#nominales">Nominales</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinales">Ordinales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos">Ciencia de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manuel Vargas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
