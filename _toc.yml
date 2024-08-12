@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: 1 - INTRODUCCIÓN A LA PROGRAMACIÓN DE COMPUTADORAS Y A LA CIENCIA DE DATOS GEOESPACIALES
+    chapters:
+    - file: contenido/1/introduccion-programacion-computadoras
+    - file: contenido/1/introduccion-ciencia-datos-geoespaciales
+    - file: contenido/1/markdown
+    - file: contenido/1/git

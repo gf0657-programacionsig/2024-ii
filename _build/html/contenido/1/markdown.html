@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Markdown - lenguaje de marcado &#8212; PF-0907 Programación de aplicaciones en SIG 2024-II</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/markdown';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Git - sistema de control de versiones" href="git.html" />
+    <link rel="prev" title="Introducción a la ciencia de datos geoespaciales" href="introduccion-ciencia-datos-geoespaciales.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    GF-0657 Programación en SIG 2024-II
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion-programacion-computadoras.html">Introducción a la programación de computadoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos-geoespaciales.html">Introducción a la ciencia de datos geoespaciales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown - lenguaje de marcado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git - sistema de control de versiones</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/markdown.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/contenido/1/markdown.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Markdown - lenguaje de marcado</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales">Tutoriales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-recursos">Otros recursos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción general</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sintaxis">Sintaxis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encabezados">Encabezados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italicas">Itálicas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negritas">Negritas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citas-textuales">Citas textuales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-hipervinculos">Enlaces (hipervínculos)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-elementos-de-sintaxis">Otros elementos de sintaxis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="markdown-lenguaje-de-marcado">
+<h1>Markdown - lenguaje de marcado<a class="headerlink" href="#markdown-lenguaje-de-marcado" title="Link to this heading">#</a></h1>
+<section id="trabajo-previo">
+<h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
+<section id="tutoriales">
+<h3>Tutoriales<a class="headerlink" href="#tutoriales" title="Link to this heading">#</a></h3>
+<p><em>Markdown Tutorial</em>. (s. f.). Recuperado 19 de marzo de 2022, de <a class="reference external" href="https://www.markdowntutorial.com/">https://www.markdowntutorial.com/</a></p>
+</section>
+<section id="otros-recursos">
+<h3>Otros recursos<a class="headerlink" href="#otros-recursos" title="Link to this heading">#</a></h3>
+<p><em>Markdown Guide</em>. (s. f.). Recuperado 10 de abril de 2022, de <a class="reference external" href="https://www.markdownguide.org/">https://www.markdownguide.org/</a></p>
+</section>
+</section>
+<section id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<p>Markdown es un lenguaje de marcado ligero ampliamente utilizado en comunicación científica, documentación de programas e investigación reproducible.</p>
+</section>
+<section id="descripcion-general">
+<h2>Descripción general<a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> es un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">lenguaje de marcado</a> creado en 2004 por John Gruber. Las “marcas” se utilizan para brindar información acerca de la presentación (ej. negritas, itálicas) o la estructura (ej. títulos, encabezados) de un documento. Se caracteriza por ser más sencillo de leer y de usar que otros lenguajes de marcado (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/HTML">Lenguaje de marcado de Hipertexto o HTML</a>), por lo que se considera un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcas_ligero">lenguaje de marcado ligero</a>. Los documentos escritos en Markdown pueden exportarse a una gran variedad de formatos (ej. HTML, DOC, PDF, LaTex) para ser usados en libros, presentaciones o páginas web, entre otros. Markdown es ampliamente utilizado en comunicación científica, documentación de programas e investigación reproducible.</p>
+</section>
+<section id="variaciones">
+<h2>Variaciones<a class="headerlink" href="#variaciones" title="Link to this heading">#</a></h2>
+<p>Las variaciones de Markdown, también llamadas <em>flavors</em>, son extensiones o modificaciones de la especificación original. Entre las más populares están:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>: para el lenguaje R.</p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/github/writing-on-github">GitHub Flavored Markdown</a>: para la plataforma GitHub.</p></li>
+<li><p><a class="reference external" href="https://github.com/Python-Markdown/markdown">Python Markdown</a>: para el lenguaje Python.</p></li>
+<li><p><a class="reference external" href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc’s Markdown</a>: para el programa <a class="reference external" href="https://pandoc.org/">Pandoc</a> de conversión entre formatos.</p></li>
+<li><p><a class="reference external" href="https://kramdown.gettalong.org/quickref.html">Kramdown</a>: para el lenguaje Ruby.</p></li>
+</ul>
+<p>Puede verse una lista más extensa en <a class="github reference external" href="https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors">commonmark/commonmark-spec</a>.</p>
+</section>
+<section id="sintaxis">
+<h2>Sintaxis<a class="headerlink" href="#sintaxis" title="Link to this heading">#</a></h2>
+<p>La sintaxis de Markdown permite especificar diferentes componentes de un documento, entre los que están:</p>
+<ul class="simple">
+<li><p>Encabezados.</p></li>
+<li><p>Estilos (ej. negritas, itálicas).</p></li>
+<li><p>Citas textuales.</p></li>
+<li><p>Enlaces a otros documentos (ej. páginas web).</p></li>
+<li><p>Imágenes.</p></li>
+<li><p>Listas.</p></li>
+</ul>
+<section id="encabezados">
+<h3>Encabezados<a class="headerlink" href="#encabezados" title="Link to this heading">#</a></h3>
+<p>Pueden definirse seis niveles de encabezados, mediante símbolos de numeral (<code class="docutils literal notranslate"><span class="pre">#</span></code>) antes del texto. El primer nivel es el de tamaño de texto más grande y el sexto el más pequeño. En la parte izquierda de la <a class="reference internal" href="#fig-md-encabezados"><span class="std std-numref">Fig. 13</span></a> se muestra la sintaxis Markdown de los encabezados y a la derecha la forma en que se despliegan en un documento.</p>
+<figure class="align-default" id="fig-md-encabezados">
+<img alt="../../_images/md-encabezados.png" src="../../_images/md-encabezados.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Sintaxis de Markdown - encabezados.</span><a class="headerlink" href="#fig-md-encabezados" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="italicas">
+<h3>Itálicas<a class="headerlink" href="#italicas" title="Link to this heading">#</a></h3>
+<p>Se definen con un asterisco (<code class="docutils literal notranslate"><span class="pre">*</span></code>) antes y después del texto o con un guión bajo (<code class="docutils literal notranslate"><span class="pre">_</span></code>) antes y después del texto.</p>
+<figure class="align-default" id="fig-md-italicas">
+<img alt="../../_images/md-italica.png" src="../../_images/md-italica.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Sintaxis de Markdown - itálicas.</span><a class="headerlink" href="#fig-md-italicas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="negritas">
+<h3>Negritas<a class="headerlink" href="#negritas" title="Link to this heading">#</a></h3>
+<p>Se definen con dos asteriscos (<code class="docutils literal notranslate"><span class="pre">**</span></code>) antes y después del texto o con dos guiones bajos (<code class="docutils literal notranslate"><span class="pre">__</span></code>) antes y después del texto.</p>
+<figure class="align-default" id="fig-md-negritas">
+<img alt="../../_images/md-negrita.png" src="../../_images/md-negrita.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Sintaxis de Markdown - negritas.</span><a class="headerlink" href="#fig-md-negritas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="citas-textuales">
+<h3>Citas textuales<a class="headerlink" href="#citas-textuales" title="Link to this heading">#</a></h3>
+<p>Se definen con un símbolo de “mayor que” (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>) antes de cada línea.</p>
+<figure class="align-default" id="fig-md-citas">
+<img alt="../../_images/md-cita.png" src="../../_images/md-cita.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Sintaxis de Markdown - citas textuales.</span><a class="headerlink" href="#fig-md-citas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enlaces-hipervinculos">
+<h3>Enlaces (hipervínculos)<a class="headerlink" href="#enlaces-hipervinculos" title="Link to this heading">#</a></h3>
+<p>Se definen con paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) seguidos de paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) el texto del enlace y en los redondos la dirección del documento.</p>
+<figure class="align-default" id="fig-md-enlaces">
+<img alt="../../_images/md-enlace.png" src="../../_images/md-enlace.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Sintaxis de Markdown - enlaces.</span><a class="headerlink" href="#fig-md-enlaces" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="imagenes">
+<h3>Imágenes<a class="headerlink" href="#imagenes" title="Link to this heading">#</a></h3>
+<p>Se definen con un signo de admiración de cierre (<code class="docutils literal notranslate"><span class="pre">!</span></code>), paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) y paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) un texto alternativo de la imagen y en los redondos la dirección de la imagen, ya sea local o remota.</p>
+<figure class="align-default" id="fig-md-imagenes">
+<img alt="../../_images/md-imagen.png" src="../../_images/md-imagen.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Sintaxis de Markdown - imágenes.</span><a class="headerlink" href="#fig-md-imagenes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="listas-numeradas">
+<h3>Listas numeradas<a class="headerlink" href="#listas-numeradas" title="Link to this heading">#</a></h3>
+<p>Se definen con números (<code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">2.</span> <span class="pre">3.</span> <span class="pre">...</span></code>) antes de cada elemento.</p>
+<figure class="align-default" id="fig-md-listas-numeradas">
+<img alt="../../_images/md-lista-numerada.png" src="../../_images/md-lista-numerada.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Sintaxis de Markdown - listas numeradas.</span><a class="headerlink" href="#fig-md-listas-numeradas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="listas-no-numeradas">
+<h3>Listas no numeradas<a class="headerlink" href="#listas-no-numeradas" title="Link to this heading">#</a></h3>
+<p>Se definen con guiones (<code class="docutils literal notranslate"><span class="pre">-</span></code>) o asteriscos (<code class="docutils literal notranslate"><span class="pre">*</span></code>) antes de cada elemento.</p>
+<figure class="align-default" id="fig-md-listas-no-numeradas">
+<img alt="../../_images/md-lista-no-numerada.png" src="../../_images/md-lista-no-numerada.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Sintaxis de Markdown - listas no numeradas.</span><a class="headerlink" href="#fig-md-listas-no-numeradas" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="otros-elementos-de-sintaxis">
+<h3>Otros elementos de sintaxis<a class="headerlink" href="#otros-elementos-de-sintaxis" title="Link to this heading">#</a></h3>
+<p>Para conocer otros elementos de la sintaxis de Markdown, se recomienda revisar en detalle la <a class="reference external" href="https://www.markdownguide.org/">Guía de referencia de Markdown</a>.</p>
+</section>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Cree un documento Markdown llamado <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, en RStudio, y escriba en este un breve perfil académico (<em>curriculum</em> académico).</p>
+<ul class="simple">
+<li><p>Incluya información como: nombre, fotografía, datos de contacto, áreas de interés, carrera, cursos aprobados, publicaciones, etc.</p></li>
+<li><p>Puede usar información ficticia (<strong>no incluya datos confidenciales o sensibles</strong>).</p></li>
+<li><p>Especifique la fuente de las imágenes (y de cualquier otra información para la que sea necesario) y no utilice imágenes para las que no tiene autorización. Considere utilizar sitios con imágenes con licencias abiertas (ej. <a class="reference external" href="https://commons.wikimedia.org/">Wikimedia Commons</a>, <a class="reference external" href="https://unsplash.com/">Unsplash</a>, <a class="reference external" href="https://www.freeimages.com/">FreeImages</a>).</p></li>
+<li><p>Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
+<ul>
+<li><p>Varios niveles de encabezados.</p></li>
+<li><p>Negritas e itálicas.</p></li>
+<li><p>Listas.</p></li>
+<li><p>Enlaces a sitios web.</p></li>
+<li><p>Imágenes (al menos una local y una remota).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Cree un repositorio en <a class="reference external" href="https://github.com/">GitHub</a> llamado <code class="docutils literal notranslate"><span class="pre">perfil-academico</span></code> y suba a este el documento que creó en el paso 1.</p></li>
+<li><p>Cree un sitio web en <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> con el repositorio creado en el paso 2.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./contenido/1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="introduccion-ciencia-datos-geoespaciales.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introducción a la ciencia de datos geoespaciales</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="git.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Git - sistema de control de versiones</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales">Tutoriales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-recursos">Otros recursos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción general</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sintaxis">Sintaxis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encabezados">Encabezados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italicas">Itálicas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negritas">Negritas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citas-textuales">Citas textuales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-hipervinculos">Enlaces (hipervínculos)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-elementos-de-sintaxis">Otros elementos de sintaxis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manuel Vargas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

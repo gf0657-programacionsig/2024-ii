@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introducción a la ciencia de datos geoespaciales &#8212; PF-0907 Programación de aplicaciones en SIG 2024-II</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/introduccion-ciencia-datos-geoespaciales';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Markdown - lenguaje de marcado" href="markdown.html" />
+    <link rel="prev" title="Introducción a la programación de computadoras" href="introduccion-programacion-computadoras.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PF-0907 Programación de aplicaciones en SIG 2024-II - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    GF-0657 Programación en SIG 2024-II
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LA PROGRAMACIÓN DE COMPUTADORAS Y A LA CIENCIA DE DATOS GEOESPACIALES</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion-programacion-computadoras.html">Introducción a la programación de computadoras</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción a la ciencia de datos geoespaciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown - lenguaje de marcado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git - sistema de control de versiones</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/pf0907-programacionsig/2023-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/introduccion-ciencia-datos-geoespaciales.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/contenido/1/introduccion-ciencia-datos-geoespaciales.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción a la ciencia de datos geoespaciales</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecturas">Lecturas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-componente-geoespacial-de-los-datos">El componente geoespacial de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-de-informacion-geografica">Sistemas de información geográfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos-geoespaciales">Ciencia de datos geoespaciales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reproducibilidad">Reproducibilidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-para-facilitar-la-reproducibilidad">Herramientas para facilitar la reproducibilidad</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-la-ciencia-de-datos-geoespaciales">
+<h1>Introducción a la ciencia de datos geoespaciales<a class="headerlink" href="#introduccion-a-la-ciencia-de-datos-geoespaciales" title="Link to this heading">#</a></h1>
+<section id="trabajo-previo">
+<h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
+<section id="lecturas">
+<h3>Lecturas<a class="headerlink" href="#lecturas" title="Link to this heading">#</a></h3>
+<p>Bartomeus Lab. (2016). <em>A reproducible workflow</em>. <a class="reference external" href="https://www.youtube.com/watch?v=s3JldKoA0zw">https://www.youtube.com/watch?v=s3JldKoA0zw</a></p>
+<p>FOSS4G. (2021). <em>FOSS4G2021—Open source for open spatial data science—Anita Graser</em>. <a class="reference external" href="https://www.youtube.com/watch?v=ZjXb53pOor0">https://www.youtube.com/watch?v=ZjXb53pOor0</a></p>
+<p>Hwang, J. P. (2021). Building a Big Data Geographical Dashboard with Open-Source Tools. <em>Medium</em>. <a class="reference external" href="https://medium.com/plotly/building-a-big-data-geographical-dashboard-with-open-source-tools-c5108d7d5683">https://medium.com/plotly/building-a-big-data-geographical-dashboard-with-open-source-tools-c5108d7d5683</a></p>
+<p>Krugman, P. (2013). Opinion | The Excel Depression. <em>The New York Times</em>. <a class="reference external" href="https://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html">https://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html</a></p>
+<p>Peng, R. D. (2011). Reproducible Research in Computational Science. <em>Science, 334</em>(6060), 1226-1227. <a class="reference external" href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a></p>
+<p>Rey, S. J., Arribas-Bel, D., &amp; Wolf, L. J. (2020). <em>Geographic Data Science with Python</em>. <a class="reference external" href="https://geographicdata.science/book/">https://geographicdata.science/book/</a> (Parte I)</p>
+<p>Singleton, A. D., Spielman, S., &amp; Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. <em>International Journal of Geographical Information Science, 30</em>(8), 1507-1521. <a class="reference external" href="https://doi.org/10.1080/13658816.2015.1137579">https://doi.org/10.1080/13658816.2015.1137579</a></p>
+<p>Wu, Q. (2021, octubre 25). A streamlit app for creating timelapse of annual Landsat imagery (1984–2021). <em>Medium</em>. <a class="reference external" href="https://giswqs.medium.com/a-streamlit-app-for-creating-timelapse-of-annual-landsat-imagery-1984-2021-3db407a8ac32">https://giswqs.medium.com/a-streamlit-app-for-creating-timelapse-of-annual-landsat-imagery-1984-2021-3db407a8ac32</a></p>
+</section>
+</section>
+<section id="el-componente-geoespacial-de-los-datos">
+<h2>El componente geoespacial de los datos<a class="headerlink" href="#el-componente-geoespacial-de-los-datos" title="Link to this heading">#</a></h2>
+<p>Una gran parte de los datos disponibles contiene algún tipo de componente geográfico o espacial<a class="footnote-reference brackets" href="#footnote-geografico-espacial" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Este componente puede expresarse de varias formas. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>Con nombres de lugares</strong>: <em>El <a class="reference external" href="https://es.wikipedia.org/wiki/Incilius_periglenes">sapo dorado (<em>Incilius periglenes</em>)</a> era una especie de anfibio, endémica de los bosques nubosos de altitud de Monteverde, Costa Rica.</em></p></li>
+<li><p><strong>Con direcciones</strong>: <em>La <a class="reference external" href="https://es.wikipedia.org/wiki/Sede_de_la_Organizaci%C3%B3n_de_las_Naciones_Unidas">sede de la Organización de las Naciones Unidas (ONU)</a> está ubicada en la ciudad de Nueva York, Estados Unidos, en la Primera Avenida, 750.</em></p></li>
+<li><p><strong>Con coordenadas</strong>: *La cima del <a class="reference external" href="https://es.wikipedia.org/wiki/Monte_Everest">Monte Everest</a> se localiza en las coordenadas geográficas 86°55′31″ E y 27°59′17″ N, como se muestra en la <a class="reference internal" href="#figure-mapa-nepal-everest"><span class="std std-numref">Fig. 10</span></a>.</p></li>
+</ul>
+<figure class="align-default" id="figure-mapa-nepal-everest">
+<img alt="../../_images/nepal-map.jpg" src="../../_images/nepal-map.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Mapa de Nepal que muestra la ubicación del Monte Everest en el sistema de coordenadas geográficas. Fuente: <a class="reference external" href="https://www.mapsofworld.com/">https://www.mapsofworld.com/</a>.</span><a class="headerlink" href="#figure-mapa-nepal-everest" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Las coordenadas correspondientes a lugares y direcciones pueden obtenerse a través de un proceso denominado <a class="reference external" href="https://es.wikipedia.org/wiki/Georreferenciaci%C3%B3n"><em>georreferenciación</em></a>, mediante el cual, en general, se determina la posición espacial de alguna entidad en un sistema de coordenadas. La georreferenciación puede emplearse también para obtener las coordenadas de, por ejemplo, fotografías aéreas o mapas antiguos. Es un proceso que puede resultar complejo y costoso y para el que se han desarrollado metodologías y plataformas especializadas (ej. <a class="reference external" href="https://doi.org/10.15468/doc-gg7h-s853">Chapman AD &amp; Wieczorek JR (2020) Georeferencing Best Practices</a>, <a class="reference external" href="https://www.geo-locate.org/">GEOLocate</a>, <a class="reference external" href="https://nominatim.openstreetmap.org/ui/search.html">Nominatim</a>).</p>
+<p>En la actualidad, hay una gran cantidad de fuentes que generan datos georreferenciados (i.e. ubicados en un sistema de coordenadas). Entre estas pueden mencionarse las tecnologías de <a class="reference external" href="https://ec.europa.eu/jrc/en/research-topic/earth-observation">observación de la Tierra (<em>Earth Observation</em>)</a> (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/Imagen_satelital">imágenes satelitales</a>), los dispositivos móviles y los sensores remotos, entre muchas otras.</p>
+<p>Seguidamente, se describen dos enfoques tecnológicos para el procesamiento de datos geoespaciales: el de los sistemas de información geográfica y el de ciencia de datos geoespaciales.</p>
+</section>
+<section id="sistemas-de-informacion-geografica">
+<h2>Sistemas de información geográfica<a class="headerlink" href="#sistemas-de-informacion-geografica" title="Link to this heading">#</a></h2>
+<p>A principios de la década de 1960, el geógrafo inglés <a class="reference external" href="https://es.wikipedia.org/wiki/Roger_Tomlinson">Roger Tomlinson</a> desarrolló en Canadá el que se considera el primer sistema de información geográfica. Se trataba del <a class="reference external" href="https://en.wikipedia.org/wiki/Canada_Geographic_Information_System">Canada Geographic Information System (CGIS)</a> y su objetivo fue manejar los datos del inventario geográfico canadiense y su análisis para la gestión del territorio rural. De manera casi simultánea al trabajo de Tomlinson, surgieron desarrollos similares en Estados Unidos y en el Reino Unido. El surgimiento de los sistemas de información geográfica no implicó solo el surgimiento de nuevas herramientas de software, sino también el desarrollo de técnicas que hasta entonces no habían sido necesarias <span id="id2">[<a class="reference internal" href="#id21" title="Víctor Olaya. Sistemas de Información Geográfica. 2020. URL: https://volaya.github.io/libro-sig/ (visited on 2021-12-31).">Ola20</a>]</span> como, por ejemplo, la manipulación de nuevos tipos de datos geométricos (ej. puntos, líneas, polígonos).</p>
+<p>En general, un sistema de información geográfica (SIG) maneja datos georreferenciados y los asocia con datos convencionales (ej. textos, números), como se muestra en la <a class="reference internal" href="#figure-mapa-qgis"><span class="std std-numref">Fig. 11</span></a>.</p>
+<figure class="align-default" id="figure-mapa-qgis">
+<img alt="../../_images/mapa-qgis.png" src="../../_images/mapa-qgis.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Mapa elaborado en QGIS que muestra la ubicación de los aeródromos de Costa Rica.</span><a class="headerlink" href="#figure-mapa-qgis" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Los SIG presentan los datos en capas (<em>layers</em>). Por ejemplo, el mapa de la <a class="reference internal" href="#figure-mapa-qgis"><span class="std std-numref">Fig. 11</span></a> contiene una capa base raster (la que muestra el mar y el continente), una capa de polígonos correspondiente a las provincias de Costa Rica y una capa de puntos correspondiente a los aeródromos. A la izquierda puede apreciarse la lista de esas capas y a la derecha un cuadro con información detallada sobre uno de los aeródromos.</p>
+<p>Los SIG de escritorio (ej. <a class="reference external" href="https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview">ArcGIS Desktop</a>, <a class="reference external" href="https://www.qgis.org/">QGIS</a>) son herramientas con interfaces de usuario muy gráficas e intuitivas, que no requieren de conocimientos de programación de computadoras y que permiten generar cartografía de alta calidad. Sin embargo, son poco flexibles y los resultados que producen son difícilmente <a class="reference external" href="https://es.wikipedia.org/wiki/Reproducibilidad_y_repetibilidad">reproducibles</a>.</p>
+</section>
+<section id="ciencia-de-datos-geoespaciales">
+<h2>Ciencia de datos geoespaciales<a class="headerlink" href="#ciencia-de-datos-geoespaciales" title="Link to this heading">#</a></h2>
+<p>Durante la última década, el uso de SIG se ha complementado con el de <a class="reference external" href="https://es.wikipedia.org/wiki/Ciencia_de_datos">ciencia de datos</a>, lo que posibilitado enriquecer la visualización y el análisis de datos geoespaciales mediante lenguajes de programación como <a class="reference external" href="https://www.python.org/">Python</a>, <a class="reference external" href="https://www.r-project.org/">R</a> o <a class="reference external" href="http://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</a>, entre otros.</p>
+<p>El uso de técnicas de ciencia de datos y de otros campos relacionados (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico">aprendizaje automatizado</a>, <a class="reference external" href="https://es.wikipedia.org/wiki/Macrodatos"><em>big data</em></a>) ha permitido aplicar a los datos geoespaciales técnicas y metodologías como <a class="reference external" href="https://es.wikipedia.org/wiki/An%C3%A1lisis_de_la_regresi%C3%B3n">análisis de regresión</a> y <a class="reference external" href="https://es.wikipedia.org/wiki/Clasificaci%C3%B3n_estad%C3%ADstica">clasificación estadística</a>.</p>
+</section>
+<section id="reproducibilidad">
+<h2>Reproducibilidad<a class="headerlink" href="#reproducibilidad" title="Link to this heading">#</a></h2>
+<p>Una de las principales características que distingue al enfoque de ciencia de datos del enfoque de SIG es la <a class="reference external" href="https://es.wikipedia.org/wiki/Reproducibilidad_y_repetibilidad">reproducibilidad</a>. En general, la reproducibilidad es la capacidad de un ensayo o experimento de ser reproducido por otros. Más formalmente, en investigación cuantitativa, un análisis se considera reproducible si <em>“el código fuente y los datos utilizados por un investigador para llegar a un resultado están disponibles y son suficientes para que otro investigador, trabajando de manera independiente, pueda llegar al mismo resultado”</em> <span id="id3">[<a class="reference internal" href="#id12" title="Christopher Gandrud. Reproducible research with R and RStudio. The R series. CRC Press, Boca Raton, FL, third edition edition, 2020. ISBN 978-0-367-14398-5 978-0-367-14402-9.">Gan20</a>]</span>.</p>
+<p>La reproducibilidad, junto con la <a class="reference external" href="https://es.wikipedia.org/wiki/Falsabilidad">falsabilidad</a>, es uno de los pilares del <a class="reference external" href="https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico">método científico</a>. Sin embargo, en años recientes, se ha generado una creciente preocupación debido a que muchos estudios científicos publicados fallan las pruebas de reproducibilidad (véase, por ejemplo, <a class="reference external" href="https://www.nytimes.com/2013/04/19/opinion/krugman-the-excel-depression.html"><em>The Excel Depression</em>, de Paul Krugman</a>), dando lugar a una <a class="reference external" href="https://es.wikipedia.org/wiki/Crisis_de_replicaci%C3%B3n">crisis de reproducibilidad o replicabilidad</a> en varias ciencias.</p>
+<p>El concepto de reproducibilidad es cada vez más importante debido, entre otras razones, al aumento exponencial de datos disponibles y a la aplicación de la programación de computadoras, para procesar estos datos, por parte de especialistas de muchas disciplinas.</p>
+<p>Alex Singleton y otros autores <span id="id4">[<a class="reference internal" href="#id9" title="Alex David Singleton, Seth Spielman, and Chris Brunsdon. Establishing a framework for Open Geographic Information science. International Journal of Geographical Information Science, 30(8):1507–1521, August 2016. Publisher: Taylor &amp; Francis _eprint: https://doi.org/10.1080/13658816.2015.1137579. URL: https://doi.org/10.1080/13658816.2015.1137579 (visited on 2022-04-09), doi:10.1080/13658816.2015.1137579.">SSB16</a>]</span> han identificado los siguientes retos para la reproducibilidad en ciencia de datos geoespaciales:</p>
+<ol class="arabic simple">
+<li><p>Los datos deben ser de dominio público y estar disponibles para los investigadores.</p></li>
+<li><p>El software utilizado debe ser de código abierto (<em>open source</em>) y estar disponible para ser revisado.</p></li>
+<li><p>Siempre que sea posible, los <a class="reference external" href="https://es.wikipedia.org/wiki/Flujo_de_trabajo">flujos de trabajo</a> deben ser públicos y con enlaces a los datos, software y métodos de análisis, junto con la documentación necesaria.</p></li>
+<li><p>El proceso de <a class="reference external" href="https://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares">revisión por pares (<em>peer review process</em>)</a> y la publicación académica deben requerir la presentación de un modelo de flujo de trabajo e idealmente la disponibilidad de los materiales necesarios para la replicación.</p></li>
+<li><p>En los casos en los que la reproducibilidad total no sea posible (ej. datos sensibles), los investigadores deben esforzarse por incluir todos los aspectos que puedan de un marco de trabajo abierto.</p></li>
+</ol>
+<p>En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores <span id="id5">[<a class="reference internal" href="#id13" title="Roger D. Peng. Reproducible Research in Computational Science. Science, 334(6060):1226–1227, December 2011. Publisher: American Association for the Advancement of Science. URL: https://www.science.org/doi/10.1126/science.1213847 (visited on 2022-04-10), doi:10.1126/science.1213847.">Pen11</a>]</span>. Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, que se ilustra en la figura <a class="reference internal" href="#figure-espectro-reproducibilidad"><span class="std std-numref">Fig. 12</span></a>.</p>
+<figure class="align-default" id="figure-espectro-reproducibilidad">
+<img alt="../../_images/espectro-reproducibilidad.png" src="../../_images/espectro-reproducibilidad.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Espectro de reproducibilidad. Fuente: <a class="reference external" href="https://www.youtube.com/watch?v=ZjXb53pOor0">Anita Graser</a>, con base en <a class="reference external" href="https://doi.org/10.1126/science.1213847">(Peng, 2001)</a>.</span><a class="headerlink" href="#figure-espectro-reproducibilidad" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="herramientas-para-facilitar-la-reproducibilidad">
+<h3>Herramientas para facilitar la reproducibilidad<a class="headerlink" href="#herramientas-para-facilitar-la-reproducibilidad" title="Link to this heading">#</a></h3>
+<p>En esta sección se destacan dos tipos de herramientas que en la actualidad se consideran esenciales para apoyar la reproducibilidad de una investigación: los lenguajes de marcado y los sistemas de control de versiones.</p>
+<p>La documentación es vital durante todo el ciclo de vida de una investigación reproducible. Para documentar, se recomienda utilizar mecanismos estandarizados y abiertos como el <a class="reference external" href="https://es.wikipedia.org/wiki/HTML">lenguaje de marcado de hipertexto (HTML, en inglés, <em>HyperText Markup Language</em>)</a> o <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, con los cuales pueden crearse documentos mediante editores de texto simples (i.e. no se requiere de software propietario), y exportables a varios formatos (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/LaTeX">LaTeX</a>, <a class="reference external" href="https://es.wikipedia.org/wiki/PDF">PDF</a>).</p>
+<p>Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de <a class="reference external" href="https://es.wikipedia.org/wiki/Control_de_versiones">control de versiones</a> como <a class="reference external" href="https://es.wikipedia.org/wiki/Git">Git</a>, el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. <a class="reference external" href="https://github.com/">GitHub</a>, <a class="reference external" href="https://about.gitlab.com/">GitLab</a>) y que ofrecen servicios relacionados, como hospedaje de sitios web.</p>
+</section>
+</section>
+<section id="referencias-bibliograficas">
+<h2>Referencias bibliográficas<a class="headerlink" href="#referencias-bibliograficas" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id6">
+<div role="list" class="citation-list">
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Gan20</a><span class="fn-bracket">]</span></span>
+<p>Christopher Gandrud. <em>Reproducible research with R and RStudio</em>. The R series. CRC Press, Boca Raton, FL, third edition edition, 2020. ISBN 978-0-367-14398-5 978-0-367-14402-9.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id56">LGMR05</a><span class="fn-bracket">]</span></span>
+<p>Paul A. Longley, Michael F. Goodchild, David J. Maguire, and David W. Rhind. <em>Geographic Information Systems and Science</em>. Wiley, Chichester ; Hoboken, NJ, 2nd edition edition, March 2005. ISBN 978-0-470-87001-3.</p>
+</div>
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Ola20</a><span class="fn-bracket">]</span></span>
+<p>Víctor Olaya. Sistemas de Información Geográfica. 2020. URL: <a class="reference external" href="https://volaya.github.io/libro-sig/">https://volaya.github.io/libro-sig/</a> (visited on 2021-12-31).</p>
+</div>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Pen11</a><span class="fn-bracket">]</span></span>
+<p>Roger D. Peng. Reproducible Research in Computational Science. <em>Science</em>, 334(6060):1226–1227, December 2011. Publisher: American Association for the Advancement of Science. URL: <a class="reference external" href="https://www.science.org/doi/10.1126/science.1213847">https://www.science.org/doi/10.1126/science.1213847</a> (visited on 2022-04-10), <a class="reference external" href="https://doi.org/10.1126/science.1213847">doi:10.1126/science.1213847</a>.</p>
+</div>
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">SSB16</a><span class="fn-bracket">]</span></span>
+<p>Alex David Singleton, Seth Spielman, and Chris Brunsdon. Establishing a framework for Open Geographic Information science. <em>International Journal of Geographical Information Science</em>, 30(8):1507–1521, August 2016. Publisher: Taylor &amp; Francis _eprint: https://doi.org/10.1080/13658816.2015.1137579. URL: <a class="reference external" href="https://doi.org/10.1080/13658816.2015.1137579">https://doi.org/10.1080/13658816.2015.1137579</a> (visited on 2022-04-09), <a class="reference external" href="https://doi.org/10.1080/13658816.2015.1137579">doi:10.1080/13658816.2015.1137579</a>.</p>
+</div>
+</div>
+</div>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="footnote-geografico-espacial" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>El adjetivo <em>geográfico</em> se refiere a la superficie de la Tierra. Así, por ejemplo, las <em>coordenadas geográficas</em> se utilizan para ubicar cualquier punto en la superficie terrestre. El término <em>espacial</em> se emplea para referirse a cualquier espacio, no siempre localizable en el planeta Tierra. En muchas ocasiones, ambas palabras son intercambiables. Por ejemplo, muchos de los métodos utilizados para analizar datos geográficos pueden aplicarse también en espacios no geográficos como, por ejemplo, otros planetas, el cosmos, el cuerpo humano (ej. con radiografías) o secuencias genómicas. En los últimos años, se ha incrementado el uso del término <em>geoespacial</em>, el cual se eligió para el nombre de este curso, como una forma de referirse al subconjunto del espacio correspondiente a la superficie de la Tierra <span id="id56">[<a class="reference internal" href="#id11" title="Paul A. Longley, Michael F. Goodchild, David J. Maguire, and David W. Rhind. Geographic Information Systems and Science. Wiley, Chichester ; Hoboken, NJ, 2nd edition edition, March 2005. ISBN 978-0-470-87001-3.">LGMR05</a>]</span>.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./contenido/1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="introduccion-programacion-computadoras.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introducción a la programación de computadoras</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown - lenguaje de marcado</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecturas">Lecturas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-componente-geoespacial-de-los-datos">El componente geoespacial de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-de-informacion-geografica">Sistemas de información geográfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos-geoespaciales">Ciencia de datos geoespaciales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reproducibilidad">Reproducibilidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-para-facilitar-la-reproducibilidad">Herramientas para facilitar la reproducibilidad</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manuel Vargas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
