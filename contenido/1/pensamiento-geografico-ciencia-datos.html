@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introducción a la ciencia de datos geoespaciales &#8212; PF-0907 Programación de aplicaciones en SIG 2024-II</title>
+    <title>Pensamiento geográfico para ciencia de datos &#8212; PF-0907 Programación de aplicaciones en SIG 2024-II</title>
   
   
   
@@ -57,7 +57,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/introduccion-ciencia-datos-geoespaciales';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/pensamiento-geografico-ciencia-datos';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Introducción a la ciencia de datos" href="introduccion-ciencia-datos.html" />
@@ -182,7 +182,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduccion-programacion-computadoras.html">Introducción a la programación de computadoras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos.html">Introducción a la ciencia de datos</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introducción a la ciencia de datos geoespaciales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pensamiento geográfico para ciencia de datos</a></li>
 </ul>
 
     </div>
@@ -254,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/gf0657-programacionsig/2024-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/introduccion-ciencia-datos-geoespaciales.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/gf0657-programacionsig/2024-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/pensamiento-geografico-ciencia-datos.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@
       
       
       
-      <li><a href="../../_sources/contenido/1/introduccion-ciencia-datos-geoespaciales.md" target="_blank"
+      <li><a href="../../_sources/contenido/1/pensamiento-geografico-ciencia-datos.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introducción a la ciencia de datos geoespaciales</h1>
+    <h1>Pensamiento geográfico para ciencia de datos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,8 +383,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-de-los-datos-geoespaciales">Características de los datos geoespaciales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-y-estructuras-de-datos">Modelos y estructuras de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos">Ciencia de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddd">ddd</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
 </ul>
             </nav>
@@ -397,8 +397,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-la-ciencia-de-datos-geoespaciales">
-<h1>Introducción a la ciencia de datos geoespaciales<a class="headerlink" href="#introduccion-a-la-ciencia-de-datos-geoespaciales" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pensamiento-geografico-para-ciencia-de-datos">
+<h1>Pensamiento geográfico para ciencia de datos<a class="headerlink" href="#pensamiento-geografico-para-ciencia-de-datos" title="Link to this heading">#</a></h1>
 <section id="trabajo-previo">
 <h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
 <section id="lecturas">
@@ -408,32 +408,27 @@ document.write(`
 </section>
 <section id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
-<p>La <strong>ciencia de datos geoespaciales</strong> es una especialización de la ciencia de datos que considera variables espaciales como la <strong>localización</strong>, la <strong>distancia</strong> y las <a class="reference external" href="https://gf0604-procesamientodatosgeograficos.github.io/2024-i/13-operaciones-datos-espaciales.html#relaciones-topol%C3%B3gicas"><strong>relaciones topológicas</strong></a> (ej. intersección, traslape, cobertura), las cuales usualmente no son tomadas en cuenta por la ciencia de datos convencionales.</p>
-<p>Adicionalmente, la ciencia de datos geoespaciales utiliza herramientas y métodos especializados, algunos de los cuales provienen de otras tecnologías de procesamiento de datos espaciales, como los <a class="reference external" href="https://es.wikipedia.org/wiki/Sistema_de_informaci%C3%B3n_geogr%C3%A1fica"><strong>sistemas de información geográfica (SIG)</strong></a>. Sin embargo, la ciencia de datos geoespaciales extiende las capacidades de los SIG mediante técnicas estadísticas y computacionales más avanzadas para el análisis y la modelización. Además, puede requerir de una mayor capacidad de procesamiento y de flujos de trabajo (<a class="reference external" href="https://datascientest.com/es/pipeline-definicion-funcionamiento-y-uso-en-data-science"><em>pipelines</em></a>) más complejos.</p>
-<p>El uso masivo de tecnologías como dispositivos móviles, redes sociales y sensores remotos, entre muchas otras, ha incrementado significativamente la disponibilidad de datos geoespaciales en formato digital y la conveniencia de su procesamiento mediante técnicas de ciencia de datos.</p>
+<p>La ciencia de datos es una disciplina que permite convertir datos “crudos” en comprensión y conocimiento <span id="id1">[<a class="reference internal" href="#id6" title="Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media, 2nd ed. edition, July 2023. URL: https://r4ds.hadley.nz/ (visited on 2022-10-16).">WCRG23</a>]</span>.</p>
+<p>La ciencia de datos permite obtener información significativa a partir de datos sin procesar.</p>
 </section>
-<section id="caracteristicas-de-los-datos-geoespaciales">
-<h2>Características de los datos geoespaciales<a class="headerlink" href="#caracteristicas-de-los-datos-geoespaciales" title="Link to this heading">#</a></h2>
-<p>Toda observación tiene asociada una localización en el espacio (ej. coordenadas geográficas), la cual permite entender mejor sus relaciones con otras observaciones y que puede ser utilizada para realizar mejores inferencias y predicciones. Como lo afirmó el geógrafo estadounidense <a class="reference external" href="https://en.wikipedia.org/wiki/Waldo_R._Tobler">Waldo Tobler (1930 - 2018)</a>:</p>
-<blockquote>
-<div><p><em>Todas las cosas están relacionadas entre sí, pero las cosas cercanas están más relacionadas que las distantes</em> <span id="id1">[<a class="reference internal" href="#id9" title="W. R. Tobler. A Computer Movie Simulating Urban Growth in the Detroit Region. Economic Geography, 46:234–240, 1970. Publisher: [Clark University, Wiley]. URL: https://www.jstor.org/stable/143141 (visited on 2024-08-18), doi:10.2307/143141.">Tob70</a>]</span>.</p>
-</div></blockquote>
-<p>Por lo tanto, si se entienden apropiadamente las relaciones espaciales entre los datos, es posible desarrollar mejores modelos <span id="id2">[<a class="reference internal" href="#id8" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</p>
+<section id="ciencia-de-datos">
+<h2>Ciencia de datos<a class="headerlink" href="#ciencia-de-datos" title="Link to this heading">#</a></h2>
+<p>La ciencia de datos permite obtener información significativa a partir de datos sin procesar. En un proyecto típico de ciencia de datos, se empieza por importar y organizar los datos. Seguidamente, se comprenden los datos mediante un ciclo iterativo de transformación, visualización y modelización. El último paso es la comunicación de los resultados a otras personas. La programación de computadoras es una actividad transversal en todo el ciclo de ciencia de datos.</p>
+<p>Las etapas iniciales incluyen tratamiento estadísticos típicos como el <a class="reference external" href="https://es.wikipedia.org/wiki/An%C3%A1lisis_exploratorio_de_datos">análisis exploratorio de datos (EDA)</a>, mientras que las más avanzadas pueden involucrar técnicas de <a class="reference external" href="https://es.wikipedia.org/wiki/Inteligencia_artificial">inteligencia artificial</a> como <a class="reference external" href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico">aprendizaje automático (<em>machine learning</em>)</a> y <a class="reference external" href="https://es.wikipedia.org/wiki/Aprendizaje_profundo">aprendizaje profundo (<em>deep learning</em>)</a>.</p>
+<p>El surgimiento de la ciencia de datos está motivado por un incremento acelerado de la cantidad de datos disponibles, así como de la disponibilidad de herramientas computacionales (lenguajes de programación, motores de bases de datos) y de infraestructura informática (hospedaje de datos, hospedaje de aplicaciones) para procesarlos y analizarlos. Los cambios tecnológicos han sido apoyados por un cambio cultural propiciado por movimientos como los de <a class="reference external" href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">código abierto (<em>open source</em>)</a>, <a class="reference external" href="https://es.wikipedia.org/wiki/Datos_abiertos">datos abiertos (<em>open data</em>)</a>, <a class="reference external" href="https://es.wikipedia.org/wiki/Acceso_abierto">acceso abierto (<em>open access</em>)</a> y <a class="reference external" href="https://es.wikipedia.org/wiki/Ciencia_abierta">ciencia abierta (<em>open science</em>)</a>. La ciencia abierta, que de alguna manera engloba a los otros movimientos <em>abiertos</em>, promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodología y el código código fuente, entre otros, de manera que sean accesibles a todos los niveles de la sociedad.</p>
 </section>
-<section id="modelos-y-estructuras-de-datos">
-<h2>Modelos y estructuras de datos<a class="headerlink" href="#modelos-y-estructuras-de-datos" title="Link to this heading">#</a></h2>
+<section id="ddd">
+<h2>ddd<a class="headerlink" href="#ddd" title="Link to this heading">#</a></h2>
+<p>Los datos geoespaciales están presentes en todas partes. Se generan masivamente a través de diversas fuentes como dispositivos móviles, redes sociales y sensores remotos, entre muchas otras.</p>
+<p>Cualquier <strong>observación</strong> tiene asociada una <strong>localización</strong> en el <strong>espacio</strong> y en el <strong>tiempo</strong> y puede ser empleada para realizar mejores <strong>inferencias</strong> y <strong>predicciones</strong> en los datos.</p>
 </section>
 <section id="referencias-bibliograficas">
 <h2>Referencias bibliográficas<a class="headerlink" href="#referencias-bibliograficas" title="Link to this heading">#</a></h2>
-<div class="docutils container" id="id3">
+<div class="docutils container" id="id2">
 <div role="list" class="citation-list">
-<div class="citation" id="id8" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">RABW20</a><span class="fn-bracket">]</span></span>
-<p>Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: <a class="reference external" href="https://geographicdata.science/book/">https://geographicdata.science/book/</a> (visited on 2021-12-31).</p>
-</div>
-<div class="citation" id="id9" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Tob70</a><span class="fn-bracket">]</span></span>
-<p>W. R. Tobler. A Computer Movie Simulating Urban Growth in the Detroit Region. <em>Economic Geography</em>, 46:234–240, 1970. Publisher: [Clark University, Wiley]. URL: <a class="reference external" href="https://www.jstor.org/stable/143141">https://www.jstor.org/stable/143141</a> (visited on 2024-08-18), <a class="reference external" href="https://doi.org/10.2307/143141">doi:10.2307/143141</a>.</p>
+<div class="citation" id="id6" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">WCRG23</a><span class="fn-bracket">]</span></span>
+<p>Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. O'Reilly Media, 2nd ed. edition, July 2023. URL: <a class="reference external" href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a> (visited on 2022-10-16).</p>
 </div>
 </div>
 </div>
@@ -500,8 +495,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-de-los-datos-geoespaciales">Características de los datos geoespaciales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-y-estructuras-de-datos">Modelos y estructuras de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciencia-de-datos">Ciencia de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ddd">ddd</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
 </ul>
   </nav></div>
