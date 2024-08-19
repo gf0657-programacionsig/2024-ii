@@ -384,7 +384,13 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-de-los-datos-geoespaciales">Características de los datos geoespaciales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-y-estructuras-de-datos">Modelos y estructuras de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-datos-geoespaciales">Modelos de datos geoespaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-vectorial">Modelo vectorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-raster">Modelo raster</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redes">Redes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-de-software-geoespacial">Herramientas de software geoespacial</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
 </ul>
             </nav>
@@ -416,22 +422,63 @@ document.write(`
 <h2>Características de los datos geoespaciales<a class="headerlink" href="#caracteristicas-de-los-datos-geoespaciales" title="Link to this heading">#</a></h2>
 <p>Toda observación tiene asociada una localización en el espacio (ej. coordenadas geográficas), la cual permite entender mejor sus relaciones con otras observaciones y que puede ser utilizada para realizar mejores inferencias y predicciones. Como lo afirmó el geógrafo estadounidense <a class="reference external" href="https://en.wikipedia.org/wiki/Waldo_R._Tobler">Waldo Tobler (1930 - 2018)</a>:</p>
 <blockquote>
-<div><p><em>Todas las cosas están relacionadas entre sí, pero las cosas cercanas están más relacionadas que las distantes</em> <span id="id1">[<a class="reference internal" href="#id9" title="W. R. Tobler. A Computer Movie Simulating Urban Growth in the Detroit Region. Economic Geography, 46:234–240, 1970. Publisher: [Clark University, Wiley]. URL: https://www.jstor.org/stable/143141 (visited on 2024-08-18), doi:10.2307/143141.">Tob70</a>]</span>.</p>
+<div><p><em>Todas las cosas están relacionadas entre sí, pero las cosas cercanas están más relacionadas que las distantes</em> <span id="id1">[<a class="reference internal" href="#id14" title="W. R. Tobler. A Computer Movie Simulating Urban Growth in the Detroit Region. Economic Geography, 46:234–240, 1970. Publisher: [Clark University, Wiley]. URL: https://www.jstor.org/stable/143141 (visited on 2024-08-18), doi:10.2307/143141.">Tob70</a>]</span>.</p>
 </div></blockquote>
-<p>Por lo tanto, si se entienden apropiadamente las relaciones espaciales entre los datos, es posible desarrollar mejores modelos <span id="id2">[<a class="reference internal" href="#id8" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</p>
+<p>Por lo tanto, si se entienden apropiadamente las relaciones espaciales entre los datos, es posible desarrollar mejores modelos <span id="id2">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</p>
 </section>
-<section id="modelos-y-estructuras-de-datos">
-<h2>Modelos y estructuras de datos<a class="headerlink" href="#modelos-y-estructuras-de-datos" title="Link to this heading">#</a></h2>
+<section id="modelos-de-datos-geoespaciales">
+<h2>Modelos de datos geoespaciales<a class="headerlink" href="#modelos-de-datos-geoespaciales" title="Link to this heading">#</a></h2>
+<p>Los modelos de datos geoespaciales se utilizan para representar procesos geográficos en una computadora <span id="id3">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>. Los modelos más utilizados son el vectorial y el raster.</p>
+<section id="modelo-vectorial">
+<h3>Modelo vectorial<a class="headerlink" href="#modelo-vectorial" title="Link to this heading">#</a></h3>
+<p>Se usa para representar objetos discretos como puntos (ej. personas, postes telefónicos), líneas (ej. ríos, caminos) y polígonos (ej. provincias, fincas) que ocupan una posición específica en el espacio y en el tiempo. Los datos vectoriales se almacenan en tablas como la que se muestra en la <a class="reference internal" href="#figure-tabla-vectorial"><span class="std std-numref">Fig. 15</span></a>. Estas tablas contienen una columna para almacenar las geometrías.</p>
+<figure class="align-default" id="figure-tabla-vectorial">
+<img alt="../../_images/tabla-vectorial.png" src="../../_images/tabla-vectorial.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Datos vectoriales almacenados en un <code class="docutils literal notranslate"><span class="pre">geodataframe</span></code> del paquete <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> de Python. Imagen de <span id="id4">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</span><a class="headerlink" href="#figure-tabla-vectorial" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="modelo-raster">
+<h3>Modelo raster<a class="headerlink" href="#modelo-raster" title="Link to this heading">#</a></h3>
+<p>Se usa para representar superficies (ej. temperatura, precipitación, densidad de población) que, en teoría, pueden ser medidas en cualquier posición en el espacio y en el tiempo. Los datos raster se almacenan en arreglos multidimensionales (matrices, cubos) como el que se muestra en la <a class="reference internal" href="#figure-matriz-raster"><span class="std std-numref">Fig. 16</span></a>.</p>
+<figure class="align-default" id="figure-matriz-raster">
+<img alt="../../_images/matriz-raster.png" src="../../_images/matriz-raster.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Datos raster almacenados en un <code class="docutils literal notranslate"><span class="pre">Data.Array</span></code> del paquete <code class="docutils literal notranslate"><span class="pre">xarray</span></code> de Python. Imagen de <span id="id5">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</span><a class="headerlink" href="#figure-matriz-raster" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="redes">
+<h3>Redes<a class="headerlink" href="#redes" title="Link to this heading">#</a></h3>
+<p>Sergio Rey, Daniel Arribas-Bel y Levi Wolf <span id="id6">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span> incluyen las redes, un conjunto de conexiones entre objetos, como otro modelo de datos, el cual puede implementarse mediante <a class="reference external" href="https://es.wikipedia.org/wiki/Grafo">grafos</a>. La <a class="reference internal" href="#figure-grafo-red"><span class="std std-numref">Fig. 17</span></a> muestra una red.</p>
+<figure class="align-default" id="figure-grafo-red">
+<img alt="../../_images/grafo-red.png" src="../../_images/grafo-red.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Datos de red. Imagen de <span id="id7">[<a class="reference internal" href="#id13" title="Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: https://geographicdata.science/book/ (visited on 2021-12-31).">RABW20</a>]</span>.</span><a class="headerlink" href="#figure-grafo-red" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="herramientas-de-software-geoespacial">
+<h2>Herramientas de software geoespacial<a class="headerlink" href="#herramientas-de-software-geoespacial" title="Link to this heading">#</a></h2>
+<p>El software geoespacial incluye programas SIG de escritorio (ej. QGIS, ArcGIS), programas utilitarios para la línea de comandos del sistema operativo (ej. GDAL), servidores web de mapas (ej. GeoServer, MapServer) y sistemas administradores de bases de datos (ej. PostgreSQL/PostGIS, Oracle Spatial and Graph). Muchos de estos programas utilizan bibliotecas programadas en C/C++ que han sido migradas a otros lenguajes de programación y proporcionan funcionalidades básicas para conversiones entre formatos, geoprocesamiento y conversiones entre sistemas de coordenadas. Algunas de las principales de estas bibliotecas son:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gdal.org/">Geospatial Data Abstraction Library (GDAL)</a>: es una biblioteca para leer y escribir datos geoespaciales en varios formatos <a class="reference external" href="https://gdal.org/drivers/raster/">raster</a> y <a class="reference external" href="https://gdal.org/drivers/vector/">vectoriales</a>. Implementa un único <a class="reference external" href="https://gdal.org/user/raster_data_model.html">modelo abstracto de datos raster</a> y un único <a class="reference external" href="https://gdal.org/user/vector_data_model.html">modelo abstracto de datos vectoriales</a>, lo que permite programar aplicaciones geoespaciales sin tener que ocuparse de las particularidades de cada formato que se utilice (GeoTIFF, NetCDF, ESRI Shapefile, GeoJSON, etc.). A pesar de que GDAL está programada en C/C++, cuenta con una interfaz de programación de aplicaciones (API) para varios lenguajes de programación, incluyendo <a class="reference external" href="https://gdal.org/api/index.html#c-api">C</a>, <a class="reference external" href="https://gdal.org/api/index.html#id3">C++</a>, <a class="reference external" href="https://gdal.org/python/index.html">Python</a> y <a class="reference external" href="https://gdal.org/java/overview-summary.html">Java</a>. Además, ofrece un conjunto de <a class="reference external" href="https://gdal.org/programs/">utilitarios de línea de comandos</a> cuyas <a class="reference external" href="https://gdal.org/download.html#binaries">distribuciones binarias</a> están disponibles para varios sistemas operativos, incluyendo Windows, macOS y Linux.</p></li>
+<li><p><a class="reference external" href="https://trac.osgeo.org/geos">Geometry Engine, Open Source (GEOS)</a>: es una implementación en C++ de la biblioteca <a class="reference external" href="http://www.tsusiatsoftware.net/jts/main.html">JTS Topology Suite</a> (desarrollada en Java) y que implementa un conjunto de operaciones y predicados geoespaciales (ej. unión, intersección, distancia, área).</p></li>
+<li><p><a class="reference external" href="https://proj.org/">PROJ</a>: es una biblioteca que transforma coordenadas entre diferentes CRS, incluyendo tanto proyecciones cartográficas como transformaciones geodésicas.</p></li>
+</ul>
 </section>
 <section id="referencias-bibliograficas">
 <h2>Referencias bibliográficas<a class="headerlink" href="#referencias-bibliograficas" title="Link to this heading">#</a></h2>
-<div class="docutils container" id="id3">
+<div class="docutils container" id="id8">
 <div role="list" class="citation-list">
-<div class="citation" id="id8" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">RABW20</a><span class="fn-bracket">]</span></span>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>RABW20<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id4">3</a>,<a role="doc-backlink" href="#id5">4</a>,<a role="doc-backlink" href="#id6">5</a>,<a role="doc-backlink" href="#id7">6</a>)</span>
 <p>Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with Python. 2020. URL: <a class="reference external" href="https://geographicdata.science/book/">https://geographicdata.science/book/</a> (visited on 2021-12-31).</p>
 </div>
-<div class="citation" id="id9" role="doc-biblioentry">
+<div class="citation" id="id14" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Tob70</a><span class="fn-bracket">]</span></span>
 <p>W. R. Tobler. A Computer Movie Simulating Urban Growth in the Detroit Region. <em>Economic Geography</em>, 46:234–240, 1970. Publisher: [Clark University, Wiley]. URL: <a class="reference external" href="https://www.jstor.org/stable/143141">https://www.jstor.org/stable/143141</a> (visited on 2024-08-18), <a class="reference external" href="https://doi.org/10.2307/143141">doi:10.2307/143141</a>.</p>
 </div>
@@ -501,7 +548,13 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-de-los-datos-geoespaciales">Características de los datos geoespaciales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-y-estructuras-de-datos">Modelos y estructuras de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-datos-geoespaciales">Modelos de datos geoespaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-vectorial">Modelo vectorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-raster">Modelo raster</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redes">Redes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-de-software-geoespacial">Herramientas de software geoespacial</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias-bibliograficas">Referencias bibliográficas</a></li>
 </ul>
   </nav></div>
