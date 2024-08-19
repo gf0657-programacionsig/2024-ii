@@ -60,7 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/markdown';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Git - sistema de control de versiones" href="git.html" />
     <link rel="prev" title="Introducción a la ciencia de datos geoespaciales" href="introduccion-ciencia-datos-geoespaciales.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -179,12 +178,12 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LA PROGRAMACIÓN DE COMPUTADORAS Y A LA CIENCIA DE DATOS GEOESPACIALES</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduccion-programacion-computadoras.html">Introducción a la programación de computadoras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos.html">Introducción a la ciencia de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos-geoespaciales.html">Introducción a la ciencia de datos geoespaciales</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown - lenguaje de marcado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git.html">Git - sistema de control de versiones</a></li>
 </ul>
 
     </div>
@@ -239,7 +238,7 @@
       
       
       
-      <li><a href="https://github.com/pf0907-programacionsig/2023-ii" target="_blank"
+      <li><a href="https://github.com/gf0657-programacionsig/2024-ii" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -256,7 +255,7 @@
       
       
       
-      <li><a href="https://github.com/pf0907-programacionsig/2023-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/markdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/gf0657-programacionsig/2024-ii/issues/new?title=Issue%20on%20page%20%2Fcontenido/1/markdown.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,26 +380,31 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software">Instalación de software</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales">Tutoriales</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-recursos">Otros recursos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros">Otros</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción general</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-documento">Ejemplo de documento</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-satelites-galileanos">Los satélites galileanos</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sintaxis">Sintaxis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encabezados">Encabezados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italicas">Itálicas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negritas">Negritas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parrafos">Párrafos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negrita">Negrita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italica">Itálica</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citas-textuales">Citas textuales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-hipervinculos">Enlaces (hipervínculos)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-elementos-de-sintaxis">Otros elementos de sintaxis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-de-interes">Recursos de interés</a></li>
 </ul>
             </nav>
         </div>
@@ -416,153 +420,437 @@ document.write(`
 <h1>Markdown - lenguaje de marcado<a class="headerlink" href="#markdown-lenguaje-de-marcado" title="Link to this heading">#</a></h1>
 <section id="trabajo-previo">
 <h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
+<section id="instalacion-de-software">
+<h3>Instalación de software<a class="headerlink" href="#instalacion-de-software" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. Editor de código fuente. Se recomienda instalar las siguientes extensiones para editar documentos Markdown:</p>
+<ul class="simple">
+<li><p>Markdown All in One</p></li>
+<li><p>markdownlint</p></li>
+<li><p>Markdown Preview Enhanced</p></li>
+</ul>
+</section>
 <section id="tutoriales">
 <h3>Tutoriales<a class="headerlink" href="#tutoriales" title="Link to this heading">#</a></h3>
-<p><em>Markdown Tutorial</em>. (s. f.). Recuperado 19 de marzo de 2022, de <a class="reference external" href="https://www.markdowntutorial.com/">https://www.markdowntutorial.com/</a></p>
+<p><em>Markdown Tutorial</em>. (s.f.). Recuperado el 1 de marzo de 2024, de <a class="reference external" href="https://www.markdowntutorial.com/">https://www.markdowntutorial.com/</a></p>
 </section>
-<section id="otros-recursos">
-<h3>Otros recursos<a class="headerlink" href="#otros-recursos" title="Link to this heading">#</a></h3>
-<p><em>Markdown Guide</em>. (s. f.). Recuperado 10 de abril de 2022, de <a class="reference external" href="https://www.markdownguide.org/">https://www.markdownguide.org/</a></p>
+<section id="otros">
+<h3>Otros<a class="headerlink" href="#otros" title="Link to this heading">#</a></h3>
+<p>Cree una cuenta gratuita en la plataforma de desarrollo colaborativo <a class="reference external" href="https://github.com/">GitHub</a>.</p>
 </section>
 </section>
-<section id="resumen">
-<h2>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
-<p>Markdown es un lenguaje de marcado ligero ampliamente utilizado en comunicación científica, documentación de programas e investigación reproducible.</p>
-</section>
-<section id="descripcion-general">
-<h2>Descripción general<a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> es un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">lenguaje de marcado</a> creado en 2004 por John Gruber. Las “marcas” se utilizan para brindar información acerca de la presentación (ej. negritas, itálicas) o la estructura (ej. títulos, encabezados) de un documento. Se caracteriza por ser más sencillo de leer y de usar que otros lenguajes de marcado (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/HTML">Lenguaje de marcado de Hipertexto o HTML</a>), por lo que se considera un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcas_ligero">lenguaje de marcado ligero</a>. Los documentos escritos en Markdown pueden exportarse a una gran variedad de formatos (ej. HTML, DOC, PDF, LaTex) para ser usados en libros, presentaciones o páginas web, entre otros. Markdown es ampliamente utilizado en comunicación científica, documentación de programas e investigación reproducible.</p>
-</section>
-<section id="variaciones">
-<h2>Variaciones<a class="headerlink" href="#variaciones" title="Link to this heading">#</a></h2>
-<p>Las variaciones de Markdown, también llamadas <em>flavors</em>, son extensiones o modificaciones de la especificación original. Entre las más populares están:</p>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> es un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">lenguaje de marcado</a>, creado en 2004 por John Gruber y Aaron Swartz. Las “marcas” se utilizan para especificar aspectos de la estructura (ej. títulos, encabezados), estilo (ej. negritas, itálicas) y semántica de un documento. Markdown se caracteriza por ser más sencillo de leer y de usar que otros lenguajes de marcado (ej. <a class="reference external" href="https://es.wikipedia.org/wiki/HTML">Lenguaje de Marcado de Hipertexto o HTML</a>), por lo que se considera un <a class="reference external" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcas_ligero">lenguaje de marcado ligero</a>.</p>
+<p>Los documentos escritos en Markdown pueden exportarse a una gran variedad de formatos (ej. HTML, DOC, PDF, LaTex) para ser usados en libros, presentaciones o páginas web, entre otros.</p>
+<p>Las variaciones de Markdown, también llamadas <em>flavors</em>, son extensiones o modificaciones de la <a class="reference internal" href="#(https://daringfireball.net/projects/markdown/)"><span class="xref myst">especificación original</span></a>. Entre las más populares están:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>: para el lenguaje R.</p></li>
-<li><p><a class="reference external" href="https://help.github.com/en/github/writing-on-github">GitHub Flavored Markdown</a>: para la plataforma GitHub.</p></li>
 <li><p><a class="reference external" href="https://github.com/Python-Markdown/markdown">Python Markdown</a>: para el lenguaje Python.</p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/github/writing-on-github">GitHub Flavored Markdown</a>: para la plataforma GitHub.</p></li>
 <li><p><a class="reference external" href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc’s Markdown</a>: para el programa <a class="reference external" href="https://pandoc.org/">Pandoc</a> de conversión entre formatos.</p></li>
-<li><p><a class="reference external" href="https://kramdown.gettalong.org/quickref.html">Kramdown</a>: para el lenguaje Ruby.</p></li>
+<li><p><a class="reference external" href="https://quarto.org/">Quarto</a>: más que un <em>flavor</em> de Markdown es un sistema de publicación de documentos técnicos y científicos que utiliza Markdown. Tiene soporte para incluir y ejecutar código en R, Python, Julia y Observable.</p></li>
 </ul>
-<p>Puede verse una lista más extensa en <a class="github reference external" href="https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors">commonmark/commonmark-spec</a>.</p>
+<p>Puede encontrarse una lista más extensa de variaciones de Markdown en <a class="reference external" href="https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors">Markdown Flavors</a>.</p>
+</section>
+<section id="ejemplo-de-documento">
+<h2>Ejemplo de documento<a class="headerlink" href="#ejemplo-de-documento" title="Link to this heading">#</a></h2>
+<p>El siguiente es un ejemplo de la sintaxis de Markdown, con marcas para un encabezado, texto en negrita, texto en itálica, un hipervínculo y una imagen.</p>
+<hr class="docutils" />
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">### Los satélites galileanos</span>
+
+Se llaman <span class="gs">**satélites galileanos**</span> los cuatro satélites
+de Júpiter descubiertos en 1610 por 
+[<span class="nt">Galileo Galilei</span>](<span class="na">https://es.wikipedia.org/wiki/Galileo_Galilei</span>): 
+<span class="ge">*Ío*</span>, <span class="ge">*Europa*</span>, <span class="ge">*Ganimedes*</span> y <span class="ge">*Calisto*</span>. 
+Son los más grandes de los satélites de Júpiter, 
+siendo visibles incluso con telescopios de baja potencia.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg)
+
+<span class="gs">**Figura 1**</span>. Los cuatro satélites galileanos, 
+en una composición que compara sus tamaños con el tamaño de Júpiter. 
+En orden descendente, son <span class="ge">*Ío*</span>, <span class="ge">*Europa*</span>, <span class="ge">*Ganimedes*</span> y <span class="ge">*Calisto*</span>.
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>El documento se visualiza de la siguiente manera:</p>
+<hr class="docutils" />
+<section id="los-satelites-galileanos">
+<h3>Los satélites galileanos<a class="headerlink" href="#los-satelites-galileanos" title="Link to this heading">#</a></h3>
+<p>Se llaman <strong>satélites galileanos</strong> los cuatro satélites
+de Júpiter descubiertos en 1610 por
+<a class="reference external" href="https://es.wikipedia.org/wiki/Galileo_Galilei">Galileo Galilei</a>:
+<em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <em>Calisto</em>.
+Son los más grandes de los satélites de Júpiter,
+siendo visibles incluso con telescopios de baja potencia.</p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg" /></p>
+<p><strong>Figura 1</strong>. Los cuatro satélites galileanos,
+en una composición que compara sus tamaños con el tamaño de Júpiter.
+En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <em>Calisto</em>.</p>
+<hr class="docutils" />
+<p>El contenido de este ejemplo está basado en <a class="reference external" href="https://es.wikipedia.org/wiki/Sat%C3%A9lite_galileano">Satélite galileano - Wikipedia, la enciclopedia libre</a>.</p>
+</section>
 </section>
 <section id="sintaxis">
 <h2>Sintaxis<a class="headerlink" href="#sintaxis" title="Link to this heading">#</a></h2>
-<p>La sintaxis de Markdown permite especificar diferentes componentes de un documento, entre los que están:</p>
-<ul class="simple">
-<li><p>Encabezados.</p></li>
-<li><p>Estilos (ej. negritas, itálicas).</p></li>
-<li><p>Citas textuales.</p></li>
-<li><p>Enlaces a otros documentos (ej. páginas web).</p></li>
-<li><p>Imágenes.</p></li>
-<li><p>Listas.</p></li>
-</ul>
+<p>En esta sección, se explican los principales elementos de sintaxis de Markdown y se muestran sus salidas.</p>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  td {
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;        
+  }
+  
+  th {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;     
+  }  
+</style>
 <section id="encabezados">
 <h3>Encabezados<a class="headerlink" href="#encabezados" title="Link to this heading">#</a></h3>
-<p>Pueden definirse seis niveles de encabezados, mediante símbolos de numeral (<code class="docutils literal notranslate"><span class="pre">#</span></code>) antes del texto. El primer nivel es el de tamaño de texto más grande y el sexto el más pequeño. En la parte izquierda de la <a class="reference internal" href="#fig-md-encabezados"><span class="std std-numref">Fig. 13</span></a> se muestra la sintaxis Markdown de los encabezados y a la derecha la forma en que se despliegan en un documento.</p>
-<figure class="align-default" id="fig-md-encabezados">
-<img alt="../../_images/md-encabezados.png" src="../../_images/md-encabezados.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Sintaxis de Markdown - encabezados.</span><a class="headerlink" href="#fig-md-encabezados" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Hay seis niveles de encabezados en Markdown, siendo el nivel 1 el de letras más grandes y el 6 el de letras más pequeñas. Se especifican mediante símbolos de numeral (<code class="docutils literal notranslate"><span class="pre">#</span></code>) antes del texto del encabezado (note el espacio entre el último signo de numeral y el inicio del texto).</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      # Encabezado de nivel 1
+    </td>
+    <td>
+      <h1>Encabezado de nivel 1</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ## Encabezado de nivel 2
+    </td>
+    <td>
+      <h2>Encabezado de nivel 2</h2>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      ### Encabezado de nivel 3
+    </td>
+    <td>
+      <h3>Encabezado de nivel 3</h3>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      #### Encabezado de nivel 4
+    </td>
+    <td>
+      <h4>Encabezado de nivel 4</h4>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      ##### Encabezado de nivel 5
+    </td>
+    <td>
+      <h5>Encabezado de nivel 5</h5>
+    </td>
+  </tr>    
+  <tr>
+    <td>
+      ###### Encabezado de nivel 6
+    </td>
+    <td>
+      <h6>Encabezado de nivel 6</h6>
+    </td>
+  </tr>    
+</table> 
+<p>Para los encabezados de nivel 1 y nivel 2, existe una sintaxis alterna, con símbolos de igual (<code class="docutils literal notranslate"><span class="pre">=====</span></code>) o guiones (<code class="docutils literal notranslate"><span class="pre">-----</span></code>) bajo el texto del encabezado.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      Otro encabezado de nivel 1<br>
+      ==========================
+    </td>
+    <td>
+      <h1>Otro encabezado de nivel 1</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Otro encabezado de nivel 2<br>
+      --------------------------
+    </td>
+    <td>
+      <h2>Otro encabezado de nivel 2</h2>
+    </td>
+  </tr>  
+</table>
 </section>
-<section id="italicas">
-<h3>Itálicas<a class="headerlink" href="#italicas" title="Link to this heading">#</a></h3>
-<p>Se definen con un asterisco (<code class="docutils literal notranslate"><span class="pre">*</span></code>) antes y después del texto o con un guión bajo (<code class="docutils literal notranslate"><span class="pre">_</span></code>) antes y después del texto.</p>
-<figure class="align-default" id="fig-md-italicas">
-<img alt="../../_images/md-italica.png" src="../../_images/md-italica.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Sintaxis de Markdown - itálicas.</span><a class="headerlink" href="#fig-md-italicas" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<section id="parrafos">
+<h3>Párrafos<a class="headerlink" href="#parrafos" title="Link to this heading">#</a></h3>
+<p>Los párrafos deben separarse mediante (al menos) una línea en blanco. Un simple cambio de línea no generará un nuevo párrafo.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      Este es el texto que corresponde al primer párrafo de un documento.<p><p>
+      Este es el texto que corresponde al segundo párrafo de un documento.
+    </td>
+    <td>
+      Este es el texto que corresponde al primer párrafo de un documento.<p><p>
+      Este es el texto que corresponde al segundo párrafo de un documento.
+    </td>
+  </tr>
+</table>
 </section>
-<section id="negritas">
-<h3>Negritas<a class="headerlink" href="#negritas" title="Link to this heading">#</a></h3>
-<p>Se definen con dos asteriscos (<code class="docutils literal notranslate"><span class="pre">**</span></code>) antes y después del texto o con dos guiones bajos (<code class="docutils literal notranslate"><span class="pre">__</span></code>) antes y después del texto.</p>
-<figure class="align-default" id="fig-md-negritas">
-<img alt="../../_images/md-negrita.png" src="../../_images/md-negrita.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Sintaxis de Markdown - negritas.</span><a class="headerlink" href="#fig-md-negritas" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<section id="negrita">
+<h3>Negrita<a class="headerlink" href="#negrita" title="Link to this heading">#</a></h3>
+<p>Hay dos sintaxis para especificar texto en <em>negrita</em>: con dos asteriscos (<code class="docutils literal notranslate"><span class="pre">**</span></code>) o con dos guiones bajos (<code class="docutils literal notranslate"><span class="pre">__</span></code>), antes y después del texto.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      **Texto en negrita**
+    </td>
+    <td>
+      <strong>Texto en negrita</strong>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      __Otro texto en negrita__
+    </td>
+    <td>
+      <strong>Otro texto en negrita</strong>
+    </td>
+  </tr>  
+</table>
+</section>
+<section id="italica">
+<h3>Itálica<a class="headerlink" href="#italica" title="Link to this heading">#</a></h3>
+<p>Hay dos sintaxis para especificar texto en <em>itálica</em>: con un asterisco (<code class="docutils literal notranslate"><span class="pre">*</span></code>) o con un guión bajo (<code class="docutils literal notranslate"><span class="pre">_</span></code>), antes y después del texto.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      *Texto en itálica*
+    </td>
+    <td>
+      <em>Texto en itálica</em>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      _Otro texto en itálica_
+    </td>
+    <td>
+      <em>Otro texto en itálica</em>
+    </td>
+  </tr>  
+</table>
 </section>
 <section id="citas-textuales">
 <h3>Citas textuales<a class="headerlink" href="#citas-textuales" title="Link to this heading">#</a></h3>
-<p>Se definen con un símbolo de “mayor que” (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>) antes de cada línea.</p>
-<figure class="align-default" id="fig-md-citas">
-<img alt="../../_images/md-cita.png" src="../../_images/md-cita.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Sintaxis de Markdown - citas textuales.</span><a class="headerlink" href="#fig-md-citas" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Se especifican con un símbolo de “mayor que” (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>) antes de cada línea.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      > *And on the pedestal these words appear:*<br>
+      > *"My name is Ozymandias, king of kings:*<br>
+      > *Look on my works, ye Mighty, and despair!"*<br>
+      Percy Bysshe Shelley, "Ozymandias" (1818)
+    </td>
+    <td>
+      <blockquote>
+        <em>
+          "And on the pedestal these words appear:<br>
+          "My name is Ozymandias, king of kings:<br>
+          Look on my works, ye Mighty, and despair!"<br>
+        </em>
+      </blockquote>
+      Percy Bysshe Shelley, "Ozymandias" (1818)
+    </td>
+  </tr>
+</table>
 </section>
 <section id="enlaces-hipervinculos">
 <h3>Enlaces (hipervínculos)<a class="headerlink" href="#enlaces-hipervinculos" title="Link to this heading">#</a></h3>
-<p>Se definen con paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) seguidos de paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) el texto del enlace y en los redondos la dirección del documento.</p>
-<figure class="align-default" id="fig-md-enlaces">
-<img alt="../../_images/md-enlace.png" src="../../_images/md-enlace.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Sintaxis de Markdown - enlaces.</span><a class="headerlink" href="#fig-md-enlaces" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Se definen con paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) seguidos de paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) el texto del enlace y en los redondos la dirección del documento al que conduce el enlace.</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      [Proyecto Gutenberg](https://www.gutenberg.org/)
+    </td>
+    <td>
+      <a href="https://www.gutenberg.org/">Proyecto Gutenberg</a>
+    </td>
+  </tr>
+</table>
 </section>
 <section id="imagenes">
 <h3>Imágenes<a class="headerlink" href="#imagenes" title="Link to this heading">#</a></h3>
 <p>Se definen con un signo de admiración de cierre (<code class="docutils literal notranslate"><span class="pre">!</span></code>), paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) y paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) un texto alternativo de la imagen y en los redondos la dirección de la imagen, ya sea local o remota.</p>
-<figure class="align-default" id="fig-md-imagenes">
-<img alt="../../_images/md-imagen.png" src="../../_images/md-imagen.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Sintaxis de Markdown - imágenes.</span><a class="headerlink" href="#fig-md-imagenes" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+      ![Imagen local](img/Jupiter_and_the_Galilean_Satellites.jpg)
+    </td>
+    <td>
+      <img src="../../_images/Jupiter_and_the_Galilean_Satellites.jpg" alt="Imagen local">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ![Imagen remota](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg)
+    </td>
+    <td>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg" alt="Imagen remota">
+    </td>
+  </tr>  
+</table>
 </section>
 <section id="listas-numeradas">
 <h3>Listas numeradas<a class="headerlink" href="#listas-numeradas" title="Link to this heading">#</a></h3>
 <p>Se definen con números (<code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">2.</span> <span class="pre">3.</span> <span class="pre">...</span></code>) antes de cada elemento.</p>
-<figure class="align-default" id="fig-md-listas-numeradas">
-<img alt="../../_images/md-lista-numerada.png" src="../../_images/md-lista-numerada.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Sintaxis de Markdown - listas numeradas.</span><a class="headerlink" href="#fig-md-listas-numeradas" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+1. Primer elemento.<br>  
+2. Segundo elemento.<br>  
+3. Tercer elemento.<br>  
+    </td>
+    <td>
+1. Primer elemento.<br>
+2. Segundo elemento.<br>
+3. Tercer elemento.<br>
+    </td>
+  </tr>
+</table>
 </section>
 <section id="listas-no-numeradas">
 <h3>Listas no numeradas<a class="headerlink" href="#listas-no-numeradas" title="Link to this heading">#</a></h3>
 <p>Se definen con guiones (<code class="docutils literal notranslate"><span class="pre">-</span></code>) o asteriscos (<code class="docutils literal notranslate"><span class="pre">*</span></code>) antes de cada elemento.</p>
-<figure class="align-default" id="fig-md-listas-no-numeradas">
-<img alt="../../_images/md-lista-no-numerada.png" src="../../_images/md-lista-no-numerada.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Sintaxis de Markdown - listas no numeradas.</span><a class="headerlink" href="#fig-md-listas-no-numeradas" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+- Un elemento.<br>  
+- Otro elemento.<br>  
+- Otro elemento más.<br>  
+    </td>
+    <td>
+- Un elemento.<br>  
+- Otro elemento.<br>  
+- Otro elemento más.<br>  
+    </td>
+  </tr>
+</table>
 </section>
-<section id="otros-elementos-de-sintaxis">
-<h3>Otros elementos de sintaxis<a class="headerlink" href="#otros-elementos-de-sintaxis" title="Link to this heading">#</a></h3>
-<p>Para conocer otros elementos de la sintaxis de Markdown, se recomienda revisar en detalle la <a class="reference external" href="https://www.markdownguide.org/">Guía de referencia de Markdown</a>.</p>
+<section id="notacion-matematica">
+<h3>Notación matemática<a class="headerlink" href="#notacion-matematica" title="Link to this heading">#</a></h3>
+<p>Las expresiones en notación matemática (ej. ecuaciones) se escriben con base en la sintaxis de <a class="reference external" href="https://latex-project.org/">LaTeX</a>. Se delimitan (al inicio y al final) con:</p>
+<ul class="simple">
+<li><p>Un símbolo de dólar (<code class="docutils literal notranslate"><span class="pre">$</span></code>), para ecuaciones dentro de un renglón (<em>inline math</em>).</p></li>
+<li><p>Dos símbolos de dólar (<code class="docutils literal notranslate"><span class="pre">$$</span></code>), para ecuaciones en su propio bloque (<em>display math</em>).</p></li>
+</ul>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida</th>
+  </tr>
+  <tr>
+    <td>
+<p>Equivalencia entre masa y energía: $E = mc^{2}$<p>  
+    </td>
+    <td>
+Equivalencia entre masa y energía: $E = mc^{2}$
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Equivalencia entre masa y energía:</p>
+$$E = mc^{2}$$
+    </td>
+    <td>
+Equivalencia entre masa y energía:
+$$E = mc^{2}$$
+    </td>
+  </tr>  
+</table>
+<p>Para más detalles sobre la sintaxis de las expresiones matemáticas, se recomienda consultar:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions">Writing mathematical expressions - GitHub Docs</a></p></li>
+<li><p><a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX/Mathematics</a></p></li>
+</ul>
 </section>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Cree un documento Markdown llamado <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, en RStudio, y escriba en este un breve perfil académico (<em>curriculum</em> académico).</p>
-<ul class="simple">
-<li><p>Incluya información como: nombre, fotografía, datos de contacto, áreas de interés, carrera, cursos aprobados, publicaciones, etc.</p></li>
-<li><p>Puede usar información ficticia (<strong>no incluya datos confidenciales o sensibles</strong>).</p></li>
-<li><p>Especifique la fuente de las imágenes (y de cualquier otra información para la que sea necesario) y no utilice imágenes para las que no tiene autorización. Considere utilizar sitios con imágenes con licencias abiertas (ej. <a class="reference external" href="https://commons.wikimedia.org/">Wikimedia Commons</a>, <a class="reference external" href="https://unsplash.com/">Unsplash</a>, <a class="reference external" href="https://www.freeimages.com/">FreeImages</a>).</p></li>
-<li><p>Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
-<ul>
-<li><p>Varios niveles de encabezados.</p></li>
-<li><p>Negritas e itálicas.</p></li>
-<li><p>Listas.</p></li>
-<li><p>Enlaces a sitios web.</p></li>
-<li><p>Imágenes (al menos una local y una remota).</p></li>
-</ul>
+<ol class="arabic">
+<li><p>Con VSCode, cree un documento Markdown llamado <code class="docutils literal notranslate"><span class="pre">README.md</span></code> y escriba en este un breve <em>curriculum</em> académico o profesional (puede elegir otro tema).</p>
+<p>a. Incluya información como: nombre, fotografía, datos de contacto, áreas de interés, carrera, cursos aprobados, publicaciones, etc.<br />
+b. Puede usar información ficticia (<strong>no incluya datos confidenciales o sensibles</strong>).<br />
+c. Especifique la fuente de las imágenes (y de cualquier otra información para la que sea necesario) y no utilice imágenes para las que no tiene autorización. Considere utilizar sitios con imágenes con licencias abiertas (ej. <a class="reference external" href="https://commons.wikimedia.org/">Wikimedia Commons</a>, <a class="reference external" href="https://unsplash.com/">Unsplash</a>, <a class="reference external" href="https://www.freeimages.com/">FreeImages</a>).<br />
+d. Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> -   Encabezados de varios niveles.
+ -   Negritas e itálicas.
+ -   Listas.
+ -   Enlaces a sitios web.
+ -   Imágenes (al menos una local y una remota).
+</pre></div>
+</div>
 </li>
-</ul>
-</li>
-<li><p>Cree un repositorio en <a class="reference external" href="https://github.com/">GitHub</a> llamado <code class="docutils literal notranslate"><span class="pre">perfil-academico</span></code> y suba a este el documento que creó en el paso 1.</p></li>
-<li><p>Cree un sitio web en <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> con el repositorio creado en el paso 2.</p></li>
+<li><p>En GitHub, cree un repositorio llamado <code class="docutils literal notranslate"><span class="pre">cv</span></code> y suba el archivo creado en el paso 1.</p></li>
+<li><p>Publique el documento en <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> con <em>Settings - Pages - Branch - Save</em>.</p></li>
 </ol>
+</section>
+<section id="recursos-de-interes">
+<h2>Recursos de interés<a class="headerlink" href="#recursos-de-interes" title="Link to this heading">#</a></h2>
+<p><em>Daring Fireball: Markdown</em>. (s. f.). Recuperado 25 de marzo de 2023, de <a class="reference external" href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></p>
+<p><em>LaTeX/Mathematics—Wikibooks, open books for an open world</em>. (s. f.). Recuperado 25 de marzo de 2023, de <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">https://en.wikibooks.org/wiki/LaTeX/Mathematics</a></p>
+<p><em>Markdown Guide</em>. (s. f.). Recuperado 10 de abril de 2022, de <a class="reference external" href="https://www.markdownguide.org/">https://www.markdownguide.org/</a></p>
+<p>Writing mathematical expressions. (s. f.). <em>GitHub Docs</em>. Recuperado 25 de marzo de 2023, de <a class="reference external" href="https://ghdocs-prod.azurewebsites.net/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions">https://ghdocs-prod.azurewebsites.net/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions</a></p>
 </section>
 </section>
 
@@ -605,15 +893,6 @@ document.write(`
         <p class="prev-next-title">Introducción a la ciencia de datos geoespaciales</p>
       </div>
     </a>
-    <a class="right-next"
-       href="git.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Git - sistema de control de versiones</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -631,26 +910,31 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo-previo">Trabajo previo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software">Instalación de software</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales">Tutoriales</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-recursos">Otros recursos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros">Otros</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción general</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-documento">Ejemplo de documento</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-satelites-galileanos">Los satélites galileanos</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sintaxis">Sintaxis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encabezados">Encabezados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italicas">Itálicas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negritas">Negritas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parrafos">Párrafos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negrita">Negrita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italica">Itálica</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citas-textuales">Citas textuales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-hipervinculos">Enlaces (hipervínculos)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-elementos-de-sintaxis">Otros elementos de sintaxis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-de-interes">Recursos de interés</a></li>
 </ul>
   </nav></div>
 
