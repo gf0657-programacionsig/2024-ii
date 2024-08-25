@@ -10,6 +10,6 @@ parts:
     - file: contenido/1/introduccion-ciencia-datos
     - file: contenido/1/introduccion-ciencia-datos-geoespaciales
     - file: contenido/1/markdown
-  - caption: Software
+  - caption: SOFTWARE
     chapters:
     - file: contenido/software/vscode
