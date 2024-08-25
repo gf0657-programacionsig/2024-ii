@@ -13,3 +13,4 @@ parts:
   - caption: SOFTWARE
     chapters:
     - file: contenido/software/vscode
+    - file: contenido/software/miniconda
