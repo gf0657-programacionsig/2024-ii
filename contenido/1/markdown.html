@@ -57,9 +57,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/1/markdown';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Visual Studio Code" href="../software/vscode.html" />
     <link rel="prev" title="Introducción a la ciencia de datos geoespaciales" href="introduccion-ciencia-datos-geoespaciales.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -184,6 +187,10 @@
 <li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos.html">Introducción a la ciencia de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introduccion-ciencia-datos-geoespaciales.html">Introducción a la ciencia de datos geoespaciales</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown - lenguaje de marcado</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../software/vscode.html">Visual Studio Code</a></li>
 </ul>
 
     </div>
@@ -400,7 +407,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-inline-math">Ejemplo de <em>inline math</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-display-math">Ejemplo de <em>display math</em></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
@@ -416,18 +427,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-lenguaje-de-marcado">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<section class="tex2jax_ignore mathjax_ignore" id="markdown-lenguaje-de-marcado">
 <h1>Markdown - lenguaje de marcado<a class="headerlink" href="#markdown-lenguaje-de-marcado" title="Link to this heading">#</a></h1>
 <section id="trabajo-previo">
 <h2>Trabajo previo<a class="headerlink" href="#trabajo-previo" title="Link to this heading">#</a></h2>
 <section id="instalacion-de-software">
 <h3>Instalación de software<a class="headerlink" href="#instalacion-de-software" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. Editor de código fuente. Se recomienda instalar las siguientes extensiones para editar documentos Markdown:</p>
-<ul class="simple">
-<li><p>Markdown All in One</p></li>
-<li><p>markdownlint</p></li>
-<li><p>Markdown Preview Enhanced</p></li>
-</ul>
+<p>Instale el editor de código fuente <a class="reference internal" href="../software/vscode.html"><span class="std std-doc">Visual Studio Code</span></a>.</p>
 </section>
 <section id="tutoriales">
 <h3>Tutoriales<a class="headerlink" href="#tutoriales" title="Link to this heading">#</a></h3>
@@ -464,7 +472,7 @@ de Júpiter descubiertos en 1610 por
 Son los más grandes de los satélites de Júpiter, 
 siendo visibles incluso con telescopios de baja potencia.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg)
+![<span class="nt">Imagen de Júpiter y los satélites</span>](<span class="na">https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg</span>)
 
 <span class="gs">**Figura 1**</span>. Los cuatro satélites galileanos, 
 en una composición que compara sus tamaños con el tamaño de Júpiter. 
@@ -482,7 +490,7 @@ de Júpiter descubiertos en 1610 por
 <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <em>Calisto</em>.
 Son los más grandes de los satélites de Júpiter,
 siendo visibles incluso con telescopios de baja potencia.</p>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg" /></p>
+<p><img alt="Imagen de Júpiter y los satélites" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg" /></p>
 <p><strong>Figura 1</strong>. Los cuatro satélites galileanos,
 en una composición que compara sus tamaños con el tamaño de Júpiter.
 En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <em>Calisto</em>.</p>
@@ -504,7 +512,7 @@ En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <e
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    padding-right: 15px;        
+    padding-right: 15px;
   }
   
   th {
@@ -513,7 +521,7 @@ En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <e
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    padding-right: 15px;     
+    padding-right: 15px;
   }  
 </style>
 <section id="encabezados">
@@ -719,7 +727,7 @@ En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <e
 </section>
 <section id="imagenes">
 <h3>Imágenes<a class="headerlink" href="#imagenes" title="Link to this heading">#</a></h3>
-<p>Se definen con un signo de admiración de cierre (<code class="docutils literal notranslate"><span class="pre">!</span></code>), paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) y paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) un texto alternativo de la imagen y en los redondos la dirección de la imagen, ya sea local o remota.</p>
+<p>Se definen con un signo de admiración de cierre (<code class="docutils literal notranslate"><span class="pre">!</span></code>), paréntesis cuadrados (<code class="docutils literal notranslate"><span class="pre">[]</span></code>) y paréntesis redondos (<code class="docutils literal notranslate"><span class="pre">()</span></code>). En los paréntesis cuadrados se coloca (opcionalmente) un texto alternativo de la imagen y en los redondos la dirección de la imagen, ya sea local o remota. Una imagen local se encuentra en la misma computadora en la que está el documento Markdown que la referencia, mientras que una imagen remota se encuentra en otra computadora a la que se accede mediante un protocolo de redes como el <a class="reference external" href="https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto">Protocolo de transferencia de hipertexto (HTTP)</a>.</p>
 <table>
   <tr>
     <th>Sintaxis Markdown</th>
@@ -727,21 +735,27 @@ En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <e
   </tr>
   <tr>
     <td>
-      ![Imagen local](img/Jupiter_and_the_Galilean_Satellites.jpg)
+      ![Imagen local](img/maquina-turing.png)
     </td>
     <td>
-      <img src="../../_images/Jupiter_and_the_Galilean_Satellites.jpg" alt="Imagen local">
+      <img src="../../_images/maquina-turing.png" alt="Imagen local">
     </td>
   </tr>
   <tr>
     <td>
-      ![Imagen remota](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg)
+      ![Imagen remota](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Turing_Machine.png/640px-Turing_Machine.png)
     </td>
     <td>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Jupiter_and_the_Galilean_Satellites.jpg/168px-Jupiter_and_the_Galilean_Satellites.jpg" alt="Imagen remota">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Turing_Machine.png/640px-Turing_Machine.png">
     </td>
   </tr>  
 </table>
+<p>Markdown no cuenta con sintaxis para especificar el tamaño de una imagen, pero esto puede lograrse con el <a class="reference external" href="https://es.wikipedia.org/wiki/HTML">Lenguaje de marcado de hipertexto (HTML, <em>HyperText Markup Language</em>)</a>, su elemento <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a> y sus atributos <code class="docutils literal notranslate"><span class="pre">height</span></code> y <code class="docutils literal notranslate"><span class="pre">width</span></code>, los cuales especifican la altura y el ancho de una imagen (las unidades por defecto son pixeles).</p>
+<p>Por ejemplo, la expresión HTML:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;img/maquina-turing.png&quot;</span> <span class="pre">height=&quot;300&quot;</span> <span class="pre">alt=&quot;Imagen</span> <span class="pre">local&quot;&gt;</span></code></p>
+<p>genera como salida una imagen de 300 pixeles de altura:</p>
+<img src="../../_images/maquina-turing.png" height="300" alt="Imagen local"/>
+<p>Si se usa solo el atributo <code class="docutils literal notranslate"><span class="pre">height</span></code>, <code class="docutils literal notranslate"><span class="pre">width</span></code> se ajusta automáticamente y viceversa.</p>
 </section>
 <section id="listas-numeradas">
 <h3>Listas numeradas<a class="headerlink" href="#listas-numeradas" title="Link to this heading">#</a></h3>
@@ -794,35 +808,28 @@ En orden descendente, son <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <e
 <li><p>Un símbolo de dólar (<code class="docutils literal notranslate"><span class="pre">$</span></code>), para ecuaciones dentro de un renglón (<em>inline math</em>).</p></li>
 <li><p>Dos símbolos de dólar (<code class="docutils literal notranslate"><span class="pre">$$</span></code>), para ecuaciones en su propio bloque (<em>display math</em>).</p></li>
 </ul>
-<table>
-  <tr>
-    <th>Sintaxis Markdown</th>
-    <th>Salida</th>
-  </tr>
-  <tr>
-    <td>
-<p>Equivalencia entre masa y energía: $E = mc^{2}$<p>  
-    </td>
-    <td>
-Equivalencia entre masa y energía: $E = mc^{2}$
-    </td>
-  </tr>
-  <tr>
-    <td>
+<section id="ejemplo-de-inline-math">
+<h4>Ejemplo de <em>inline math</em><a class="headerlink" href="#ejemplo-de-inline-math" title="Link to this heading">#</a></h4>
+<p><strong>Sintaxis Markdown</strong></p>
+<p>Equivalencia entre masa y energía: $E = mc^{2}$</p>
+<p><strong>Salida</strong><br />
+Equivalencia entre masa y energía: <span class="math notranslate nohighlight">\(E = mc^{2}\)</span></p>
+</section>
+<section id="ejemplo-de-display-math">
+<h4>Ejemplo de <em>display math</em><a class="headerlink" href="#ejemplo-de-display-math" title="Link to this heading">#</a></h4>
+<p><strong>Sintaxis Markdown</strong></p>
 <p>Equivalencia entre masa y energía:</p>
-$$E = mc^{2}$$
-    </td>
-    <td>
-Equivalencia entre masa y energía:
-$$E = mc^{2}$$
-    </td>
-  </tr>  
-</table>
+<p>$$E = mc^{2}$$</p>
+<p><strong>Salida</strong><br />
+Equivalencia entre masa y energía:</p>
+<div class="math notranslate nohighlight">
+\[E = mc^{2}\]</div>
 <p>Para más detalles sobre la sintaxis de las expresiones matemáticas, se recomienda consultar:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions">Writing mathematical expressions - GitHub Docs</a></p></li>
 <li><p><a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX/Mathematics</a></p></li>
 </ul>
+</section>
 </section>
 </section>
 <section id="ejercicios">
@@ -842,7 +849,7 @@ d. Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
 </div>
 </li>
 <li><p>En GitHub, cree un repositorio llamado <code class="docutils literal notranslate"><span class="pre">cv</span></code> y suba el archivo creado en el paso 1.</p></li>
-<li><p>Publique el documento en <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> con <em>Settings - Pages - Branch - Save</em>.</p></li>
+<li><p>Publique el documento en <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> con <em>Settings &gt; Pages &gt; Branch &gt; Save</em>.</p></li>
 </ol>
 </section>
 <section id="recursos-de-interes">
@@ -893,6 +900,15 @@ d. Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
         <p class="prev-next-title">Introducción a la ciencia de datos geoespaciales</p>
       </div>
     </a>
+    <a class="right-next"
+       href="../software/vscode.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Visual Studio Code</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -930,7 +946,11 @@ d. Asegúrese de utilizar los siguientes elementos de sintaxis Markdown:</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes">Imágenes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-numeradas">Listas numeradas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-no-numeradas">Listas no numeradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion-matematica">Notación matemática</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-inline-math">Ejemplo de <em>inline math</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-display-math">Ejemplo de <em>display math</em></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
