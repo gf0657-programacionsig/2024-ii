@@ -12,7 +12,8 @@ parts:
     - file: contenido/1/markdown
   - caption: 2 - EL LENGUAJE DE PROGRAMACIÓN PYTHON
     chapters:
-    - file: contenido/2/introduccion-python    
+    - file: contenido/2/introduccion-python
+    - file: contenido/2/lenguaje-python
   - caption: SOFTWARE
     chapters:
     - file: contenido/software/vscode
