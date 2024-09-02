@@ -46,8 +46,8 @@ html:
   # favicon: "fav.ico"
   baseurl: https://gf0657-programacionsig.github.io/2024-ii/ # The base URL where your book will be hosted.
   use_repository_button: true
-  # use_issues_button: true
-  # use_edit_page_button: true
+  use_issues_button: false
+  use_edit_page_button: false
   use_download_button: true # google_analytics_id: G-XXXXXXX
   thebe: true # Enable Thebe
 
