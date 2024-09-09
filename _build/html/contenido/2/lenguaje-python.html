@@ -1662,7 +1662,7 @@ Primer número mayor que 20:  41
 </ul>
 <section id="funciones-predefinidas">
 <h3>Funciones predefinidas<a class="headerlink" href="#funciones-predefinidas" title="Link to this heading">#</a></h3>
-<p>Python tiene una lista de <a class="reference external" href="https://docs.python.org/3/library/functions.html">funciones predefinidas</a>, de las cuales algunas se han utilizado ya en este curso:</p>
+<p>Python tiene una lista de <a class="reference external" href="https://docs.python.org/3/library/functions.html">funciones predefinidas</a>. Algunas se han utilizado ya en este curso:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># type(): tipo de datos de una expresión</span>
@@ -1721,7 +1721,7 @@ Primer número mayor que 20:  41
 </section>
 <section id="funciones-definidas-en-modulos-de-la-biblioteca-estandar">
 <h3>Funciones definidas en módulos de la biblioteca estándar<a class="headerlink" href="#funciones-definidas-en-modulos-de-la-biblioteca-estandar" title="Link to this heading">#</a></h3>
-<p>La <a class="reference external" href="https://docs.python.org/3/library/">biblioteca estándar de Python</a> es el conjunto de módulos que se incluye junto con cada distribución de Python, sin necesidad de instalarlos separadamente. Estos módulos proporcionan un conjunto de funciones más especializadas en áreas como matemáticas, multimedios, redes y otras. Para utilizar estas funciones, primero debe importarse el módulo del que forman parte mediante la sentencia <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#import">import</a>. Por ejemplo:</p>
+<p>La <a class="reference external" href="https://docs.python.org/3/library/">biblioteca estándar de Python</a> es el conjunto de módulos que se incluye con cada distribución de Python, sin necesidad de instalarlos separadamente. Estos módulos proporcionan un conjunto de funciones más especializadas en áreas como matemáticas, multimedios, redes y otras. Para utilizar estas funciones, primero debe importarse el módulo del que forman parte mediante la sentencia <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#import">import</a>. Por ejemplo:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -1828,7 +1828,7 @@ Primer número mayor que 20:  41
 <li><p><strong>Estado</strong>: implementado con un conjunto de variables llamadas <strong>propiedades</strong>.</p></li>
 <li><p><strong>Comportamiento</strong>: implementado con un conjunto de funciones llamadas <strong>métodos</strong>.</p></li>
 </ul>
-<p>Los objetos se agrupan en <a class="reference external" href="https://docs.python.org/3/tutorial/classes.html">clases</a>. Todos los objetos de una clase contienen los mismos métodos y propiedades. Una clase puede verse como una plantilla o “machote” a partir de la cual se crean objetos. A un objeto creado a partir de una clase se le llama también una <strong>instancia</strong> de esa clase.</p>
+<p>Los objetos se agrupan en <a class="reference external" href="https://docs.python.org/3/tutorial/classes.html">clases</a>. Todos los objetos de una clase contienen los mismos métodos y propiedades. Una clase puede verse como una plantilla a partir de la cual se crean objetos. A un objeto creado a partir de una clase se le llama también una <strong>instancia</strong> de esa clase.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definición de la clase cuentaBancaria</span>
@@ -2079,6 +2079,36 @@ Primer número mayor que 20:  41
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;03/02/2001 04:05&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>El formateo también puede realizarse a través de <a class="reference external" href="https://www.freecodecamp.org/news/python-f-strings-tutorial-how-to-use-f-strings-for-string-formatting/">f-strings</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">longitud_centroide_cr</span> <span class="o">=</span> <span class="o">-</span><span class="mf">84.19451</span>
+<span class="n">latitud_centroide_cr</span> <span class="o">=</span> <span class="mf">9.972725</span>
+
+<span class="c1"># Hilera formateada con f-string</span>
+<span class="sa">f</span><span class="s1">&#39;El centroide de Costa Rica se ubica aproximadamente en </span><span class="si">{</span><span class="n">longitud_centroide_cr</span><span class="si">}</span><span class="s1"> grados de longitud oeste y </span><span class="si">{</span><span class="n">latitud_centroide_cr</span><span class="si">}</span><span class="s1"> grados de latitud norte.&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;El centroide de Costa Rica se ubica aproximadamente en -84.19451 grados de longitud oeste y 9.972725 grados de latitud norte.&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hilera formateada con f-string para desplegar dos decimales</span>
+<span class="sa">f</span><span class="s1">&#39;El centroide de Costa Rica se ubica aproximadamente en </span><span class="si">{</span><span class="n">longitud_centroide_cr</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> grados de longitud oeste y </span><span class="si">{</span><span class="n">latitud_centroide_cr</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> grados de latitud norte.&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;El centroide de Costa Rica se ubica aproximadamente en -84.19 grados de longitud oeste y 9.97 grados de latitud norte.&#39;
 </pre></div>
 </div>
 </div>
