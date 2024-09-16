@@ -14,6 +14,7 @@ parts:
     chapters:
     - file: contenido/2/introduccion-python
     - file: contenido/2/lenguaje-python
+    - file: contenido/2/api
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
