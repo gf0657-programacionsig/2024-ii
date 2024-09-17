@@ -1,0 +1,341 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1726556837000,
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2009-01-01&endtime=2009-12-31&minlatitude=8.0&maxlatitude=11.5&minlongitude=-86.0&maxlongitude=-82.0&minmagnitude=5",
+        "title": "USGS Earthquakes",
+        "status": 200,
+        "api": "1.14.1",
+        "count": 8
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.2,
+                "place": "64 km NNE of Matina, Costa Rica",
+                "time": 1258737748600,
+                "updated": 1657920352187,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000h48n",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000h48n&format=geojson",
+                "felt": 48,
+                "cdi": 4.2,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 436,
+                "net": "us",
+                "code": "p000h48n",
+                "ids": ",usp000h48n,us2009pfa2,gcmt20091120172228,",
+                "sources": ",us,us,gcmt,",
+                "types": ",associate,dyfi,impact-text,moment-tensor,origin,phase-data,",
+                "nst": 212,
+                "dmin": null,
+                "rms": 0.89,
+                "gap": 39.9,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.2 - 64 km NNE of Matina, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.962,
+                    10.576,
+                    26.3
+                ]
+            },
+            "id": "usp000h48n"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.1,
+                "place": "3 km SSE of Corredor, Costa Rica",
+                "time": 1252213364960,
+                "updated": 1657905322772,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000h191",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000h191&format=geojson",
+                "felt": 87,
+                "cdi": 4.6,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 440,
+                "net": "us",
+                "code": "p000h191",
+                "ids": ",usp000h191,us2009lfak,gcmtc200909060502a,gcmt20090906050245,iscgem13668216,",
+                "sources": ",us,us,gcmt,gcmt,iscgem,",
+                "types": ",associate,dyfi,focal-mechanism,impact-text,moment-tensor,origin,phase-data,",
+                "nst": 156,
+                "dmin": null,
+                "rms": 1.05,
+                "gap": 80.5,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.1 - 3 km SSE of Corredor, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.932,
+                    8.61,
+                    48.1
+                ]
+            },
+            "id": "usp000h191"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5,
+                "place": "4 km NNW of Río Sereno, Panama",
+                "time": 1241771633110,
+                "updated": 1657877819184,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gwxr",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000gwxr&format=geojson",
+                "felt": 45,
+                "cdi": 5.4,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 409,
+                "net": "us",
+                "code": "p000gwxr",
+                "ids": ",usp000gwxr,us2009gjap,gcmtc200905080833a,gcmt20090508083353,iscgem12784449,",
+                "sources": ",us,us,gcmt,gcmt,iscgem,",
+                "types": ",associate,dyfi,focal-mechanism,impact-text,moment-tensor,origin,phase-data,",
+                "nst": 125,
+                "dmin": null,
+                "rms": 1.09,
+                "gap": 86.5,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.0 - 4 km NNW of Río Sereno, Panama"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.867,
+                    8.856,
+                    31.1
+                ]
+            },
+            "id": "usp000gwxr"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.1,
+                "place": "6 km WSW of Golfito, Costa Rica",
+                "time": 1236965592580,
+                "updated": 1657864277352,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000guyu",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000guyu&format=geojson",
+                "felt": 15,
+                "cdi": 5.4,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 408,
+                "net": "us",
+                "code": "p000guyu",
+                "ids": ",usp000guyu,us2009edbc,gcmt20090313173312,iscgem11882795,",
+                "sources": ",us,us,gcmt,iscgem,",
+                "types": ",associate,dyfi,impact-text,moment-tensor,origin,phase-data,",
+                "nst": 168,
+                "dmin": null,
+                "rms": 0.98,
+                "gap": 59.4,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.1 - 6 km WSW of Golfito, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.169,
+                    8.575,
+                    28.9
+                ]
+            },
+            "id": "usp000guyu"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.9,
+                "place": "15 km SW of Golfito, Costa Rica",
+                "time": 1236805438980,
+                "updated": 1657863404040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000guvb",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000guvb&format=geojson",
+                "felt": 169,
+                "cdi": 5.4,
+                "mmi": 5.858,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 627,
+                "net": "us",
+                "code": "p000guvb",
+                "ids": ",usp000guvb,us2009ebbr,choy20090311210359,gcmtc200903112103a,gcmt20090311210359,atlas20090311210359,iscgem14260549,",
+                "sources": ",us,us,choy,gcmt,gcmt,atlas,iscgem,",
+                "types": ",associate,dyfi,focal-mechanism,impact-text,moment-tensor,origin,phase-data,shakemap,trump-shakemap,",
+                "nst": 410,
+                "dmin": null,
+                "rms": 1.03,
+                "gap": 47.5,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.9 - 15 km SW of Golfito, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.206,
+                    8.493,
+                    17
+                ]
+            },
+            "id": "usp000guvb"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.3,
+                "place": "2 km ENE of Golfito, Costa Rica",
+                "time": 1236792412400,
+                "updated": 1651522495036,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000guv7",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000guv7&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 432,
+                "net": "us",
+                "code": "p000guv7",
+                "ids": ",usp000guv7,iscgem12085976,",
+                "sources": ",us,iscgem,",
+                "types": ",impact-text,origin,phase-data,",
+                "nst": 77,
+                "dmin": null,
+                "rms": 1,
+                "gap": 63.8,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 5.3 - 2 km ENE of Golfito, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.092,
+                    8.616,
+                    10
+                ]
+            },
+            "id": "usp000guv7"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.9,
+                "place": "15 km SW of Golfito, Costa Rica",
+                "time": 1236792276610,
+                "updated": 1657863293391,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000guv5",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000guv5&format=geojson",
+                "felt": 230,
+                "cdi": 6.2,
+                "mmi": 6.193,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 678,
+                "net": "us",
+                "code": "p000guv5",
+                "ids": ",usp000guv5,us2009eba4,choy20090311172436,gcmtc200903111724a,gcmt20090311172436,atlas20090311172436,iscgem14269655,",
+                "sources": ",us,us,choy,gcmt,gcmt,atlas,iscgem,",
+                "types": ",associate,dyfi,focal-mechanism,impact-text,moment-tensor,origin,phase-data,shakemap,trump-shakemap,",
+                "nst": 417,
+                "dmin": null,
+                "rms": 1.01,
+                "gap": 66.8,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 5.9 - 15 km SW of Golfito, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.219,
+                    8.504,
+                    14
+                ]
+            },
+            "id": "usp000guv5"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.1,
+                "place": "10 km NNE of Sabanilla, Costa Rica",
+                "time": 1231442495610,
+                "updated": 1700599335789,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gscg",
+                "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp000gscg&format=geojson",
+                "felt": 900,
+                "cdi": 7.4,
+                "mmi": 6.208,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 1238,
+                "net": "us",
+                "code": "p000gscg",
+                "ids": ",us2009bpba,pt09008000,usp000gscg,choy20090108192135,gcmtc200901081921a,gcmt20090108192135,atlas20090108192134,iscgem13962308,",
+                "sources": ",us,pt,us,choy,gcmt,gcmt,atlas,iscgem,",
+                "types": ",associate,dyfi,focal-mechanism,general-text,ground-failure,impact-text,moment-tensor,origin,phase-data,poster,shakemap,trump-shakemap,",
+                "nst": 289,
+                "dmin": null,
+                "rms": 0.95,
+                "gap": 73.9,
+                "magType": "mwc",
+                "type": "earthquake",
+                "title": "M 6.1 - 10 km NNE of Sabanilla, Costa Rica"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.197,
+                    10.165,
+                    14
+                ]
+            },
+            "id": "usp000gscg"
+        }
+    ],
+    "bbox": [
+        -84.197,
+        8.493,
+        10,
+        -82.867,
+        10.576,
+        48.1
+    ]
+}
