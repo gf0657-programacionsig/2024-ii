@@ -1,0 +1,4505 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.749472,
+                    10.528536
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T14:08:06",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.75015,
+                    10.527919
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-02T14:04:46",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.298917,
+                    8.535922
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-02T14:05",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.748058,
+                    9.15575
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-02T08:34:28",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.125167,
+                    10.417142
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-03T08:36:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.1213,
+                    10.415745
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-03T11:34:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.121292,
+                    10.45158
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-04T15:36:12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.203499,
+                    9.461724
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-04T09:40:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.605471,
+                    9.800509
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T08:18:41",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.694269,
+                    10.502344
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T12:30:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.838875,
+                    9.737013
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T12:19:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.655311,
+                    9.892629
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T11:44:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.734765,
+                    8.614366
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-07T17:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.734765,
+                    8.614366
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-07T17:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.205322,
+                    10.682293
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T12:23:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.06793,
+                    10.450508
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T07:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.999872,
+                    10.462502
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T14:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.999185,
+                    10.469423
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T15:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.000043,
+                    10.467313
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T15:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.205315,
+                    10.68236
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11T13:28:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.186073,
+                    10.058087
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11T12:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.52855,
+                    9.881176
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-13T09:50:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004936,
+                    10.43183
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-10T10:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.732582,
+                    11.035197
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T10:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.850097,
+                    10.28642
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-13T13:50:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.011879,
+                    10.431346
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T13:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004633,
+                    10.434443
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-15T06:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.006202,
+                    10.431222
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T11:39",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.007583,
+                    10.431672
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T07:23",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.267587,
+                    10.017202
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-07T12:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.506149,
+                    10.533977
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-17T14:35:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.747102,
+                    10.530009
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-18T13:18:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.665962,
+                    8.688545
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-18T15:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.47693,
+                    10.50419
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-08T15:52",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.199808,
+                    9.465166
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11T09:48:30",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.005379,
+                    10.43019
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T13:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.011879,
+                    10.431346
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T08:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.110204,
+                    10.443033
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-10T09:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.669435,
+                    8.690519
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-08T13:50",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.782056,
+                    10.889528
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T06:27:20",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.782056,
+                    10.889528
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T08:06:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.027674,
+                    10.483714
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-22T10:30:03",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.069056,
+                    10.450204
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T12:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.06883,
+                    10.450199
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T13:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.121111,
+                    10.451684
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-02T11:26",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T16:22:17",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T16:24:19",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T16:32:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T16:43:39",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T16:56:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.791164,
+                    10.885119
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-14T17:11:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.661635,
+                    9.701522
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-24T15:50:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.837945,
+                    9.735887
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-25T09:27:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.201056,
+                    10.728241
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11T09:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.306717,
+                    8.527226
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T09:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.145186,
+                    9.390945
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T08:03:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.747551,
+                    10.530425
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-27T12:00:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.776599,
+                    10.904106
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-17",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.18052,
+                    10.68662
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-21T21:46",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.750874,
+                    10.529576
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-17T20:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.477858,
+                    8.690303
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T14:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.512908,
+                    10.545962
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T06:57:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.605735,
+                    9.800144
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-23T13:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.22033,
+                    9.461445
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-29T18:34:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.507805,
+                    10.532408
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-30T08:13:44",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.606193,
+                    9.801021
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-23T13:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.002016,
+                    9.884747
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-20T15:59:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.748079,
+                    9.155768
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-29T09:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.079037,
+                    9.981263
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-04T11:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.006971,
+                    10.430623
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-23T07:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.015946,
+                    10.435919
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-28T15:25",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.015946,
+                    10.435919
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-28T15:26",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.015946,
+                    10.435919
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-28T15:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.966976,
+                    8.588471
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-27T09:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.122275,
+                    10.415945
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T11:28:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.625952,
+                    9.777432
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-30T10:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.719885,
+                    11.028815
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-29T09:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.487189,
+                    8.86195
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T11:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.786501,
+                    10.892656
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-27T07:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.506923,
+                    10.448877
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T08:10",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.122093,
+                    10.415956
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-04T15:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.073369,
+                    9.938197
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-21T11:10:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.441993,
+                    10.627601
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-22T07:54",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.717985,
+                    11.027432
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-18T12:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.734318,
+                    10.360869
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-29T08:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.567356,
+                    10.552012
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-29T13:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.509271,
+                    10.535535
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-30T06:19",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.512149,
+                    10.527632
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-30T07:05",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.942503,
+                    8.627755
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T09:39",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.140057,
+                    8.661178
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T13:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.649311,
+                    10.471953
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T07:15",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.140095,
+                    8.660992
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T13:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.125297,
+                    10.41718
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T11:40:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.121278,
+                    10.415708
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T16:49:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.122305,
+                    10.415922
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T17:00:42",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.122261,
+                    10.415922
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-06T17:00:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.542696,
+                    9.885759
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T06:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.473212,
+                    8.858475
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-25T11:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004909,
+                    10.431415
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T11:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.068906,
+                    10.45038
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-07T19:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.701697,
+                    9.997583
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-26T09:54:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.069266,
+                    10.450232
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T07:42",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004985,
+                    10.431419
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-09T10:03",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.656853,
+                    9.700782
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-18T14:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.660536,
+                    9.704156
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-19T17:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.093425,
+                    9.592163
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-25T10:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.12413,
+                    10.416868
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-05T11:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.506316,
+                    9.857853
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-28T13:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.528205,
+                    9.880388
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-01T10:26:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.504402,
+                    10.539196
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11",
+                "locality": "Tortuguero"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.564488,
+                    10.551369
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-11",
+                "locality": "Tortuguero NP"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.510413,
+                    10.53193
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-12",
+                "locality": "Tortuguero NP"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.786982,
+                    10.897337
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-12",
+                "locality": "Los Chiles"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.205581,
+                    10.678086
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-16",
+                "locality": "San Carlos"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.205563,
+                    10.678078
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-16",
+                "locality": "San Carlos"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.796555,
+                    10.867945
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-21",
+                "locality": "Los Chiles"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.796995,
+                    10.868755
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-01-21",
+                "locality": "Los Chiles"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.330451,
+                    8.699053
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-01T14:25",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.069683,
+                    10.451244
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-05T08:52",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.069683,
+                    10.451244
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-02T09:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.069683,
+                    10.451244
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-02T19:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.016709,
+                    10.436942
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-03T19:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.49884,
+                    10.493851
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-05T18:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.702506,
+                    9.998011
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-08T11:38:17",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.675532,
+                    9.956202
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-04T11:43:20",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.507064,
+                    10.551111
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-09T10:12:56",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.702186,
+                    9.997534
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-08T14:05:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.508775,
+                    10.552728
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-09T11:46:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.21505,
+                    10.018164
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-10T17:11:28",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.517008,
+                    10.560808
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-09T06:59:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.006242,
+                    10.431405
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-11T22:36:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.005224,
+                    10.431518
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12T09:31",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.117785,
+                    10.39777
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-07T19:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.512778,
+                    10.545811
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-09T06:36:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.506316,
+                    9.857853
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-08T19:31",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.006622,
+                    10.431253
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-13T17:32:30",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.416763,
+                    8.428555
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12T20:01:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.005246,
+                    10.431618
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12T10:29:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.40225,
+                    10.807371
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-06T13:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.078893,
+                    9.98141
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-16T11:58:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.306669,
+                    8.386917
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-16T15:45:28",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.006971,
+                    10.430623
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-02T10:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.778642,
+                    10.891118
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-15T11:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.775952,
+                    10.892383
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-15T12:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.482224,
+                    9.710991
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T18:12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.735755,
+                    10.979362
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-13T12:18:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.398197,
+                    10.385739
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T11:52:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.399644,
+                    10.3828
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T10:59:25",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.69334,
+                    9.63685
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-20T16:31:54",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.216048,
+                    10.217414
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-23T09:50:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.761323,
+                    10.89779
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T07:38:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.366135,
+                    10.341986
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-01T15:29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.365883,
+                    10.34172
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-01T15:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.50702,
+                    10.106439
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T17:23",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.50702,
+                    10.106439
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T11:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.50702,
+                    10.106439
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T11:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.50702,
+                    10.106439
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T11:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.670395,
+                    10.440116
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T17:47:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.79567,
+                    10.89241
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-19T10:26",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.760825,
+                    10.897708
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T07:38:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.655052,
+                    9.890139
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T09:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.573066,
+                    10.450817
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-07T19:57",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.569475,
+                    9.007216
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-28T13:55:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.654478,
+                    9.892397
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-28T14:21:44",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.746422,
+                    10.528882
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-29T07:20:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.053244,
+                    9.6708
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-29T10:32:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.59207,
+                    10.545372
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-07T15:56",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.59207,
+                    10.545372
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-07T15:59",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.780983,
+                    10.209908
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-17T10:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.591212,
+                    10.545504
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-17T12:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.470422,
+                    8.87072
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-04T09:44",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.504132,
+                    10.544565
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T14:52",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.504011,
+                    10.544327
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-18T15:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.506911,
+                    10.536246
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-19T08:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.506539,
+                    10.5323
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-19T09:19",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.513387,
+                    10.528055
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-19T10:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.464533,
+                    10.473277
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-20T12:48",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.464477,
+                    10.473408
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-20T13:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.747789,
+                    9.155631
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-25T14:19:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.217058,
+                    9.482678
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-29T07:31",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.470549,
+                    10.472451
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-17T19:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.595716,
+                    10.544854
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-17T19:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.667029,
+                    8.690101
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-04T13:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.68866,
+                    8.693667
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-05T12:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.668358,
+                    8.689403
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T15:10",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.510767,
+                    10.532687
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-17T07:31",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.838653,
+                    9.735862
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-27T11:53:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.150241,
+                    8.598668
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-01T16:03",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.838731,
+                    9.735984
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-11T10:21",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.668625,
+                    10.440603
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T11:26:05",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.120051,
+                    10.414651
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-28T16:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.204519,
+                    8.696731
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-21T08:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.024944,
+                    9.990237
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T04:02:20",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.096619,
+                    10.000872
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T08:03:03",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.094536,
+                    9.997453
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T08:29:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.764306,
+                    10.895568
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T07:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.763833,
+                    10.895968
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T07:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.798871,
+                    10.877018
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-24T11:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.507724,
+                    10.551207
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12T16:05",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.510739,
+                    10.531736
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-13T08:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.502843,
+                    10.541401
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T10:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.502849,
+                    10.54143
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T10:08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.502841,
+                    10.541417
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-14T10:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.660033,
+                    9.653247
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-08T10:49",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.312335,
+                    10.307591
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.238276,
+                    10.861959
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-15T10:23",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.767752,
+                    10.89214
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-22T17:12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.82988,
+                    9.734358
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-27T16:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.570383,
+                    10.553258
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-12",
+                "locality": "Tortuguero NP"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.462891,
+                    10.47397
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-08T00:00",
+                "locality": "Leguanbrücke/Muelle San carlos"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.733086,
+                    11.034043
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-02-07T00:00",
+                "locality": "Río Frío nördlich von Los Chiles im NSG Caño Negro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.83985,
+                    10.30245
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-01T16:07:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.366688,
+                    10.342484
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T10:41:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.848312,
+                    10.293812
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T11:10:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.753428,
+                    9.748917
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T18:05",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.753428,
+                    9.748917
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T09:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.030267,
+                    10.50775
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T13:33:52",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.338337,
+                    10.342259
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T10:58:10",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.145186,
+                    9.391
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-03T09:15",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.366705,
+                    10.342522
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T10:42:12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.67395,
+                    10.460395
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-05T10:00:17",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.674266,
+                    10.460098
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-05T10:03:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.068153,
+                    9.964691
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T07:34:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.660682,
+                    10.464951
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T08:26:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.068639,
+                    10.449956
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-01T14:43:46",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.299228,
+                    8.536605
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T08:23:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.299276,
+                    8.538611
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T11:44:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.208017,
+                    10.712462
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T09:16:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.207987,
+                    10.712487
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T09:18:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004975,
+                    10.43132
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T14:58:46",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.005451,
+                    10.432672
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T15:57:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.662866,
+                    10.595802
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T16:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.652109,
+                    10.401461
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T16:54",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.013863,
+                    10.439868
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T14:59:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004867,
+                    10.431413
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T19:13:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.003747,
+                    10.431488
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-11T13:32:17",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.685263,
+                    10.943447
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T07:37:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.662178,
+                    9.949263
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-13T13:22:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.772594,
+                    10.894756
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T09:50",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.555192,
+                    10.451313
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-13T14:48:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004997,
+                    10.431333
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T07:14:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.595051,
+                    10.545327
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T14:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.595051,
+                    10.545327
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T14:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.536714,
+                    10.579502
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T15:31",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.536714,
+                    10.579502
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T15:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.536714,
+                    10.579502
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T15:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.536714,
+                    10.579502
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-04T15:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.640538,
+                    10.47912
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-08T09:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.672592,
+                    8.693158
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-09T14:59:59",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.005062,
+                    10.431353
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T15:39:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.594395,
+                    10.54566
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T10:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.737529,
+                    10.354498
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T11:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.686358,
+                    10.498785
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T16:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.710105,
+                    9.636387
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T11:49:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.004958,
+                    10.431428
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T08:43:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.510362,
+                    10.532133
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T07:11:21",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.007575,
+                    10.43583
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T15:08:56",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.50702,
+                    10.10521
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T20:33:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.641488,
+                    9.690204
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-09T20:23:20",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.499887,
+                    9.868313
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T10:07:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.675537,
+                    10.484762
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-17T14:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.468262,
+                    10.471875
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-16T11:36:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.506923,
+                    10.448877
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-02T13:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.4645,
+                    10.47332
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-18T12:11:11",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.642071,
+                    10.465027
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-03T08:41:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.472351,
+                    8.858855
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-09T12:14:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.016742,
+                    9.733195
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-12T15:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.720377,
+                    10.999234
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T12:07:37",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.728956,
+                    10.91038
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T11:46:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.009842,
+                    10.429447
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T14:11:41",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.505449,
+                    10.530978
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T06:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.514114,
+                    10.357369
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-20T15:20:06",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.285295,
+                    8.400187
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-18T12:52:19",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.773273,
+                    10.895414
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-01T08:41",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.292272,
+                    8.504722
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-23T16:20:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.19836,
+                    9.453126
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T15:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.19836,
+                    9.453126
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-15T16:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.158633,
+                    9.408208
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-24T14:44:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.157204,
+                    8.627374
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-24T16:39:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.158659,
+                    9.408212
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-25T14:06:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.204378,
+                    10.683781
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-19T15:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.158716,
+                    9.408213
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-26T14:54:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.160439,
+                    9.404682
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-26T18:00:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.152273,
+                    8.623348
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T13:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.156105,
+                    8.626685
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-10T13:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.160533,
+                    9.404632
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-27T11:43:34",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.04135,
+                    10.555515
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-03T13:57:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.772634,
+                    9.298456
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-27T15:20:55",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.082489,
+                    9.983838
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-28T12:16:12",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.158739,
+                    9.408169
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-28T13:28:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.481877,
+                    8.446607
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-12T06:19",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.456787,
+                    8.441657
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-12T10:36",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.77292,
+                    9.298284
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-29T16:54:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.511346,
+                    10.552062
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-06T15:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.297027,
+                    8.499561
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-25T08:52:09",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.778318,
+                    10.891552
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-16T06:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.778318,
+                    10.891552
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-16T15:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.068932,
+                    10.449967
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-17T13:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.509131,
+                    10.549845
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-07T08:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.215455,
+                    9.482795
+                ]
+            },
+            "properties": {
+                "species": "Iguana iguana",
+                "eventDate": "2024-03-14T16:47",
+                "locality": null
+            }
+        }
+    ]
+}

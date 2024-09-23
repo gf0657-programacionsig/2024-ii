@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -84.0426,
+        "lat": 9.9374
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "muy nuboso",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 21.25,
+        "feels_like": 21.81,
+        "temp_min": 20.32,
+        "temp_max": 21.85,
+        "pressure": 1014,
+        "humidity": 91,
+        "sea_level": 1014,
+        "grnd_level": 841
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.58,
+        "deg": 321,
+        "gust": 5.81
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1727107506,
+    "sys": {
+        "type": 2,
+        "id": 2089985,
+        "country": "CR",
+        "sunrise": 1727090713,
+        "sunset": 1727134290
+    },
+    "timezone": -21600,
+    "id": 3623811,
+    "name": "El Prado",
+    "cod": 200
+}
