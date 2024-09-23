@@ -18,60 +18,38 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-pais = input("Ingresa el nombre de un país: ")
-url = f'https://restcountries.com/v3.1/name/{pais}'
+import requests
 
-respuesta = requests.get(url)
+# Solicitud GET
+respuesta = requests.get('https://api.github.com/users/octocat')
 
+# Verificación de la respuesta
 if respuesta.status_code == 200:
+    # La solicitud fue exitosa
     datos = respuesta.json()
-    try:
-        pais_datos = datos[0]
 
-        nombre_comun = pais_datos['name']['common']
-        capital = pais_datos.get('capital', ['No disponible'])[0]
-        region = pais_datos.get('region', 'No disponible')
-        poblacion = pais_datos.get('population', 'No disponible')
-        monedas = pais_datos.get('currencies', {})
-        idiomas = pais_datos.get('languages', {})
+    # Formateao de datos en formato JSON, para que sean más legibles
+    json_formateado = json.dumps(datos, indent=4, ensure_ascii=False)
+    # Despliegue del JSON formateado
+    print(json_formateado)
 
-        # Obtener los nombres de las monedas
-        nombres_monedas = ', '.join([moneda['name'] for moneda in monedas.values()])
-
-        # Obtener los nombres de los idiomas
-        nombres_idiomas = ', '.join(idiomas.values())
-
-        print(f"\nInformación sobre {nombre_comun}:")
-        print(f"Capital: {capital}")
-        print(f"Región: {region}")
-        print(f"Población: {poblacion}")
-        print(f"Moneda(s): {nombres_monedas}")
-        print(f"Idioma(s): {nombres_idiomas}")
-    except (KeyError, IndexError) as e:
-        print("No se pudo procesar la información del país.")
+    # Almacenamiento de datos JSON en un archivo
+    with open('datos.json', 'w', encoding='utf-8') as archivo:
+        json.dump(datos, archivo, indent=4, ensure_ascii=False)    
 else:
-    print('Error al obtener los datos de la API.')
-
+    # Se produjo un error
+    print(f"Error {respuesta.status_code}")
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
-Cell [0;32mIn[9], line 1[0m
-[0;32m----> 1[0m pais [38;5;241m=[39m [38;5;28;43minput[39;49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mIngresa el nombre de un país: [39;49m[38;5;124;43m"[39;49m[43m)[49m
-[1;32m      2[0m url [38;5;241m=[39m [38;5;124mf[39m[38;5;124m'[39m[38;5;124mhttps://restcountries.com/v3.1/name/[39m[38;5;132;01m{[39;00mpais[38;5;132;01m}[39;00m[38;5;124m'[39m
-[1;32m      4[0m respuesta [38;5;241m=[39m requests[38;5;241m.[39mget(url)
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 12[0m
+[1;32m      9[0m datos [38;5;241m=[39m respuesta[38;5;241m.[39mjson()
+[1;32m     11[0m [38;5;66;03m# Formateao de datos en formato JSON, para que sean más legibles[39;00m
+[0;32m---> 12[0m json_formateado [38;5;241m=[39m [43mjson[49m[38;5;241m.[39mdumps(datos, indent[38;5;241m=[39m[38;5;241m4[39m, ensure_ascii[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+[1;32m     13[0m [38;5;66;03m# Despliegue del JSON formateado[39;00m
+[1;32m     14[0m [38;5;28mprint[39m(json_formateado)
 
-File [0;32m~/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/ipykernel/kernelbase.py:1281[0m, in [0;36mKernel.raw_input[0;34m(self, prompt)[0m
-[1;32m   1279[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28mself[39m[38;5;241m.[39m_allow_stdin:
-[1;32m   1280[0m     msg [38;5;241m=[39m [38;5;124m"[39m[38;5;124mraw_input was called, but this frontend does not support input requests.[39m[38;5;124m"[39m
-[0;32m-> 1281[0m     [38;5;28;01mraise[39;00m StdinNotImplementedError(msg)
-[1;32m   1282[0m [38;5;28;01mreturn[39;00m [38;5;28mself[39m[38;5;241m.[39m_input_request(
-[1;32m   1283[0m     [38;5;28mstr[39m(prompt),
-[1;32m   1284[0m     [38;5;28mself[39m[38;5;241m.[39m_parent_ident[[38;5;124m"[39m[38;5;124mshell[39m[38;5;124m"[39m],
-[1;32m   1285[0m     [38;5;28mself[39m[38;5;241m.[39mget_parent([38;5;124m"[39m[38;5;124mshell[39m[38;5;124m"[39m),
-[1;32m   1286[0m     password[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
-[1;32m   1287[0m )
-
-[0;31mStdinNotImplementedError[0m: raw_input was called, but this frontend does not support input requests.
+[0;31mNameError[0m: name 'json' is not defined
 
