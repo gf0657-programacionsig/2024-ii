@@ -1,0 +1,1850 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.579157,
+                    10.467856
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-01-30T15:18:56",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.655167,
+                    10.22839
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-01-25T07:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.566878,
+                    10.449497
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-02-01T13:24:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.565366,
+                    8.466594
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-02-06T09:51",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.563344,
+                    10.454353
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-02-08T16:38",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.548497,
+                    10.469183
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-02-09T11:42",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.449484,
+                    10.556402
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-02-09T11:45",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.675464,
+                    10.839945
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-03-11T06:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.754684,
+                    10.32483
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-03-05T17:27",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.45606,
+                    10.411646
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-05-25T07:57",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.667942,
+                    10.69378
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-07-11T11:45",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.403606,
+                    10.452461
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2024-08-30T15:51:24",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.414722,
+                    10.505114
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-02-14T09:10:50",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.725034,
+                    10.800742
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-04-10T11:50:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.738478,
+                    10.857479
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-04-10T11:51:04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.429583,
+                    10.801074
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-06-17T15:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.171909,
+                    10.565713
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-07-04T16:17:22",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.640117,
+                    10.291615
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-07-22T06:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.688657,
+                    10.241681
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-07-28T15:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.752421,
+                    10.335011
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-08-02T13:51",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.744394,
+                    10.239703
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-08-03T15:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.715788,
+                    10.378098
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-08-17T06:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.713735,
+                    10.323172
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-09-15T23:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.75432,
+                    10.307928
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-09-07T10:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.152311,
+                    10.164605
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-10-01T10:29:25",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.234848,
+                    10.106577
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-10-04T05:53:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.655421,
+                    10.704329
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2023-10-11T12:28:54",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-10",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-10",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-10",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.560203,
+                    10.763197
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-11",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.560203,
+                    10.763197
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-11",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.560203,
+                    10.763197
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-11",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.58463,
+                    10.72969
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-13",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.58463,
+                    10.72969
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-13",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.58463,
+                    10.72969
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-13",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-24",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-24",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-24",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.528661,
+                    10.59766
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-04-12T07:13:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.572084,
+                    10.738537
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-16",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.592733,
+                    11.02931
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-05-22T08:00",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.562764,
+                    10.489799
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-08-22T19:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.659663,
+                    10.847266
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-09-28T05:25",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.544452,
+                    10.544223
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-10-09T18:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.012202,
+                    10.513393
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-10-28T17:14:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.57318,
+                    10.73641
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-12-23",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.454236,
+                    10.407485
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2022-12-10T11:02:58",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.55255,
+                    8.704
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-03-16",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.084341,
+                    10.26186
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-04-10T13:20:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5949,
+                    10.726964
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-05-14",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5949,
+                    10.726964
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-05-14",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5949,
+                    10.726964
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-05-19",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5949,
+                    10.726964
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2021-09-22",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.589544,
+                    10.563141
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2020-01-27T12:02",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.753038,
+                    10.388769
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2020-03-26T12:14",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.387481,
+                    8.512211
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2020-03-14T09:43",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5949,
+                    10.726964
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2020-05-23",
+                "locality": "Estaciz\u0005xperimental Forestal Horizontes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.541359,
+                    9.876449
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2020-09-10T16:09:05Z",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-20",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-28",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-28",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-02-28",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.536003,
+                    10.50904
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-03-18T12:01",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.58411,
+                    8.67738
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-11",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-17",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-17",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-17",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-26",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-26",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-26",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-26",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-26",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-01",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-01",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-01",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-15",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-15",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.5835,
+                    8.68927
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-04-15",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.58411,
+                    8.67738
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-05-07",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-05-31",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-05-31",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40155,
+                    8.74807
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-05-31",
+                "locality": "MOGOS"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.55246,
+                    8.70394
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-07-04",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.55246,
+                    8.70394
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-07-04",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.55246,
+                    8.70394
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-07-04",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.55246,
+                    8.70394
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-07-06",
+                "locality": "RANCHO QUEMADO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.433084,
+                    10.558145
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-08-02T08:43:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.594155,
+                    10.843254
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-09-18T16:22:35",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.692092,
+                    10.724513
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2019-10-08T22:07",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.7266,
+                    8.78439
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2018-04-08T10:07:40",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.765998,
+                    8.73978
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2018-04-07T08:46:16",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.181651,
+                    10.416283
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2018-06-21T20:38:21",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.339621,
+                    8.657425
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2017-12-13T09:06:13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.42066,
+                    10.482056
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2016-01-29",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.488668,
+                    8.839019
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2015-10-06T15:52",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.45907,
+                    10.523513
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2014-04-15T15:53",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.40461,
+                    10.568895
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2013-04-05T09:33",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.548784,
+                    10.485827
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2013-05-03T11:47",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.378839,
+                    10.231784
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2013-05-23T09:06",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.477647,
+                    10.461741
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2013-09-13",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.64662,
+                    10.947836
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2013-12-28T07:44",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.614037,
+                    10.651345
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2012-12-26",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.798497,
+                    10.865281
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2011-02-15T09:28Z",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.542163,
+                    10.445335
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2011-06-22T17:02Z",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.563265,
+                    10.424067
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2009-03-31T14:32",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.008126,
+                    10.205651
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2009-03-16T15:06",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.458064,
+                    8.446631
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2009-11-08",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.19855,
+                    10.260415
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2007-04-09T10:18",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.623591,
+                    10.70885
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "2003-08-04",
+                "locality": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.0146,
+                    10.9197
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "1993-06-10",
+                "locality": "DELICIAS DE UPALA, 2 KM N OF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.05,
+                    10.96808
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": "1993-06-10",
+                "locality": "DELICIAS DE UPALA, 2 KM N OF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.0,
+                    9.95
+                ]
+            },
+            "properties": {
+                "species": "Panthera onca",
+                "eventDate": null,
+                "locality": null
+            }
+        }
+    ]
+}
