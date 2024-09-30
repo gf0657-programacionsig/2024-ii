@@ -15,6 +15,9 @@ parts:
     - file: contenido/2/introduccion-python
     - file: contenido/2/lenguaje-python
     - file: contenido/2/api
+  - caption: 3 - ANÁLISIS Y VISUALIZACIÓN DE DATOS
+    chapters:
+    - file: contenido/3/pandas
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
