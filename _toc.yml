@@ -18,6 +18,7 @@ parts:
   - caption: 3 - ANÁLISIS Y VISUALIZACIÓN DE DATOS
     chapters:
     - file: contenido/3/pandas
+    - file: contenido/3/matplotlib
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01

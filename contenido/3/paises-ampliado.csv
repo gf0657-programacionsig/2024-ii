@@ -1,0 +1,202 @@
+ADM0_ISO,NAME,CONTINENT,REGION_UN,SUBREGION,REGION_WB,ECONOMY,INCOME_GRP,POP_EST,GDP_MD,GDP_PC,LANGUAGES,LIFE_EXPECTANCY
+IDN,Indonesia,Asia,Asia,South-Eastern Asia,East Asia & Pacific,4. Emerging region: MIKT,4. Lower middle income,270625568.0,1119190,4135.566377822808,Indonesian,68.25
+MYS,Malaysia,Asia,Asia,South-Eastern Asia,East Asia & Pacific,6. Developing region,3. Upper middle income,31949777.0,364681,11414.195473101425,"English, Malay",76.26
+CHL,Chile,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,18952038.0,282318,14896.445437688548,Spanish,79.519
+BOL,Bolivia,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,4. Lower middle income,11513100.0,40895,3552.040718833329,"Aymara, Guaraní, Quechua, Spanish",64.928
+PER,Peru,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,32510453.0,226848,6977.694220378904,"Aymara, Quechua, Spanish",73.385
+ARG,Argentina,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,44938712.0,445445,9912.277859676975,"Guaraní, Spanish",76.064
+GBR,United Kingdom,Europe,Europe,Northern Europe,Europe & Central Asia,1. Developed region: G7,1. High income: OECD,67366465.0,2863166,42501.354345964275,English,82.0585365853659
+CYP,Cyprus,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,2. High income: nonOECD,1198575.0,24948,20814.717477003942,"Greek, Turkish",81.889
+IND,India,Asia,Asia,Southern Asia,South Asia,3. Emerging region: BRIC,4. Lower middle income,1366417754.0,2868929,2099.598743943135,"English, Hindi, Tamil",67.744
+CHN,China,Asia,Asia,Eastern Asia,East Asia & Pacific,3. Emerging region: BRIC,3. Upper middle income,1405862845.0,14762473,10500.649513928935,Chinese,78.587
+ISR,Israel,Asia,Asia,Western Asia,Middle East & North Africa,2. Developed region: nonG7,1. High income: OECD,13738606.0,410928,29910.458164387273,"Arabic, Hebrew",82.7
+LBN,Lebanon,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,3. Upper middle income,6855713.0,51991,7583.602172377986,"Arabic, French",74.416
+ETH,Ethiopia,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,112078730.0,95912,855.7555925196511,Amharic,65.645
+SSD,S. Sudan,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,11062113.0,11998,1084.6029144703186,English,55.567
+SOM,Somalia,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,10192317.3,4719,462.99578997604397,"Arabic, Somali",56.107
+KEN,Kenya,Africa,Africa,Eastern Africa,Sub-Saharan Africa,5. Emerging region: G20,5. Low income,52573973.0,95503,1816.5452323719192,"English, Swahili",62.055
+MWI,Malawi,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,18628747.0,7666,411.51452644667944,"English, Chewa",62.898
+TZA,Tanzania,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,58005463.0,63177,1089.1560334584349,"English, Swahili",66.782
+SYR,Syria,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,4. Lower middle income,17070135.0,98830,5789.643725723317,Arabic,72.3
+SOM,Somaliland,Africa,Africa,Eastern Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,5096159.0,17836,3499.890800110436,"Arabic, Somali",56.107
+FRA,France,Europe,Europe,Western Europe,Europe & Central Asia,1. Developed region: G7,1. High income: OECD,67692632.0,2732886,40371.98612693919,French,82.2292682926829
+SUR,Suriname,South America,Americas,South America,Latin America & Caribbean,6. Developing region,3. Upper middle income,581363.0,3697,6359.193825544453,Dutch,70.289
+GUY,Guyana,South America,Americas,South America,Latin America & Caribbean,6. Developing region,4. Lower middle income,782766.0,5173,6608.6161126058105,English,65.989
+KOR,South Korea,Asia,Asia,Eastern Asia,East Asia & Pacific,4. Emerging region: MIKT,1. High income: OECD,51709098.0,1646739,31846.213987333525,Korean,82.6804878048781
+PRK,North Korea,Asia,Asia,Eastern Asia,East Asia & Pacific,7. Least developed region,5. Low income,25666161.0,40000,1558.472262369117,Korean,73.578
+MAR,Morocco,Africa,Africa,Northern Africa,Middle East & North Africa,6. Developing region,4. Lower middle income,36471769.0,119700,3281.990517103791,"Arabic, Berber",74.973
+B28,W. Sahara,Africa,Africa,Northern Africa,Middle East & North Africa,7. Least developed region,5. Low income,603253.0,907,1503.5151089178173,,
+CRI,Costa Rica,North America,Americas,Central America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,5047561.0,61801,12243.735142576781,Spanish,77.32
+NIC,Nicaragua,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,4. Lower middle income,6545502.0,12520,1912.7639102394285,Spanish,74.615
+COG,Congo,Africa,Africa,Middle Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,5380508.0,12267,2279.8962477149,"French, Kikongo, Lingala",63.053
+COD,Dem. Rep. Congo,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,86790567.0,50400,580.708269828448,"French, Kikongo, Lingala, Tshiluba, Swahili",59.743
+BTN,Bhutan,Asia,Asia,Southern Asia,South Asia,7. Least developed region,4. Lower middle income,763092.0,2530,3315.4586865017586,Dzongkha,72.229
+UKR,Ukraine,Europe,Europe,Eastern Europe,Europe & Central Asia,6. Developing region,4. Lower middle income,44385155.0,153781,3464.6944456992433,Ukrainian,68.5879268292683
+BLR,Belarus,Europe,Europe,Eastern Europe,Europe & Central Asia,6. Developing region,3. Upper middle income,9466856.0,63080,6663.247016749806,"Belarusian, Russian",73.1114634146342
+NAM,Namibia,Africa,Africa,Southern Africa,Sub-Saharan Africa,6. Developing region,3. Upper middle income,2494530.0,12366,4957.246455244074,"Afrikaans, German, English, Herero, Khoekhoe, Kwangali, Lozi, Ndonga, Tswana",58.059
+ZAF,South Africa,Africa,Africa,Southern Africa,Sub-Saharan Africa,5. Emerging region: G20,3. Upper middle income,58558270.0,351431,6001.389726848146,"Afrikaans, English, Southern Ndebele, Northern Sotho, Southern Sotho, Swazi, Tswana, Tsonga, Venda, Xhosa, Zulu",61.48
+NLD,Netherlands,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,17637435.0,914392,51843.819693736645,Dutch,81.7146341463415
+OMN,Oman,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,2. High income: nonOECD,4974986.0,76331,15342.957749026831,Arabic,73.935
+UZB,Uzbekistan,Asia,Asia,Central Asia,Europe & Central Asia,6. Developing region,4. Lower middle income,33580650.0,57921,1724.8326044909793,"Russian, Uzbek",71.674
+KAZ,Kazakhstan,Asia,Asia,Central Asia,Europe & Central Asia,6. Developing region,3. Upper middle income,18513930.0,181665,9812.341301927792,"Kazakh, Russian",74.44
+TJK,Tajikistan,Asia,Asia,Central Asia,Europe & Central Asia,6. Developing region,5. Low income,9321018.0,8116,870.7203440654229,"Russian, Tajik",71.288
+LTU,Lithuania,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,3. Upper middle income,2786844.0,54627,19601.743046973566,Lithuanian,75.7926829268293
+BRA,Brazil,South America,Americas,South America,Latin America & Caribbean,3. Emerging region: BRIC,3. Upper middle income,211049527.0,1839758,8717.18608495152,Portuguese,73.425
+URY,Uruguay,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,3461734.0,56045,16189.86323039263,Spanish,78.0
+MNG,Mongolia,Asia,Asia,Eastern Asia,East Asia & Pacific,6. Developing region,4. Lower middle income,3225167.0,13996,4339.620242920754,Mongolian,72.667
+RUS,Russia,Europe,Europe,Eastern Europe,Europe & Central Asia,3. Emerging region: BRIC,3. Upper middle income,144373535.0,1699876,11774.152374948775,Russian,72.5456097560976
+CZE,Czechia,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,10669709.0,250680,23494.5489141269,"Czech, Slovak",79.0292682926829
+DEU,Germany,Europe,Europe,Western Europe,Europe & Central Asia,1. Developed region: G7,1. High income: OECD,83132799.0,3861123,46445.2423886269,German,80.7056097560976
+EST,Estonia,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,1326590.0,31471,23723.23023692324,Estonian,77.9439024390244
+LVA,Latvia,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,3. Upper middle income,1912789.0,34102,17828.417039202966,Latvian,74.580487804878
+NOR,Norway,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,5347896.0,403336,75419.56687265422,"Norwegian Nynorsk, Norwegian Bokmål, Sami",82.5609756097561
+SWE,Sweden,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,10285453.0,530883,51614.93616275336,Swedish,83.109756097561
+FIN,Finland,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,5550198.0,225700,40665.21590761266,"Finnish, Swedish",81.1878048780488
+VNM,Vietnam,Asia,Asia,South-Eastern Asia,East Asia & Pacific,5. Emerging region: G20,4. Lower middle income,96462106.0,261921,2715.2734981755425,Vietnamese,74.58
+KHM,Cambodia,Asia,Asia,South-Eastern Asia,East Asia & Pacific,7. Least developed region,5. Low income,16486542.0,27089,1643.0977460282454,Khmer,69.896
+LUX,Luxembourg,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,619896.0,71104,114703.11148966923,"German, French, Luxembourgish",83.0463414634146
+ARE,United Arab Emirates,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,2. High income: nonOECD,9770529.0,421142,43103.29563527215,Arabic,79.196
+BEL,Belgium,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,11484055.0,533097,46420.624073987805,"German, French, Dutch",81.6975609756098
+GEO,Georgia,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,4. Lower middle income,245246.0,500,2038.7692357877397,Georgian,71.587
+MKD,North Macedonia,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,3. Upper middle income,2083459.0,12547,6022.196741092577,Macedonian,74.4248780487805
+ALB,Albania,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,4. Lower middle income,2854191.0,15279,5353.180638576746,Albanian,76.833
+AZE,Azerbaijan,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,3. Upper middle income,10023318.0,48047,4793.522464317704,Azerbaijani,73.488
+SRB,Kosovo,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,4. Lower middle income,1794248.0,7926,4417.449538748267,Serbian,75.4821951219512
+TUR,Turkey,Asia,Asia,Western Asia,Europe & Central Asia,4. Emerging region: MIKT,3. Upper middle income,83429615.0,761425,9126.555360467622,Turkish,78.475
+ESP,Spain,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,47076781.0,1393490,29600.36711091185,"Spanish, Catalan, Basque, Galician",83.0829268292683
+LAO,Laos,Asia,Asia,South-Eastern Asia,East Asia & Pacific,7. Least developed region,4. Lower middle income,7169455.0,18173,2534.781235114803,Lao,68.999
+KGZ,Kyrgyzstan,Asia,Asia,Central Asia,Europe & Central Asia,6. Developing region,5. Low income,6456900.0,8454,1309.2970310830274,"Kyrgyz, Russian",72.0487804878049
+ARM,Armenia,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,4. Lower middle income,2957731.0,13672,4622.46228612406,Armenian,73.372
+DNK,Denmark,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,5923456.0,356271,60145.80001944811,Danish,81.3048780487805
+LBY,Libya,Africa,Africa,Northern Africa,Middle East & North Africa,6. Developing region,3. Upper middle income,6777452.0,52091,7685.926805531046,Arabic,72.151
+TUN,Tunisia,Africa,Africa,Northern Africa,Middle East & North Africa,6. Developing region,3. Upper middle income,11694719.0,38796,3317.394800165784,Arabic,74.263
+ROU,Romania,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,3. Upper middle income,19356544.0,250077,12919.506705329215,Romanian,75.3048780487805
+HUN,Hungary,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,9769949.0,163469,16731.817126169237,Hungarian,76.0170731707317
+SVK,Slovakia,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,5454073.0,105079,19266.152103208005,Slovak,77.0658536585366
+POL,Poland,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,37970874.0,595858,15692.501573706204,Polish,77.3048780487805
+IRL,Ireland,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,4941444.0,388698,78660.81250743709,"English, Irish",83.0560975609756
+GRC,Greece,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,10716322.0,209852,19582.46495392729,Greek,80.6365853658537
+ZMB,Zambia,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,4. Lower middle income,17861030.0,23309,1305.0199232631041,English,61.803
+SLE,Sierra Leone,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,7813215.0,4121,527.439728716028,English,60.411
+GIN,Guinea,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,12771246.0,12296,962.7878125595577,French,58.985
+LBR,Liberia,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,4937374.0,3070,621.788019299328,English,61.1
+CAF,Central African Rep.,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,4745185.0,2220,467.84266577593917,"French, Sango",54.477
+SDZ,Sudan,Africa,Africa,Northern Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,42813238.0,30513,712.7001232656124,,
+DJI,Djibouti,Africa,Africa,Eastern Africa,Middle East & North Africa,7. Least developed region,4. Lower middle income,973560.0,3324,3414.2733883890055,"Arabic, French",62.859
+ERI,Eritrea,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,6081196.0,2065,339.5713606336648,"Arabic, English, Tigrinya",66.604
+AUT,Austria,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,8877067.0,445075,50137.618652647325,German,81.0926829268293
+IRQ,Iraq,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,4. Lower middle income,39309783.0,234094,5955.107918046762,"Arabic, Aramaic, Sorani",71.336
+ITA,Italy,Europe,Europe,Southern Europe,Europe & Central Asia,1. Developed region: G7,1. High income: OECD,60297396.0,2003576,33228.23426736372,Italian,82.9
+CHE,Switzerland,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,8574832.0,703082,81993.67637756634,"French, Swiss German, Italian, Romansh",83.4536585365854
+IRN,Iran,Asia,Asia,Southern Asia,Middle East & North Africa,5. Emerging region: G20,3. Upper middle income,82913906.0,453996,5475.510947463988,Persian (Farsi),74.556
+LIE,Liechtenstein,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,38019.0,6876,180856.9399510771,German,84.319512195122
+CIV,Côte d'Ivoire,Africa,Africa,Western Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,25716544.0,58539,2276.3167554707197,French,58.916
+SRB,Serbia,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,3. Upper middle income,6944975.0,51475,7411.833735902577,Serbian,75.4821951219512
+MLI,Mali,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,19658031.0,17279,878.9791815874133,French,59.417
+SEN,Senegal,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,4. Lower middle income,16296364.0,23578,1446.825807278237,French,67.913
+NGA,Nigeria,Africa,Africa,Western Africa,Sub-Saharan Africa,5. Emerging region: G20,4. Lower middle income,200963599.0,448120,2229.856562232447,English,53.633
+BEN,Benin,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,11801151.0,14390,1219.3725849283685,French,59.954
+AGO,Angola,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,3. Upper middle income,31825295.0,88815,2790.7046894616374,Portuguese,61.929
+HRV,Croatia,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,4067500.0,60752,14935.955746773203,Croatian,77.5756097560976
+SVN,Slovenia,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,2087946.0,54174,25946.07331798811,Slovene,81.2829268292683
+QAT,Qatar,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,2. High income: nonOECD,2832067.0,175837,62087.867271501695,Arabic,81.559
+SAU,Saudi Arabia,Asia,Asia,Western Asia,Middle East & North Africa,2. Developed region: nonG7,2. High income: nonOECD,34268528.0,792966,23139.77419747939,Arabic,77.905
+BWA,Botswana,Africa,Africa,Southern Africa,Sub-Saharan Africa,6. Developing region,3. Upper middle income,2303697.0,18340,7961.116414181205,"English, Tswana",65.913
+ZWE,Zimbabwe,Africa,Africa,Eastern Africa,Sub-Saharan Africa,5. Emerging region: G20,5. Low income,14645468.0,21440,1463.9340989308091,"Chibarwe, English, Kalanga, Khoisan, Ndau, Northern Ndebele, Chewa, Shona, Sotho, Tonga, Tswana, Tsonga, Venda, Xhosa, Zimbabwean Sign Language",59.391
+PAK,Pakistan,Asia,Asia,Southern Asia,South Asia,5. Emerging region: G20,4. Lower middle income,216565318.0,278221,1284.69785729957,"English, Urdu",66.431
+BGR,Bulgaria,Europe,Europe,Eastern Europe,Europe & Central Asia,2. Developed region: nonG7,3. Upper middle income,6975761.0,68558,9828.031665649096,Bulgarian,74.3609756097561
+THA,Thailand,Asia,Asia,South-Eastern Asia,East Asia & Pacific,5. Emerging region: G20,3. Upper middle income,69625582.0,543548,7806.728279844037,Thai,79.68
+SMR,San Marino,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,33860.0,1655,48877.731836975785,Italian,
+HTI,Haiti,North America,Americas,Caribbean,Latin America & Caribbean,7. Least developed region,5. Low income,11263077.0,14332,1272.4764289545387,"French, Haitian Creole",63.728
+DOM,Dominican Rep.,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,10738958.0,88941,8282.088448432334,Spanish,74.17
+TCD,Chad,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,15946876.0,11314,709.4806531385834,"Arabic, French",52.997
+KWT,Kuwait,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,2. High income: nonOECD,4207083.0,134628,32000.31946125142,Arabic,80.264
+SLV,El Salvador,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,4. Lower middle income,6453553.0,27022,4187.150860928856,Spanish,71.475
+GTM,Guatemala,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,4. Lower middle income,16604026.0,76710,4619.963856958548,Spanish,68.674
+TLS,Timor-Leste,Asia,Asia,South-Eastern Asia,East Asia & Pacific,7. Least developed region,4. Lower middle income,1293119.0,2017,1559.794574203921,"Portuguese, Tetum",69.056
+BRN,Brunei,Asia,Asia,South-Eastern Asia,East Asia & Pacific,6. Developing region,2. High income: nonOECD,433285.0,13469,31085.77495182155,Malay,74.551
+MCO,Monaco,Europe,Europe,Western Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,38964.0,7188,184477.97967354482,French,
+DZA,Algeria,Africa,Africa,Northern Africa,Middle East & North Africa,6. Developing region,3. Upper middle income,43053054.0,171091,3973.9573410982644,Arabic,77.129
+MOZ,Mozambique,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,30366036.0,15291,503.55601238172807,Portuguese,59.625
+SWZ,eSwatini,Africa,Africa,Southern Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,1148130.0,4471,3894.1583270187175,"English, Swazi",56.36
+BDI,Burundi,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,11530580.0,3012,261.2184296019801,"French, Kirundi",61.977
+RWA,Rwanda,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,12626950.0,10354,819.9921596268299,"English, French, Kinyarwanda",67.129
+MMR,Myanmar,Asia,Asia,South-Eastern Asia,East Asia & Pacific,7. Least developed region,5. Low income,54045420.0,76085,1407.7973674735065,Burmese,67.256
+BGD,Bangladesh,Asia,Asia,Southern Asia,South Asia,7. Least developed region,5. Low income,163046161.0,302571,1855.7382654351488,Bengali,73.698
+AND,Andorra,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,77142.0,3154,40885.639470068185,Catalan,
+AFG,Afghanistan,Asia,Asia,Southern Asia,South Asia,7. Least developed region,5. Low income,38041754.0,19291,507.1006978279708,"Dari, Pashto, Turkmen",62.879
+MNE,Montenegro,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,3. Upper middle income,622137.0,5542,8908.005792936283,Montenegrin,76.1878048780488
+BIH,Bosnia and Herz.,Europe,Europe,Southern Europe,Europe & Central Asia,6. Developing region,3. Upper middle income,3301000.0,20164,6108.451984247198,"Bosnian, Croatian, Serbian",75.293
+UGA,Uganda,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,44269594.0,35165,794.3375310828466,"English, Swahili",63.638
+CUB,Cuba,North America,Americas,Caribbean,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,11333483.0,100023,8825.442275777004,Spanish,78.155
+HND,Honduras,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,4. Lower middle income,9746117.0,25095,2574.871612971607,Spanish,70.728
+ECU,Ecuador,South America,Americas,South America,Latin America & Caribbean,6. Developing region,3. Upper middle income,17373662.0,107435,6183.785548492885,Spanish,77.894
+COL,Colombia,South America,Americas,South America,Latin America & Caribbean,6. Developing region,3. Upper middle income,50339443.0,323615,6428.656749340671,Spanish,73.659
+PRY,Paraguay,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,4. Lower middle income,7044636.0,38145,5414.758122350111,"Guaraní, Spanish",70.475
+PR1,Portugal,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,10269417.0,238785,23252.050238100175,,
+MDA,Moldova,Europe,Europe,Eastern Europe,Europe & Central Asia,6. Developing region,4. Lower middle income,2657637.0,11968,4503.248562538827,Romanian,68.621
+TKM,Turkmenistan,Asia,Asia,Central Asia,Europe & Central Asia,6. Developing region,3. Upper middle income,5942089.0,40761,6859.708765721954,"Russian, Turkmen",69.41
+JOR,Jordan,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,3. Upper middle income,10101694.0,44502,4405.399728006016,Arabic,74.215
+NPL,Nepal,Asia,Asia,Southern Asia,South Asia,7. Least developed region,5. Low income,28608710.0,30641,1071.0374567745278,Nepali,70.484
+LSO,Lesotho,Africa,Africa,Southern Africa,Sub-Saharan Africa,7. Least developed region,4. Lower middle income,2125268.0,2376,1117.976650474199,"English, Sotho",53.036
+CMR,Cameroon,Africa,Africa,Middle Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,25876380.0,39007,1507.4365115986084,"English, French",60.958
+GAB,Gabon,Africa,Africa,Middle Africa,Sub-Saharan Africa,6. Developing region,3. Upper middle income,2172579.0,16874,7766.806178279363,French,65.694
+NER,Niger,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,23310715.0,12911,553.8654648731281,French,62.08
+BFA,Burkina Faso,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,20321378.0,15990,786.8560882042547,French,59.766
+TGO,Togo,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,8082366.0,5490,679.2565444326575,French,61.588
+GHA,Ghana,Africa,Africa,Western Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,30417856.0,66983,2202.0947169978053,English,63.945
+GNB,Guinea-Bissau,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,1920922.0,1339,697.0610987848544,"Portuguese, Upper Guinea Creole",59.861
+USA,United States of America,North America,Americas,Northern America,North America,1. Developed region: G7,1. High income: OECD,331595460.0,21542705,64966.82735041065,English,77.4341463414634
+CAN,Canada,North America,Americas,Northern America,North America,1. Developed region: G7,1. High income: OECD,37589262.0,1736425,46194.70847818188,"English, French",81.2956097560976
+MEX,Mexico,North America,Americas,Central America,Latin America & Caribbean,4. Emerging region: MIKT,3. Upper middle income,127575529.0,1268870,9946.029696651307,Spanish,74.832
+BLZ,Belize,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,4. Lower middle income,390353.0,1879,4813.591800242345,"Belizean Creole, English, Spanish",70.962
+PAN,Panama,North America,Americas,Central America,Latin America & Caribbean,6. Developing region,3. Upper middle income,4246439.0,66800,15730.827641701671,Spanish,76.826
+VEN,Venezuela,South America,Americas,South America,Latin America & Caribbean,5. Emerging region: G20,3. Upper middle income,28515829.0,482359,16915.482274774477,Spanish,71.105
+PN1,Papua New Guinea,Oceania,Oceania,Melanesia,East Asia & Pacific,6. Developing region,4. Lower middle income,8776109.0,24829,2829.1581155156573,,
+EGY,Egypt,Africa,Africa,Northern Africa,Middle East & North Africa,5. Emerging region: G20,4. Lower middle income,100388073.0,303092,3019.203287227159,Arabic,70.159
+YEM,Yemen,Asia,Asia,Western Asia,Middle East & North Africa,7. Least developed region,4. Lower middle income,29161922.0,22581,774.3316781383614,Arabic,63.72
+MRT,Mauritania,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,4525696.0,7600,1679.2997143422801,Arabic,64.691
+GNQ,Eq. Guinea,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,2. High income: nonOECD,1355986.0,11026,8131.352388593982,"French, Portuguese, Spanish",61.19
+GMB,Gambia,Africa,Africa,Western Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,2347706.0,1826,777.7805227741463,English,62.906
+VAT,Vatican,Europe,Europe,Southern Europe,Europe & Central Asia,2. Developed region: nonG7,2. High income: nonOECD,825.0,-99,-120000.0,"Italian, Latin",
+CYP,N. Cyprus,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,3. Upper middle income,326000.0,3600,11042.944785276073,"Greek, Turkish",81.889
+CYP,Cyprus U.N. Buffer Zone,Asia,Asia,Western Asia,Europe & Central Asia,6. Developing region,2. High income: nonOECD,10000.0,280,28000.0,"Greek, Turkish",81.889
+ATA,Antarctica,Antarctica,Antarctica,Antarctica,Antarctica,6. Developing region,2. High income: nonOECD,4490.0,898,200000.0,,
+AUS,Australia,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,2. Developed region: nonG7,1. High income: OECD,25368867.0,1396634,55053.069575397276,English,83.2
+FJI,Fiji,Oceania,Oceania,Melanesia,East Asia & Pacific,6. Developing region,4. Lower middle income,889953.0,5496,6175.607026438475,"English, Fijian, Fiji Hindi",68.312
+NZL,New Zealand,Oceania,Oceania,Australia and New Zealand,East Asia & Pacific,1. Developed region: G7,1. High income: OECD,4950828.0,207302,41872.18784413436,"English, Māori, New Zealand Sign Language",82.7609756097561
+MDG,Madagascar,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,26969307.0,14114,523.3356570860349,"French, Malagasy",65.23
+PHL,Philippines,Asia,Asia,South-Eastern Asia,East Asia & Pacific,5. Emerging region: G20,4. Lower middle income,108116615.0,376795,3485.079513449436,"English, Filipino",72.187
+LKA,Sri Lanka,Asia,Asia,Southern Asia,South Asia,6. Developing region,4. Lower middle income,21803000.0,84008,3853.0477457230654,"Sinhala, Tamil",76.61
+BHS,Bahamas,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,2. High income: nonOECD,389482.0,13578,34861.68808828136,English,74.358
+TWN,Taiwan,Asia,Asia,Eastern Asia,East Asia & Pacific,2. Developed region: nonG7,2. High income: nonOECD,23568378.0,1127000,47818.30977082937,Chinese,
+JPN,Japan,Asia,Asia,Eastern Asia,East Asia & Pacific,1. Developed region: G7,1. High income: OECD,126264931.0,5081769,40246.87583284705,Japanese,83.9963414634146
+ISL,Iceland,Europe,Europe,Northern Europe,Europe & Central Asia,2. Developed region: nonG7,1. High income: OECD,361313.0,24188,66944.72659439323,Icelandic,82.1707317073171
+SYC,Seychelles,Seven seas (open ocean),Africa,Eastern Africa,Sub-Saharan Africa,6. Developing region,3. Upper middle income,97625.0,1703,17444.302176696543,"Seychellois Creole, English, French",73.8487804878049
+KIR,Kiribati,Oceania,Oceania,Micronesia,East Asia & Pacific,7. Least developed region,4. Lower middle income,117606.0,194,1649.57570191997,"English, Gilbertese",67.661
+MHL,Marshall Is.,Oceania,Oceania,Micronesia,East Asia & Pacific,6. Developing region,4. Lower middle income,58791.0,221,3759.0787705601197,"English, Marshallese",65.146
+TTO,Trinidad and Tobago,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,2. High income: nonOECD,1394973.0,24269,17397.469341700522,English,74.708
+GRD,Grenada,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,112003.0,1210,10803.282054944957,English,75.335
+VCT,St. Vin. and Gren.,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,110589.0,824,7451.0123068297935,English,68.972
+BRB,Barbados,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,2. High income: nonOECD,287025.0,5209,18148.24492640014,English,77.706
+LCA,Saint Lucia,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,182790.0,2122,11608.950161387384,English,71.294
+DMA,Dominica,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,71808.0,582,8104.946524064171,English,72.981
+ATG,Antigua and Barb.,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,97118.0,1661,17102.905743528492,English,79.236
+KNA,St. Kitts and Nevis,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,2. High income: nonOECD,52834.0,1053,19930.34788204565,English,72.027
+JAM,Jamaica,North America,Americas,Caribbean,Latin America & Caribbean,6. Developing region,3. Upper middle income,2948279.0,16458,5582.239672703974,"English, Jamaican Patois",70.629
+MUS,Mauritius,Seven seas (open ocean),Africa,Eastern Africa,Sub-Saharan Africa,6. Developing region,3. Upper middle income,1265711.0,14048,11098.900143871706,"English, French, Mauritian Creole",73.5146341463415
+COM,Comoros,Africa,Africa,Eastern Africa,Sub-Saharan Africa,7. Least developed region,5. Low income,850886.0,1165,1369.1610862089633,"Arabic, French, Comorian",63.68
+STP,São Tomé and Principe,Africa,Africa,Middle Africa,Sub-Saharan Africa,7. Least developed region,4. Lower middle income,215056.0,418,1943.6797857302283,Portuguese,68.794
+CPV,Cabo Verde,Africa,Africa,Western Africa,Sub-Saharan Africa,6. Developing region,4. Lower middle income,549935.0,1981,3602.2439015520017,Portuguese,74.722
+MLT,Malta,Europe,Europe,Southern Europe,Middle East & North Africa,2. Developed region: nonG7,2. High income: nonOECD,502653.0,14989,29819.776267126625,"English, Maltese",82.7
+SGP,Singapore,Asia,Asia,South-Eastern Asia,East Asia & Pacific,6. Developing region,2. High income: nonOECD,5703569.0,372062,65233.18995527187,"English, Chinese, Malay, Tamil",82.8951219512195
+TON,Tonga,Oceania,Oceania,Polynesia,East Asia & Pacific,6. Developing region,4. Lower middle income,104494.0,512,4899.802859494325,"English, Tongan",71.27
+WSM,Samoa,Oceania,Oceania,Polynesia,East Asia & Pacific,7. Least developed region,4. Lower middle income,197097.0,852,4322.744638426764,"English, Samoan",72.598
+SLB,Solomon Is.,Oceania,Oceania,Melanesia,East Asia & Pacific,7. Least developed region,4. Lower middle income,669823.0,1589,2372.268494811316,English,70.742
+TUV,Tuvalu,Oceania,Oceania,Polynesia,East Asia & Pacific,7. Least developed region,3. Upper middle income,11646.0,47,4035.7204190279926,"English, Tuvaluan",64.854
+MDV,Maldives,Seven seas (open ocean),Asia,Southern Asia,South Asia,6. Developing region,3. Upper middle income,530953.0,5642,10626.175951543733,Maldivian,80.839
+NRU,Nauru,Oceania,Oceania,Micronesia,East Asia & Pacific,6. Developing region,4. Lower middle income,12581.0,118,9379.22263731023,"English, Nauru",64.014
+FSM,Micronesia,Oceania,Oceania,Micronesia,East Asia & Pacific,6. Developing region,4. Lower middle income,113815.0,401,3523.2614330272813,English,70.925
+VUT,Vanuatu,Oceania,Oceania,Melanesia,East Asia & Pacific,7. Least developed region,4. Lower middle income,299882.0,934,3114.5583929679005,"Bislama, English, French",70.492
+PLW,Palau,Oceania,Oceania,Micronesia,East Asia & Pacific,6. Developing region,3. Upper middle income,18008.0,268,14882.274544646823,"English, Palauan",
+BHR,Bahrain,Asia,Asia,Western Asia,Middle East & North Africa,6. Developing region,2. High income: nonOECD,1641172.0,38574,23503.93499279783,Arabic,79.246
