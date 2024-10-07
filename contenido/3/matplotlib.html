@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Tarea 1" href="../evaluaciones/tarea-01.html" />
-    <link rel="prev" title="pandas: paquete para manipulación y análisis de datos" href="pandas.html" />
+    <link rel="prev" title="pandas: biblioteca para análisis y manipulación de datos" href="pandas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -187,7 +187,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - ANÁLISIS Y VISUALIZACIÓN DE DATOS</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="pandas.html">pandas: paquete para manipulación y análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas.html">pandas: biblioteca para análisis y manipulación de datos</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">matplotlib: biblioteca para visualización de datos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
@@ -480,13 +480,18 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-y-carga">Instalación y carga</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-basada-en-la-clase-axes">Interfaz basada en la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-basada-en-el-modulo-pyplot">Interfaz basada en el módulo <code class="docutils literal notranslate"><span class="pre">pyplot</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-de-axes-basada-en-objetos-explicita">Interfaz de <code class="docutils literal notranslate"><span class="pre">Axes</span></code> (basada en objetos, explícita)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-de-pyplot-basada-en-funciones-implicita">Interfaz de <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> (basada en funciones, implícita)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integracion-con-pandas">Integración con pandas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-graficos">Tipos de gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-dispersion">Gráficos de dispersión</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-barras">Gráficos de barras</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#barras-apiladas">Barras apiladas</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#barras-agrupadas">Barras agrupadas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -507,15 +512,18 @@ document.write(`
 <p><a class="reference external" href="https://colab.research.google.com/github/gf0657-programacionsig/2024-ii/blob/main/contenido/3/matplotlib.ipynb"><img alt="Abrir en Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://matplotlib.org/">matplotlib</a> es una de las bibliotecas más populares de Python para visualización de datos. Se utiliza principalmente para crear gráficos estáticos en dos dimensiones, pero también puede emplearse para generar visualizaciones animadas, interactivas y en tres dimensiones.</p>
+<p>La biblioteca <a class="reference external" href="https://matplotlib.org/">matplotlib</a> es una de las más populares de Python para visualización de datos. Se utiliza principalmente para crear gráficos estáticos en dos dimensiones, pero también puede emplearse para generar visualizaciones animadas, interactivas y en tres dimensiones.</p>
 <p>matplotlib se compone de varios módulos, siendo <a class="reference external" href="https://matplotlib.org/stable/api/pyplot_summary.html"><code class="docutils literal notranslate"><span class="pre">pyplot</span></code></a> el principal y el más utilizado.</p>
 </section>
 <section id="instalacion-y-carga">
 <h2>Instalación y carga<a class="headerlink" href="#instalacion-y-carga" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Carga del módulo pyplot de matplotlib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Carga del módulo pyplot de matplotlib con el alias plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Módulo para configurar las marcas (&quot;ticks&quot;) de los ejes de los gráficos</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">ticker</span>
 </pre></div>
 </div>
 </div>
@@ -524,15 +532,15 @@ document.write(`
 <section id="interfaces">
 <h2>Interfaces<a class="headerlink" href="#interfaces" title="Link to this heading">#</a></h2>
 <p>matplotlib cuenta con dos <a class="reference external" href="https://matplotlib.org/stable/api/index">interfaces</a> para crear visualizaciones: una basada en la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code> y otra basada en el módulo <code class="docutils literal notranslate"><span class="pre">pyplot</span></code>.</p>
-<section id="interfaz-basada-en-la-clase-axes">
-<h3>Interfaz basada en la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code><a class="headerlink" href="#interfaz-basada-en-la-clase-axes" title="Link to this heading">#</a></h3>
-<p>Esta interfaz es orientada a objetos y utiliza métodos para tareas como agregar datos, configurar los límites de los ejes y especificar etiquetas. Permite controlar una gran cantidad de detalles y se recomienda para visualizaciones complejas o con múltiples subgráficos.</p>
+<section id="interfaz-de-axes-basada-en-objetos-explicita">
+<h3>Interfaz de <code class="docutils literal notranslate"><span class="pre">Axes</span></code> (basada en objetos, explícita)<a class="headerlink" href="#interfaz-de-axes-basada-en-objetos-explicita" title="Link to this heading">#</a></h3>
+<p>Esta interfaz es orientada a objetos y utiliza métodos para tareas como agregar datos, configurar los límites de los ejes y especificar etiquetas, entre otras. Permite controlar una gran cantidad de detalles y se recomienda para visualizaciones complejas o con múltiples gráficos.</p>
 <p>La estructura principal de una visualización programada con esta interfaz consta de objetos de dos clases:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html"><code class="docutils literal notranslate"><span class="pre">Figure</span></code></a> (figura): es el contenedor general del gráfico. Puede verse como un canvas o lienzo en el que se dibujan los gráficos.</p></li>
-<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html"><code class="docutils literal notranslate"><span class="pre">Axes</span></code></a> (subgráficos): son los “subgráficos” o partes de la figura en los que se dibujan los datos. Un objeto de la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code> contiene elementos visuales como geometrías (líneas, barras, histogramas, etc.), títulos y etiquetas.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html"><code class="docutils literal notranslate"><span class="pre">Figure</span></code></a> (figura): es el contenedor general de los gráficos. Puede verse como un <em>canvas</em> o lienzo en el que estos se dibujan.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html"><code class="docutils literal notranslate"><span class="pre">Axes</span></code></a> (gráficos o subgráficos): son los gráficos contenidos en la figura. Un objeto de la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code> contiene elementos visuales como geometrías (líneas, barras, histogramas, etc.), títulos y etiquetas.</p></li>
 </ul>
-<p>En el siguiente bloque de código se genera una figura con un subgráfico.</p>
+<p>En el siguiente bloque de código se genera una figura con un gráfico.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Figura con:</span>
@@ -542,7 +550,7 @@ document.write(`
 <span class="n">estatura</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.77</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.63</span><span class="p">,</span> <span class="mf">1.69</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">1.55</span><span class="p">,</span> <span class="mf">1.65</span><span class="p">,</span> <span class="mf">1.71</span><span class="p">,</span> <span class="mf">1.85</span><span class="p">,</span> <span class="mf">1.73</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">]</span>
 <span class="n">peso</span> <span class="o">=</span> <span class="p">[</span><span class="mf">75.1</span><span class="p">,</span> <span class="mf">62.9</span><span class="p">,</span> <span class="mf">78.4</span><span class="p">,</span> <span class="mf">61.2</span><span class="p">,</span> <span class="mf">67.8</span><span class="p">,</span> <span class="mf">71.1</span><span class="p">,</span> <span class="mf">75.5</span><span class="p">,</span> <span class="mf">81.6</span><span class="p">,</span> <span class="mf">82.2</span><span class="p">,</span> <span class="mf">64.4</span><span class="p">,</span> <span class="mf">65.6</span><span class="p">,</span> <span class="mf">72.2</span><span class="p">,</span> <span class="mf">90.3</span><span class="p">,</span> <span class="mf">74.3</span><span class="p">,</span> <span class="mf">66.7</span><span class="p">]</span>
 
-<span class="c1"># Creación una figura con un subgráfico</span>
+<span class="c1"># Creación una figura con espacio para un gráfico</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
 <span class="c1"># Creación de un gráfico de dispersión</span>
@@ -564,12 +572,12 @@ document.write(`
 </div>
 <p>En este ejemplo se utilizaron los siguientes métodos:</p>
 <ol class="arabic simple">
-<li><p>El método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.subplots()</span></code></a> retorna, en una tupla, una figura y un conjunto de subgráficos. La figura se almacena en el objeto <code class="docutils literal notranslate"><span class="pre">fig</span></code> y el único subgráfico en el objeto <code class="docutils literal notranslate"><span class="pre">ax</span></code>.</p></li>
+<li><p>El método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.subplots()</span></code></a> retorna, en una tupla, una figura y un conjunto de gráficos. La figura se almacena en el objeto <code class="docutils literal notranslate"><span class="pre">fig</span></code> y el único gráfico en el objeto <code class="docutils literal notranslate"><span class="pre">ax</span></code>.</p></li>
 <li><p>El método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.scatter.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.scatter()</span></code></a> genera un gráfico de dispersión (<em>scatter plot</em>) en el subgráfico <code class="docutils literal notranslate"><span class="pre">ax</span></code>.</p></li>
-<li><p>Los métodos <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_title.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_title()</span></code></a>, <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xlabel.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_xlabel()</span></code></a> y <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylabel.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_ylabel()</span></code></a> ayudan a personalizar el subgráfico <code class="docutils literal notranslate"><span class="pre">ax</span></code> al especificar respectivamente el título, la etiqueta del eje x y la etiqueta del eje y.</p></li>
+<li><p>Los métodos <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_title.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_title()</span></code></a>, <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xlabel.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_xlabel()</span></code></a> y <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylabel.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.set_ylabel()</span></code></a> ayudan a personalizar el gráfico <code class="docutils literal notranslate"><span class="pre">ax</span></code> al especificar respectivamente el título, la etiqueta del eje x y la etiqueta del eje y.</p></li>
 <li><p>Por último, el método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.show()</span></code></a> despliega todas las figuras que han sido creadas. En este caso, solo se despliega <code class="docutils literal notranslate"><span class="pre">fig</span></code>. Una figura específica puede desplegarse con el método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.show.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.figure.Figure.show()</span></code></a>. Sin embargo, debe tenerse en cuenta que este último método puede no funcionar adecuadamente en ambientes interactivos como cuadernos de notas de Jupyter.</p></li>
 </ol>
-<p>La interfaz basada en subgráficos también puede utilizarse para generar figuras con varios subgráficos, como en el siguiente bloque de código:</p>
+<p>La interfaz basada en subgráficos también puede utilizarse para generar figuras con varios gráficos, como en el siguiente bloque de código:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Figura con:</span>
@@ -582,7 +590,7 @@ document.write(`
 <span class="n">grasa_corporal</span> <span class="o">=</span> <span class="p">[</span><span class="mf">19.43</span><span class="p">,</span> <span class="mf">20.88</span><span class="p">,</span> <span class="mf">19.59</span><span class="p">,</span> <span class="mf">19.29</span><span class="p">,</span> <span class="mf">20.96</span><span class="p">,</span> <span class="mf">20.53</span><span class="p">,</span> <span class="mf">20.09</span><span class="p">,</span> <span class="mf">20.7</span><span class="p">,</span> <span class="mf">17.96</span><span class="p">,</span> <span class="mf">22.67</span><span class="p">,</span> <span class="mf">19.35</span><span class="p">,</span> <span class="mf">20.25</span><span class="p">,</span> <span class="mf">22.26</span><span class="p">,</span> <span class="mf">20.37</span><span class="p">,</span> <span class="mf">20.88</span><span class="p">]</span>
 
 <span class="c1"># Creación de una figura de 8x6 pulgadas</span>
-<span class="c1"># con dos subgráficos distribuidos en 2 filas y 1 columna</span>
+<span class="c1"># con espacio para dos gráficos distribuidos en 2 filas y 1 columna</span>
 <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="c1"># Creación del primer gráfico de dispersión en ax1</span>
@@ -601,7 +609,7 @@ document.write(`
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Peso (kg)&#39;</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Grasa corporal (%)&#39;</span><span class="p">)</span>
 
-<span class="c1"># Ajuste del espacio entre los subgráficos</span>
+<span class="c1"># Ajuste del espacio entre los gráficos</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 
 <span class="c1"># Despliegue de la figura</span>
@@ -613,10 +621,11 @@ document.write(`
 <img alt="../../_images/32c01c200e166c920bb72a0f7bacb1908781a40c1491e920bd3bc1a448a29bcf.png" src="../../_images/32c01c200e166c920bb72a0f7bacb1908781a40c1491e920bd3bc1a448a29bcf.png" />
 </div>
 </div>
-<p>En este caso, el método <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.subplots()</span></code> fue llamado con los argumentos <code class="docutils literal notranslate"><span class="pre">nrows</span></code> y <code class="docutils literal notranslate"><span class="pre">ncols</span></code> correspondientes a la cantidad de filas (1) y de columnas (2), lo que proporciona espacio para dos subgráficos: <code class="docutils literal notranslate"><span class="pre">ax1</span></code> y <code class="docutils literal notranslate"><span class="pre">ax2</span></code>. El argumento <code class="docutils literal notranslate"><span class="pre">figsize</span></code> especifica el tamaño de la figura en pulgadas (8 de ancho x 6 de alto). El método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.tight_layout()</span></code></a> ajusta el espacio entre y alrededor de los subgráficos. En <code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.scatter()</span></code> se usa el argumento <code class="docutils literal notranslate"><span class="pre">c</span></code> para especificar el color de los puntos.</p>
+<p>En este caso, el método <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.subplots()</span></code> fue llamado con los argumentos <code class="docutils literal notranslate"><span class="pre">nrows</span></code> y <code class="docutils literal notranslate"><span class="pre">ncols</span></code> correspondientes a la cantidad de filas (1) y de columnas (2), lo que proporciona espacio para dos gráficos: <code class="docutils literal notranslate"><span class="pre">ax1</span></code> y <code class="docutils literal notranslate"><span class="pre">ax2</span></code>. El argumento <code class="docutils literal notranslate"><span class="pre">figsize</span></code> especifica el tamaño de la figura en pulgadas (8 de ancho x 6 de alto). El método <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html"><code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.tight_layout()</span></code></a> ajusta el espacio entre y alrededor de los gráficos. En <code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.scatter()</span></code> se usa el argumento <code class="docutils literal notranslate"><span class="pre">c</span></code> para especificar el color de los puntos.</p>
+<p>En este curso, se prefiere esta interfaz por ser más adecuada para gráficos complejos y proporcionar mayor control.</p>
 </section>
-<section id="interfaz-basada-en-el-modulo-pyplot">
-<h3>Interfaz basada en el módulo <code class="docutils literal notranslate"><span class="pre">pyplot</span></code><a class="headerlink" href="#interfaz-basada-en-el-modulo-pyplot" title="Link to this heading">#</a></h3>
+<section id="interfaz-de-pyplot-basada-en-funciones-implicita">
+<h3>Interfaz de <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> (basada en funciones, implícita)<a class="headerlink" href="#interfaz-de-pyplot-basada-en-funciones-implicita" title="Link to this heading">#</a></h3>
 <p>Esta interfaz es conveniente para gráficos simples y rápidos. La mayoría de las funciones se llaman directamente desde <code class="docutils literal notranslate"><span class="pre">pyplot</span></code>. Las clases <code class="docutils literal notranslate"><span class="pre">Figure</span></code> y <code class="docutils literal notranslate"><span class="pre">Axes</span></code> se manipulan a través de estas funciones, sin tener que declarar objetos, por lo que se dice que se usan de manera “implícita”.</p>
 <p>El siguiente bloque de código genera un gráfico mediante esta interfaz.</p>
 <div class="cell docutils container">
@@ -655,6 +664,7 @@ document.write(`
 <h3>Tipos de gráficos<a class="headerlink" href="#tipos-de-graficos" title="Link to this heading">#</a></h3>
 <p>El método <a class="reference internal" href="#pandas.DataFrame.plot"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot()</span></code></span></a> genera gráficos de diferentes tipos, los cuales se especifican por medio del argumento <code class="docutils literal notranslate"><span class="pre">kind</span></code> (kind=’bar’, kind=’pie’, kind=’hist’, kind=’scatter’, etc.).</p>
 <p>Cada tipo de gráfico puede generarse también a través de funciones como <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.bar()</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.pie()</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.hist()</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.scatter()</span></code> y otras.</p>
+<p>En los siguientes ejemplos, se utiliza el conjunto de datos de <a class="reference external" href="https://github.com/gf0657-programacionsig/2024-ii/blob/main/datos/natural-earth/paises.csv">países de Natural Earth</a>, el cual se carga y se configura en el siguiente bloque de código.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -719,16 +729,28 @@ document.write(`
   </thead>
   <tbody>
     <tr>
-      <th>TGO</th>
-      <td>Togo</td>
+      <th>SMR</th>
+      <td>San Marino</td>
+      <td>Europe</td>
+      <td>Europe</td>
+      <td>Southern Europe</td>
+      <td>Europe &amp; Central Asia</td>
+      <td>2. Developed region: nonG7</td>
+      <td>2. High income: nonOECD</td>
+      <td>33,860.00</td>
+      <td>1655</td>
+    </tr>
+    <tr>
+      <th>SOM</th>
+      <td>Somaliland</td>
       <td>Africa</td>
       <td>Africa</td>
-      <td>Western Africa</td>
+      <td>Eastern Africa</td>
       <td>Sub-Saharan Africa</td>
-      <td>7. Least developed region</td>
-      <td>5. Low income</td>
-      <td>8,082,366.00</td>
-      <td>5490</td>
+      <td>6. Developing region</td>
+      <td>4. Lower middle income</td>
+      <td>5,096,159.00</td>
+      <td>17836</td>
     </tr>
     <tr>
       <th>ATA</th>
@@ -743,40 +765,28 @@ document.write(`
       <td>898</td>
     </tr>
     <tr>
-      <th>RWA</th>
-      <td>Rwanda</td>
-      <td>Africa</td>
-      <td>Africa</td>
-      <td>Eastern Africa</td>
-      <td>Sub-Saharan Africa</td>
-      <td>7. Least developed region</td>
-      <td>5. Low income</td>
-      <td>12,626,950.00</td>
-      <td>10354</td>
-    </tr>
-    <tr>
-      <th>COD</th>
-      <td>Dem. Rep. Congo</td>
-      <td>Africa</td>
-      <td>Africa</td>
-      <td>Middle Africa</td>
-      <td>Sub-Saharan Africa</td>
-      <td>7. Least developed region</td>
-      <td>5. Low income</td>
-      <td>86,790,567.00</td>
-      <td>50400</td>
-    </tr>
-    <tr>
-      <th>CYP</th>
-      <td>Cyprus U.N. Buffer Zone</td>
-      <td>Asia</td>
-      <td>Asia</td>
-      <td>Western Asia</td>
+      <th>SRB</th>
+      <td>Serbia</td>
+      <td>Europe</td>
+      <td>Europe</td>
+      <td>Southern Europe</td>
       <td>Europe &amp; Central Asia</td>
       <td>6. Developing region</td>
-      <td>2. High income: nonOECD</td>
-      <td>10,000.00</td>
-      <td>280</td>
+      <td>3. Upper middle income</td>
+      <td>6,944,975.00</td>
+      <td>51475</td>
+    </tr>
+    <tr>
+      <th>NPL</th>
+      <td>Nepal</td>
+      <td>Asia</td>
+      <td>Asia</td>
+      <td>Southern Asia</td>
+      <td>South Asia</td>
+      <td>7. Least developed region</td>
+      <td>5. Low income</td>
+      <td>28,608,710.00</td>
+      <td>30641</td>
     </tr>
   </tbody>
 </table>
@@ -784,14 +794,14 @@ document.write(`
 </div>
 <section id="graficos-de-dispersion">
 <h4>Gráficos de dispersión<a class="headerlink" href="#graficos-de-dispersion" title="Link to this heading">#</a></h4>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n">gráfico de dispersión (en inglés, <em>scatter plot</em>)</a> despliega los valores de dos variables numéricas, como puntos en un sistema de coordenadas. El valor de una variable se despliega en el eje X y el de la otra variable en el eje Y. Variables adicionales pueden ser mostradas mediante atributos de los puntos, tales como su tamaño, color o forma.</p>
+<p>En el siguiente bloque de código, mediante el método <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.scatter.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.scatter()</span></code></a>, se genera un gráfico de dispersión que muestra la relación entre la población y el producto interno bruto de los países de América Central.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">ticker</span>
-
-<span class="c1"># Subconjunto de países de América Central</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Subconjunto de países de América Central</span>
 <span class="n">paises_america_central</span> <span class="o">=</span> <span class="n">paises</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;PAN&#39;</span><span class="p">,</span> <span class="s1">&#39;CRI&#39;</span><span class="p">,</span> <span class="s1">&#39;NIC&#39;</span><span class="p">,</span> <span class="s1">&#39;SLV&#39;</span><span class="p">,</span> <span class="s1">&#39;HND&#39;</span><span class="p">,</span> <span class="s1">&#39;GTM&#39;</span><span class="p">,</span> <span class="s1">&#39;BLZ&#39;</span><span class="p">]]</span>
 
-<span class="c1"># Creción de una figura y un subgráfico</span>
+<span class="c1"># Creación de una figura con espacio para un gráfico</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="c1"># Creación del gráfico de dispersión</span>
@@ -808,7 +818,7 @@ document.write(`
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Población (habitantes)&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;PIB (millones de dólares)&#39;</span><span class="p">)</span>
 
-<span class="c1"># Configurar separadores de miles en los ejes y evitar notación científica</span>
+<span class="c1"># Configuración de marcas en los ejes para evitar la notación científica</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
 
@@ -821,6 +831,168 @@ document.write(`
 <img alt="../../_images/1327414e2d3945325738204f674fcfcb51538917132cd5449b4391bc4aeed744.png" src="../../_images/1327414e2d3945325738204f674fcfcb51538917132cd5449b4391bc4aeed744.png" />
 </div>
 </div>
+<p><strong>Ejercicios</strong></p>
+<ol class="arabic simple">
+<li><p>Programe gráficos de dispersión que muestren la relación entre:</p></li>
+</ol>
+<ul class="simple">
+<li><p>El PIB y la esperanza de vida de los países de Europa.</p></li>
+<li><p>El PIB y la esperanza de vida de los países de África.</p></li>
+<li><p>El PIB y la esperanza de vida de todos los países.</p></li>
+</ul>
+</section>
+<section id="graficos-de-barras">
+<h4>Gráficos de barras<a class="headerlink" href="#graficos-de-barras" title="Link to this heading">#</a></h4>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/Diagrama_de_barras">gráfico de barras</a> se compone de barras rectangulares con longitud proporcional a estadísticas (ej. frecuencias, promedios, mínimos, máximos) asociadas a una variable categórica o discreta. Las barras pueden ser horizontales o verticales y se recomienda que estén ordenadas según su longitud, a menos que exista un orden inherente a la variable (ej. el orden de los días de la semana). Es uno de los tipos de gráficos estadísticos más antiguos y comunes y tiene la ventaja de ser muy fácil de comprender.</p>
+<p>En el siguiente bloque de código, mediante el método <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.bar()</span></code></a>, se genera un gráfico de barras que muestra el total de población por continente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suma de población por continente</span>
+<span class="n">poblacion_continente_suma</span> <span class="o">=</span> <span class="n">paises</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;CONTINENT&#39;</span><span class="p">)[</span><span class="s1">&#39;POP_EST&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Creación de una figura con espacio para un gráfico</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Creación del gráfico de barras</span>
+<span class="c1"># Es recomendable que las barras se muestren en orden</span>
+<span class="n">poblacion_continente_suma</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+
+<span class="c1"># Personalización del gráfico</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Suma de población por continente&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Continente&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Población (habitantes)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Configuración de marcas en los ejes para evitar la notación científica</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># Despliegue del gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/112f106e1701b475eab8ad2be9b0c742ea77249f0fe613e5f3947434fba1b093.png" src="../../_images/112f106e1701b475eab8ad2be9b0c742ea77249f0fe613e5f3947434fba1b093.png" />
+</div>
+</div>
+<p>El método <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.barh.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.barh()</span></code></a> permite mostrar el mismo gráfico, pero con barras horizontales.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creación de una figura con espacio para un gráfico</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Creación del gráfico de barras</span>
+<span class="c1"># Es recomendable que las barras se muestren en orden</span>
+<span class="n">poblacion_continente_suma</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+
+<span class="c1"># Personalización del gráfico</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Suma de población por continente&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Población (habitantes)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Continente&#39;</span><span class="p">)</span>
+
+<span class="c1"># Configuración de marcas en los ejes para evitar la notación científica</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># Despliegue del gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/1e1b18e4abfee7e2fc83252e1cf1665bcc93efa0f08a1fc56112f07289f3b212.png" src="../../_images/1e1b18e4abfee7e2fc83252e1cf1665bcc93efa0f08a1fc56112f07289f3b212.png" />
+</div>
+</div>
+<section id="barras-apiladas">
+<h5>Barras apiladas<a class="headerlink" href="#barras-apiladas" title="Link to this heading">#</a></h5>
+<p>Con el método <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.unstack.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.unstack()</span></code></a> y el argumento <code class="docutils literal notranslate"><span class="pre">stacked=True</span></code> puede generarse un gráfico de barras apiladas (en inglés, <em>stacked</em>), el cual permite mostrar datos con varios niveles de agrupación.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suma de población por región y subregión de la ONU</span>
+<span class="n">poblacion_region_subregion_suma</span> <span class="o">=</span> <span class="n">paises</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;REGION_UN&#39;</span><span class="p">,</span> <span class="s1">&#39;SUBREGION&#39;</span><span class="p">])[</span><span class="s1">&#39;POP_EST&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Creación de una figura con espacio para un gráfico</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Creación del gráfico de barras agrupadas</span>
+<span class="n">poblacion_region_subregion_suma</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+    <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+    <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Personalización del gráfico</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Suma de población por región y subregión de la ONU&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Región&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Población (habitantes)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Configuración de marcas en los ejes para evitar la notación científica</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># Ajustar la posición de la leyenda</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Subregión&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ajustar el diseño para dar más espacio a la leyenda</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Despliegue del gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/e136edf3c3005f319de7671394416a7b2f8709e89c27d94dd5ad075e3b973b28.png" src="../../_images/e136edf3c3005f319de7671394416a7b2f8709e89c27d94dd5ad075e3b973b28.png" />
+</div>
+</div>
+</section>
+<section id="barras-agrupadas">
+<h5>Barras agrupadas<a class="headerlink" href="#barras-agrupadas" title="Link to this heading">#</a></h5>
+<p>Otra forma de mostrar barras con diferentes niveles de agrupación son las barras agrupadas, con el argumento <code class="docutils literal notranslate"><span class="pre">stacked=False</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suma de población por región y subregión de la ONU</span>
+<span class="n">poblacion_region_subregion_suma</span> <span class="o">=</span> <span class="n">paises</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;REGION_UN&#39;</span><span class="p">,</span> <span class="s1">&#39;SUBREGION&#39;</span><span class="p">])[</span><span class="s1">&#39;POP_EST&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Creación de una figura con espacio para un gráfico</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Creación del gráfico de barras agrupadas</span>
+<span class="n">poblacion_region_subregion_suma</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+    <span class="n">stacked</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+    <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Personalización del gráfico</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Suma de población por región y subregión de la ONU&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Región&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Población (habitantes)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Configuración de marcas en los ejes para evitar la notación científica</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">StrMethodFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:,.0f}</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># Ajustar la posición de la leyenda</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Subregión&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ajustar el diseño para dar más espacio a la leyenda</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Despliegue del gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/ed99797e4437cf71bab4e7ac7336d7c30630e9fab8e0dee3317bb48c26c4d59c.png" src="../../_images/ed99797e4437cf71bab4e7ac7336d7c30630e9fab8e0dee3317bb48c26c4d59c.png" />
+</div>
+</div>
+<p><strong>Ejercicios</strong></p>
+<ol class="arabic simple">
+<li><p>Programe gráficos de barras para:</p></li>
+</ol>
+<ul class="simple">
+<li><p>PIB por economía (<code class="docutils literal notranslate"><span class="pre">ECONOMY</span></code>).</p></li>
+<li><p>PIB por grupo de ingresos (<code class="docutils literal notranslate"><span class="pre">INCOME_GRP</span></code>).</p></li>
+</ul>
+</section>
 </section>
 </section>
 </section>
@@ -862,7 +1034,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">pandas: paquete para manipulación y análisis de datos</p>
+        <p class="prev-next-title">pandas: biblioteca para análisis y manipulación de datos</p>
       </div>
     </a>
     <a class="right-next"
@@ -893,13 +1065,18 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-y-carga">Instalación y carga</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-basada-en-la-clase-axes">Interfaz basada en la clase <code class="docutils literal notranslate"><span class="pre">Axes</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-basada-en-el-modulo-pyplot">Interfaz basada en el módulo <code class="docutils literal notranslate"><span class="pre">pyplot</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-de-axes-basada-en-objetos-explicita">Interfaz de <code class="docutils literal notranslate"><span class="pre">Axes</span></code> (basada en objetos, explícita)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaz-de-pyplot-basada-en-funciones-implicita">Interfaz de <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> (basada en funciones, implícita)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integracion-con-pandas">Integración con pandas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-graficos">Tipos de gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-dispersion">Gráficos de dispersión</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-barras">Gráficos de barras</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#barras-apiladas">Barras apiladas</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#barras-agrupadas">Barras agrupadas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
