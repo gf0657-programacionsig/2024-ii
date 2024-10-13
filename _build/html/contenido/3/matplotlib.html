@@ -516,6 +516,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicios</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros">Otros</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#climogramas">Climogramas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -751,64 +755,64 @@ document.write(`
   </thead>
   <tbody>
     <tr>
-      <th>EGY</th>
-      <td>Egypt</td>
-      <td>Africa</td>
-      <td>Africa</td>
-      <td>Northern Africa</td>
-      <td>Middle East &amp; North Africa</td>
-      <td>5. Emerging region: G20</td>
-      <td>4. Lower middle income</td>
-      <td>100,388,073.00</td>
-      <td>303092</td>
-    </tr>
-    <tr>
-      <th>MKD</th>
-      <td>North Macedonia</td>
+      <th>ESP</th>
+      <td>Spain</td>
       <td>Europe</td>
       <td>Europe</td>
       <td>Southern Europe</td>
       <td>Europe &amp; Central Asia</td>
-      <td>6. Developing region</td>
-      <td>3. Upper middle income</td>
-      <td>2,083,459.00</td>
-      <td>12547</td>
+      <td>2. Developed region: nonG7</td>
+      <td>1. High income: OECD</td>
+      <td>47,076,781.00</td>
+      <td>1393490</td>
     </tr>
     <tr>
-      <th>THA</th>
-      <td>Thailand</td>
+      <th>DMA</th>
+      <td>Dominica</td>
+      <td>North America</td>
+      <td>Americas</td>
+      <td>Caribbean</td>
+      <td>Latin America &amp; Caribbean</td>
+      <td>6. Developing region</td>
+      <td>3. Upper middle income</td>
+      <td>71,808.00</td>
+      <td>582</td>
+    </tr>
+    <tr>
+      <th>IDN</th>
+      <td>Indonesia</td>
       <td>Asia</td>
       <td>Asia</td>
       <td>South-Eastern Asia</td>
       <td>East Asia &amp; Pacific</td>
-      <td>5. Emerging region: G20</td>
-      <td>3. Upper middle income</td>
-      <td>69,625,582.00</td>
-      <td>543548</td>
+      <td>4. Emerging region: MIKT</td>
+      <td>4. Lower middle income</td>
+      <td>270,625,568.00</td>
+      <td>1119190</td>
     </tr>
     <tr>
-      <th>COM</th>
-      <td>Comoros</td>
+      <th>KEN</th>
+      <td>Kenya</td>
       <td>Africa</td>
       <td>Africa</td>
       <td>Eastern Africa</td>
       <td>Sub-Saharan Africa</td>
-      <td>7. Least developed region</td>
+      <td>5. Emerging region: G20</td>
       <td>5. Low income</td>
-      <td>850,886.00</td>
-      <td>1165</td>
+      <td>52,573,973.00</td>
+      <td>95503</td>
     </tr>
     <tr>
-      <th>MLT</th>
-      <td>Malta</td>
-      <td>Europe</td>
-      <td>Europe</td>
-      <td>Southern Europe</td>
-      <td>Middle East &amp; North Africa</td>
-      <td>2. Developed region: nonG7</td>
-      <td>2. High income: nonOECD</td>
-      <td>502,653.00</td>
-      <td>14989</td>
+      <th>SLE</th>
+      <td>Sierra Leone</td>
+      <td>Africa</td>
+      <td>Africa</td>
+      <td>Western Africa</td>
+      <td>Sub-Saharan Africa</td>
+      <td>7. Least developed region</td>
+      <td>5. Low income</td>
+      <td>7,813,215.00</td>
+      <td>4121</td>
     </tr>
   </tbody>
 </table>
@@ -1384,6 +1388,175 @@ Name: 45, Length: 64, dtype: object
 </ul>
 </section>
 </section>
+<section id="otros">
+<h3>Otros<a class="headerlink" href="#otros" title="Link to this heading">#</a></h3>
+<section id="climogramas">
+<h4>Climogramas<a class="headerlink" href="#climogramas" title="Link to this heading">#</a></h4>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/Climograma">climograma</a> es un gráfico estadístico que combina las variables climáticas de temperatura y precitipación a lo largo de un período de tiempo, para una región o lugar específico. Permite visualizar las condiciones climáticas de un área, facilitando el análisis de patrones estacionales y tendencias climáticas.</p>
+<p>Un climograma puede tomar varias formas. Una de las más usuales es la de un gráfico de barras combinado con un gráfico de líneas. Las barras representan las unidades de tiempo (ej. meses) y su longitud el valor de una de las variables (ej. precipitación), mientras que la línea muestra los valores de la otra variable (ej. temperatura).</p>
+<p>En los siguientes bloque de código se genera un climograma con <a class="reference external" href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means?tab=overview">datos de temperatura y precipitación de ERA5</a>. <a class="reference external" href="https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5">ERA5</a> es el quinto conjunto de datos de reanálisis atmosférico global producido por el <a class="reference external" href="https://www.ecmwf.int/">Centro Europeo de Predicción a Medio Plazo (ECMWF)</a>. Es una reconstrucción del clima de la Tierra, desde 1950 hasta la actualidad.</p>
+<p>Los datos que se utilizan en el climograma corresponden a los promedios mensuales de temperatura a 2 m de la superficie y de precipitación total para todo el territorio de Costa Rica, entre los años 2004 y 2023. Se utilizó una cuadrícula de 0.1 x 0.1 grados decimales.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Carga de datos de clima</span>
+<span class="n">clima</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;https://raw.githubusercontent.com/gf0657-programacionsig/2024-ii/refs/heads/main/datos/era5/temperatura-precipitacion-cri-2004-2023.csv&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Despliegue de los datos</span>
+<span class="n">clima</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mes</th>
+      <th>temperatura</th>
+      <th>precipitacion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Enero</td>
+      <td>22.15</td>
+      <td>3.98</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Febrero</td>
+      <td>22.60</td>
+      <td>2.92</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Marzo</td>
+      <td>23.16</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Abril</td>
+      <td>23.67</td>
+      <td>4.72</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Mayo</td>
+      <td>23.46</td>
+      <td>11.91</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Junio</td>
+      <td>23.12</td>
+      <td>12.44</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Julio</td>
+      <td>22.87</td>
+      <td>11.75</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Agosto</td>
+      <td>22.95</td>
+      <td>12.03</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Septiembre</td>
+      <td>22.91</td>
+      <td>11.77</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Octubre</td>
+      <td>22.59</td>
+      <td>14.74</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Noviembre</td>
+      <td>22.24</td>
+      <td>12.65</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Diciembre</td>
+      <td>22.13</td>
+      <td>6.32</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear el climograma</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Gráfico de barras para precipitación</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;mes&#39;</span><span class="p">],</span> 
+    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;precipitacion&#39;</span><span class="p">],</span> 
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> 
+    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Precipitación (mm)&#39;</span>
+<span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Mes&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Precipitación (mm)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+
+<span class="c1"># Eje derecho para la temperatura</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;mes&#39;</span><span class="p">],</span> 
+    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;temperatura&#39;</span><span class="p">],</span> 
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> 
+<span class="n">label</span><span class="o">=</span><span class="s1">&#39;Temperatura (°C)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (°C)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+
+<span class="c1"># Título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Precipitación y temperatura promedio mensual en Costa Rica entre 2004 y 2023&#39;</span><span class="p">)</span>
+
+<span class="c1"># Leyendas</span>
+<span class="n">lines</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+<span class="n">lines2</span><span class="p">,</span> <span class="n">labels2</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">lines</span> <span class="o">+</span> <span class="n">lines2</span><span class="p">,</span> <span class="n">labels</span> <span class="o">+</span> <span class="n">labels2</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ajustar el diseño para evitar que las etiquetas se corten</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/6afb5494d62386f8100d83fe2a868a335d76a1bf991350188af81848d1a71632.png" src="../../_images/6afb5494d62386f8100d83fe2a868a335d76a1bf991350188af81848d1a71632.png" />
+</div>
+</div>
+</section>
+</section>
 </section>
 </section>
 
@@ -1488,6 +1661,10 @@ Name: 45, Length: 64, dtype: object
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicios</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros">Otros</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#climogramas">Climogramas</a></li>
 </ul>
 </li>
 </ul>
