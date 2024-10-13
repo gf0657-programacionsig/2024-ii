@@ -755,64 +755,64 @@ document.write(`
   </thead>
   <tbody>
     <tr>
-      <th>ESP</th>
-      <td>Spain</td>
+      <th>UZB</th>
+      <td>Uzbekistan</td>
+      <td>Asia</td>
+      <td>Asia</td>
+      <td>Central Asia</td>
+      <td>Europe &amp; Central Asia</td>
+      <td>6. Developing region</td>
+      <td>4. Lower middle income</td>
+      <td>33,580,650.00</td>
+      <td>57921</td>
+    </tr>
+    <tr>
+      <th>MMR</th>
+      <td>Myanmar</td>
+      <td>Asia</td>
+      <td>Asia</td>
+      <td>South-Eastern Asia</td>
+      <td>East Asia &amp; Pacific</td>
+      <td>7. Least developed region</td>
+      <td>5. Low income</td>
+      <td>54,045,420.00</td>
+      <td>76085</td>
+    </tr>
+    <tr>
+      <th>ISL</th>
+      <td>Iceland</td>
       <td>Europe</td>
       <td>Europe</td>
-      <td>Southern Europe</td>
+      <td>Northern Europe</td>
       <td>Europe &amp; Central Asia</td>
       <td>2. Developed region: nonG7</td>
       <td>1. High income: OECD</td>
-      <td>47,076,781.00</td>
-      <td>1393490</td>
+      <td>361,313.00</td>
+      <td>24188</td>
     </tr>
     <tr>
-      <th>DMA</th>
-      <td>Dominica</td>
+      <th>TTO</th>
+      <td>Trinidad and Tobago</td>
       <td>North America</td>
       <td>Americas</td>
       <td>Caribbean</td>
       <td>Latin America &amp; Caribbean</td>
       <td>6. Developing region</td>
-      <td>3. Upper middle income</td>
-      <td>71,808.00</td>
-      <td>582</td>
+      <td>2. High income: nonOECD</td>
+      <td>1,394,973.00</td>
+      <td>24269</td>
     </tr>
     <tr>
-      <th>IDN</th>
-      <td>Indonesia</td>
-      <td>Asia</td>
-      <td>Asia</td>
-      <td>South-Eastern Asia</td>
-      <td>East Asia &amp; Pacific</td>
-      <td>4. Emerging region: MIKT</td>
-      <td>4. Lower middle income</td>
-      <td>270,625,568.00</td>
-      <td>1119190</td>
-    </tr>
-    <tr>
-      <th>KEN</th>
-      <td>Kenya</td>
+      <th>B28</th>
+      <td>W. Sahara</td>
       <td>Africa</td>
       <td>Africa</td>
-      <td>Eastern Africa</td>
-      <td>Sub-Saharan Africa</td>
-      <td>5. Emerging region: G20</td>
-      <td>5. Low income</td>
-      <td>52,573,973.00</td>
-      <td>95503</td>
-    </tr>
-    <tr>
-      <th>SLE</th>
-      <td>Sierra Leone</td>
-      <td>Africa</td>
-      <td>Africa</td>
-      <td>Western Africa</td>
-      <td>Sub-Saharan Africa</td>
+      <td>Northern Africa</td>
+      <td>Middle East &amp; North Africa</td>
       <td>7. Least developed region</td>
       <td>5. Low income</td>
-      <td>7,813,215.00</td>
-      <td>4121</td>
+      <td>603,253.00</td>
+      <td>907</td>
     </tr>
   </tbody>
 </table>
@@ -1403,6 +1403,9 @@ Name: 45, Length: 64, dtype: object
     <span class="s2">&quot;https://raw.githubusercontent.com/gf0657-programacionsig/2024-ii/refs/heads/main/datos/era5/temperatura-precipitacion-cri-2004-2023.csv&quot;</span>
 <span class="p">)</span>
 
+<span class="c1"># Se usa la columna mes como índice</span>
+<span class="n">clima</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;mes&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="c1"># Despliegue de los datos</span>
 <span class="n">clima</span>
 </pre></div>
@@ -1427,81 +1430,73 @@ Name: 45, Length: 64, dtype: object
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>mes</th>
       <th>temperatura</th>
       <th>precipitacion</th>
+    </tr>
+    <tr>
+      <th>mes</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>Enero</td>
+      <th>Enero</th>
       <td>22.15</td>
       <td>3.98</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>Febrero</td>
+      <th>Febrero</th>
       <td>22.60</td>
       <td>2.92</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>Marzo</td>
+      <th>Marzo</th>
       <td>23.16</td>
       <td>2.73</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>Abril</td>
+      <th>Abril</th>
       <td>23.67</td>
       <td>4.72</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>Mayo</td>
+      <th>Mayo</th>
       <td>23.46</td>
       <td>11.91</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Junio</td>
+      <th>Junio</th>
       <td>23.12</td>
       <td>12.44</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Julio</td>
+      <th>Julio</th>
       <td>22.87</td>
       <td>11.75</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Agosto</td>
+      <th>Agosto</th>
       <td>22.95</td>
       <td>12.03</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Septiembre</td>
+      <th>Septiembre</th>
       <td>22.91</td>
       <td>11.77</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>Octubre</td>
+      <th>Octubre</th>
       <td>22.59</td>
       <td>14.74</td>
     </tr>
     <tr>
-      <th>10</th>
-      <td>Noviembre</td>
+      <th>Noviembre</th>
       <td>22.24</td>
       <td>12.65</td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>Diciembre</td>
+      <th>Diciembre</th>
       <td>22.13</td>
       <td>6.32</td>
     </tr>
@@ -1515,23 +1510,23 @@ Name: 45, Length: 64, dtype: object
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="c1"># Gráfico de barras para precipitación</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
-    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;mes&#39;</span><span class="p">],</span> 
-    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;precipitacion&#39;</span><span class="p">],</span> 
+<span class="n">clima</span><span class="p">[</span>
+<span class="p">[</span><span class="s1">&#39;precipitacion&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span> 
     <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> 
-    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Precipitación (mm)&#39;</span>
+    <span class="n">legend</span><span class="o">=</span><span class="kc">False</span>
 <span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Mes&#39;</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Precipitación (mm)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
 
-<span class="c1"># Eje derecho para la temperatura</span>
+<span class="c1"># Gráfico de líneas para la temperatura (comparte los ejes de ax1)</span>
 <span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
-    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;mes&#39;</span><span class="p">],</span> 
-    <span class="n">clima</span><span class="p">[</span><span class="s1">&#39;temperatura&#39;</span><span class="p">],</span> 
+<span class="n">clima</span><span class="p">[[</span><span class="s1">&#39;temperatura&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> 
     <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> 
-<span class="n">label</span><span class="o">=</span><span class="s1">&#39;Temperatura (°C)&#39;</span><span class="p">)</span>
+    <span class="n">legend</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (°C)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 
@@ -1552,7 +1547,7 @@ Name: 45, Length: 64, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6afb5494d62386f8100d83fe2a868a335d76a1bf991350188af81848d1a71632.png" src="../../_images/6afb5494d62386f8100d83fe2a868a335d76a1bf991350188af81848d1a71632.png" />
+<img alt="../../_images/db6f66ffff5b90dcc7f95428a6b0e6b6b3967ca40ce6144b26ae6c56df681bdd.png" src="../../_images/db6f66ffff5b90dcc7f95428a6b0e6b6b3967ca40ce6144b26ae6c56df681bdd.png" />
 </div>
 </div>
 </section>
