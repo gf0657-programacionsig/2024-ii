@@ -19,6 +19,7 @@ parts:
     chapters:
     - file: contenido/3/pandas
     - file: contenido/3/matplotlib
+    - file: contenido/3/plotly
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
