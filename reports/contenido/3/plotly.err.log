@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/mfvargas/miniconda3/envs/gf0657-2024-ii/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Subconjunto de países seleccionados
+paises_seleccionados = paises.loc[['PAN', 'CRI', 'NIC', 'SLV', 'HND', 'GTM', 'BLZ']]
+
+# Creación de una figura con espacio para un gráfico
+fig, ax = plt.subplots(figsize=(10, 6))
+
+# Creación del gráfico de dispersión
+paises_seleccionados.plot.scatter(
+    ax=ax, 
+    x='POP_EST', 
+    y='GDP_MD', 
+    color='red',
+    s=50
+)
+
+# Etiquetas en cada punto
+desplazamiento_x = 1
+desplazamiento_y = 1.02
+for i, row in paises_seleccionados.iterrows():
+    ax.text(
+        x=row['POP_EST']*desplazamiento_x, 
+        y=row['GDP_MD']*desplazamiento_y, 
+        s=i, 
+        fontsize=9, 
+        ha='center'
+    )
+
+# Personalización del gráfico
+ax.set_title('Relación entre población y producto interno bruto (PIB)')
+ax.set_xlabel('Población (habitantes)')
+ax.set_ylabel('PIB (millones de dólares)')
+
+# Configuración de marcas en los ejes para evitar la notación científica
+ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
+ax.yaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
+
+# Cuadrícula
+ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+# Despliegue del gráfico
+plt.show()
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[3], line 34[0m
+[1;32m     31[0m ax[38;5;241m.[39mset_ylabel([38;5;124m'[39m[38;5;124mPIB (millones de dólares)[39m[38;5;124m'[39m)
+[1;32m     33[0m [38;5;66;03m# Configuración de marcas en los ejes para evitar la notación científica[39;00m
+[0;32m---> 34[0m ax[38;5;241m.[39mxaxis[38;5;241m.[39mset_major_formatter([43mticker[49m[38;5;241m.[39mStrMethodFormatter([38;5;124m'[39m[38;5;132;01m{x:,.0f}[39;00m[38;5;124m'[39m))
+[1;32m     35[0m ax[38;5;241m.[39myaxis[38;5;241m.[39mset_major_formatter(ticker[38;5;241m.[39mStrMethodFormatter([38;5;124m'[39m[38;5;132;01m{x:,.0f}[39;00m[38;5;124m'[39m))
+[1;32m     37[0m [38;5;66;03m# Cuadrícula[39;00m
+
+[0;31mNameError[0m: name 'ticker' is not defined
+
