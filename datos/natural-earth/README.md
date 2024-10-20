@@ -15,3 +15,14 @@ ogr2ogr \
         FROM ne_10m_admin_0_sovereignty \
         WHERE ADM0_ISO != '-99'"
 ```
+
+```shell
+# Generación de archivo GPKG de países de Natural Earth
+ogr2ogr \
+  paises.gpkg \
+  /vsizip/ne_10m_admin_0_sovereignty.zip/ne_10m_admin_0_sovereignty.shp \
+  -sql "SELECT ADM0_ISO, NAME, CONTINENT, REGION_UN, SUBREGION, REGION_WB, \
+               ECONOMY, INCOME_GRP, POP_EST, GDP_MD \
+        FROM ne_10m_admin_0_sovereignty \
+        WHERE ADM0_ISO != '-99'"
+```
