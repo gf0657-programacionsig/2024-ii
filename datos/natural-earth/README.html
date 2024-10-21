@@ -187,7 +187,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - ANÁLISIS Y VISUALIZACIÓN DE DATOS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../contenido/3/pandas.html">pandas: paquete para manipulación y análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenido/3/pandas.html">pandas: biblioteca para análisis y manipulación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenido/3/matplotlib.html">matplotlib: biblioteca para visualización de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenido/3/plotly.html">plotly: biblioteca para gráficos interactivos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - PROCESAMIENTO DE DATOS GEOESPACIALES</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../contenido/4/modelos-estandares-datos-geoespaciales.html">Modelos y estándares de datos geoespaciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenido/4/geopandas.html">geopandas: biblioteca para manipulación y análisis de datos vectoriales</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
 <ul class="nav bd-sidenav">
@@ -430,6 +437,16 @@ document.write(`
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generación de archivo CSV de países de Natural Earth</span>
 ogr2ogr<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>paises.csv<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>/vsizip/ne_10m_admin_0_sovereignty.zip/ne_10m_admin_0_sovereignty.shp<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-sql<span class="w"> </span><span class="s2">&quot;SELECT ADM0_ISO, NAME, CONTINENT, REGION_UN, SUBREGION, REGION_WB, \</span>
+<span class="s2">               ECONOMY, INCOME_GRP, POP_EST, GDP_MD \</span>
+<span class="s2">        FROM ne_10m_admin_0_sovereignty \</span>
+<span class="s2">        WHERE ADM0_ISO != &#39;-99&#39;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generación de archivo GPKG de países de Natural Earth</span>
+ogr2ogr<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>paises.gpkg<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>/vsizip/ne_10m_admin_0_sovereignty.zip/ne_10m_admin_0_sovereignty.shp<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-sql<span class="w"> </span><span class="s2">&quot;SELECT ADM0_ISO, NAME, CONTINENT, REGION_UN, SUBREGION, REGION_WB, \</span>
 <span class="s2">               ECONOMY, INCOME_GRP, POP_EST, GDP_MD \</span>
