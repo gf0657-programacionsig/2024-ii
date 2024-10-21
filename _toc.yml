@@ -23,6 +23,7 @@ parts:
   - caption: 4 - PROCESAMIENTO DE DATOS GEOESPACIALES
     chapters:
     - file: contenido/4/modelos-estandares-datos-geoespaciales
+    - file: contenido/4/geopandas
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
