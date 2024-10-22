@@ -36,7 +36,7 @@ conda config --env --set channel_priority strict
 conda install -c conda-forge mamba
 
 # Instalación de los paquetes jupyter y jupyterlab mediante mamba
-mamba install -c conda-forge jupyter jupyterlab
+mamba install -c conda-forge jupyter jupyterlab pandas matplotlib plotly geopandas owslib shapely fiona pyproj folium
 
 # Desactivación del ambiente (al finalizar la sesión de trabajo)
 conda deactivate
