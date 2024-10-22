@@ -2,7 +2,7 @@
 
 ## Fecha y hora límite de entrega
 
-Viernes 2 de noviembre de 2024, 11:59 p.m.
+Viernes 1 de noviembre de 2024, 11:59 p.m.
 
 ## Objetivos
 
