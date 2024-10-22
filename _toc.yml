@@ -27,6 +27,7 @@ parts:
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
+    - file: contenido/evaluaciones/tarea-02
   - caption: SOFTWARE
     chapters:
     - file: contenido/software/vscode
