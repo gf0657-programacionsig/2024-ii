@@ -182,10 +182,23 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../2/introduccion-python.html">Introducción a Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2/lenguaje-python.html">El lenguaje Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2/api.html">Interfaces de programación de aplicaciones (API)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - ANÁLISIS Y VISUALIZACIÓN DE DATOS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../3/pandas.html">pandas: biblioteca para análisis y manipulación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3/matplotlib.html">matplotlib: biblioteca para visualización de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3/plotly.html">plotly: biblioteca para gráficos interactivos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - PROCESAMIENTO DE DATOS GEOESPACIALES</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../4/modelos-estandares-datos-geoespaciales.html">Modelos y estándares de datos geoespaciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4/geopandas.html">geopandas: biblioteca para manipulación y análisis de datos vectoriales</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current nav bd-sidenav">
@@ -456,7 +469,7 @@ conda<span class="w"> </span>config<span class="w"> </span>--env<span class="w">
 conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mamba
 
 <span class="c1"># Instalación de los paquetes jupyter y jupyterlab mediante mamba</span>
-mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>jupyter<span class="w"> </span>jupyterlab
+mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>jupyter<span class="w"> </span>jupyterlab<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>plotly<span class="w"> </span>geopandas<span class="w"> </span>owslib<span class="w"> </span>shapely<span class="w"> </span>fiona<span class="w"> </span>pyproj<span class="w"> </span>folium
 
 <span class="c1"># Desactivación del ambiente (al finalizar la sesión de trabajo)</span>
 conda<span class="w"> </span>deactivate
