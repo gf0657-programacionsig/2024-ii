@@ -29,9 +29,12 @@ Metadata:
 ```bash
 # Descargar capa de provincias
 ogr2ogr \
+    -makevalid \
     -t_srs EPSG:4326 \
+    -nln provincias \
     "provincias.gpkg" \
     WFS:"https://geos.snitcr.go.cr/be/IGN_5_CO/wfs" "IGN_5_CO:limiteprovincial_5k"
+
 ```
 
 ### Cantones
@@ -39,9 +42,12 @@ ogr2ogr \
 ```bash
 # Descargar capa de cantones
 ogr2ogr \
+    -makevalid \
     -t_srs EPSG:4326 \
+    -nln cantones \
     "cantones.gpkg" \
     WFS:"https://geos.snitcr.go.cr/be/IGN_5_CO/wfs" "IGN_5_CO:limitecantonal_5k"
+
 ```
 
 ### Distritos
@@ -49,7 +55,10 @@ ogr2ogr \
 ```bash
 # Descargar capa de distritos
 ogr2ogr \
+    -makevalid \
     -t_srs EPSG:4326 \
+    -nln distritos \
     "distritos.gpkg" \
     WFS:"https://geos.snitcr.go.cr/be/IGN_5_CO/wfs" "IGN_5_CO:limitedistrital_5k"
+
 ```
