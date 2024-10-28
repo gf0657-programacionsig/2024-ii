@@ -25,6 +25,7 @@ parts:
     - file: contenido/4/modelos-estandares-datos-geoespaciales
     - file: contenido/4/geopandas
     - file: contenido/4/ejemplo-analisis-riqueza-especies
+    - file: contenido/4/ejemplo-analisis-densidad-red-vial
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
