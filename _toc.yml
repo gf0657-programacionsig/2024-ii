@@ -24,6 +24,7 @@ parts:
     chapters:
     - file: contenido/4/modelos-estandares-datos-geoespaciales
     - file: contenido/4/geopandas
+    - file: contenido/4/ejemplo-analisis-riqueza-especies
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
