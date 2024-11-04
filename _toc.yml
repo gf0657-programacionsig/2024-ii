@@ -27,6 +27,7 @@ parts:
     - file: contenido/4/ejemplo-analisis-riqueza-especies
     - file: contenido/4/ejemplo-analisis-densidad-red-vial
     - file: contenido/4/rasterio
+    - file: contenido/4/leafmap
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
