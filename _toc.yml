@@ -29,7 +29,7 @@ parts:
     - file: contenido/4/rasterio
     - external: true
       title: "leafmap: biblioteca para análisis geoespacial y mapas interactivos"
-      url: https://colab.research.google.com/github/gf0657-programacionsig/2024-ii/blob/main/contenido/4/leafmap.ipynb
+      url: https://colab.research.google.com/drive/1KwW-XvWbmLMWY4NqyShYF1xrCUuldZHK?usp=sharing
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
