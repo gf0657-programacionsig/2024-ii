@@ -27,7 +27,9 @@ parts:
     - file: contenido/4/ejemplo-analisis-riqueza-especies
     - file: contenido/4/ejemplo-analisis-densidad-red-vial
     - file: contenido/4/rasterio
-    - file: contenido/4/leafmap
+    - external: true
+      title: "leafmap: biblioteca para análisis geoespacial y mapas interactivos"
+      url: https://colab.research.google.com/github/gf0657-programacionsig/2024-ii/blob/main/contenido/4/leafmap.ipynb
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
