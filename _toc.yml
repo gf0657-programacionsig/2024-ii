@@ -31,6 +31,12 @@ parts:
       title: "leafmap: biblioteca para análisis geoespacial y mapas interactivos"
       url: https://colab.research.google.com/drive/1KwW-XvWbmLMWY4NqyShYF1xrCUuldZHK?usp=sharing  
     - external: true
+      title: "Ejemplo de análisis espacial: cálculo y visualización del Índice de Vegetación de Diferencia Normalizada (NDVI)"
+      url: https://colab.research.google.com/drive/1u9_m_Li64hj600AjXLfsqs0EEGaNTBVY?usp=sharing      
+    - external: true
+      title: "Ejemplo de análisis espacial: búsqueda y visualización de imágenes de alta resolución del Programa de Datos Abiertos de Maxar"
+      url: https://colab.research.google.com/drive/1UY8W-4qtt5XIfXf3h22R29MLzF-1S-Wr?usp=sharing
+    - external: true
       title: "Apache Arrow y lonboard: formato columnar y biblioteca para manejo y visualización de conjuntos de datos grandes"
       url: https://colab.research.google.com/drive/1yvsqZpbp8e_wK_2dRZDvvk49XcGe0o_e?usp=sharing  
   - caption: EVALUACIONES
