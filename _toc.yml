@@ -31,7 +31,7 @@ parts:
       title: "leafmap: biblioteca para análisis geoespacial y mapas interactivos"
       url: https://colab.research.google.com/drive/1KwW-XvWbmLMWY4NqyShYF1xrCUuldZHK?usp=sharing  
     - external: true
-      title: "Apache Arrow y lonboard: formato columnar y biblioteca para manejo de datos grandes"
+      title: "Apache Arrow y lonboard: formato columnar y biblioteca para manejo y visualización de conjuntos de datos grandes"
       url: https://colab.research.google.com/drive/1yvsqZpbp8e_wK_2dRZDvvk49XcGe0o_e?usp=sharing  
   - caption: EVALUACIONES
     chapters:
