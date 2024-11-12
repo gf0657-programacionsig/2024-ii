@@ -31,6 +31,9 @@ parts:
       title: "leafmap: biblioteca para análisis geoespacial y mapas interactivos"
       url: https://colab.research.google.com/drive/1KwW-XvWbmLMWY4NqyShYF1xrCUuldZHK?usp=sharing  
     - external: true
+      title: "Ejemplo de aplicación espacial: Búsqueda y visualización de imágenes Sentinel 2"
+      url: https://colab.research.google.com/drive/1SpGTusIEscZ2ZIk6WjmE2Bf8WZG_KFKW?usp=sharing
+    - external: true
       title: "Ejemplo de análisis espacial: cálculo y visualización del Índice de Vegetación de Diferencia Normalizada (NDVI)"
       url: https://colab.research.google.com/drive/1u9_m_Li64hj600AjXLfsqs0EEGaNTBVY?usp=sharing      
     - external: true
