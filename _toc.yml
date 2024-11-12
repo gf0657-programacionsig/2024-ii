@@ -39,6 +39,9 @@ parts:
     - external: true
       title: "Apache Arrow y lonboard: formato columnar y biblioteca para manejo y visualización de conjuntos de datos grandes"
       url: https://colab.research.google.com/drive/1yvsqZpbp8e_wK_2dRZDvvk49XcGe0o_e?usp=sharing  
+    - external: true
+      title: "Apache Parquet y DuckDB: formato de archivo columnar y sistema administrador de bases de datos orientados a análisis"
+      url: https://colab.research.google.com/drive/1qNgFk8Ozlm4fg4KkCO00XvWmUqSVA9aQ?usp=sharing
   - caption: EVALUACIONES
     chapters:
     - file: contenido/evaluaciones/tarea-01
