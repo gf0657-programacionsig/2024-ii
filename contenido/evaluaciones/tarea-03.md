@@ -59,3 +59,7 @@ El contenido del cuaderno de notas debe tener **estructura**, ser **coherente** 
   - Mapa
 - Borre del documento salidas innecesarias como advertencias (*warnings*) o mensajes que dificulten su legibilidad. 
 - Puede considerar el cuaderno de notas un breve artículo sobre sus datos, con gráficos estadísticos y mapas.
+
+**IMPORTANTE**
+
+No debe sobreescribir la tarea 2, debe dejarla como la entregó. Puede guardar una copia del documento y trabajar ahí.
