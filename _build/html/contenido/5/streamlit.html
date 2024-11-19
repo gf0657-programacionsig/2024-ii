@@ -433,7 +433,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion">Instalación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-ejemplo">Aplicación de ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-ejemplo">Aplicación de ejemplo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecucion-en-la-computadora-local">Ejecución en la computadora local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publicacion-en-streamlit-cloud">Publicación en Streamlit Cloud</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-de-interes">Recursos de interés</a></li>
 </ul>
             </nav>
@@ -466,7 +470,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>streamlit
 </pre></div>
 </div>
-<p>Se recomienda crear un entorno virtual. Por ejemplo:</p>
+<p>Se recomienda crear un entorno virtual con Streamlit y otras bibliotecas requeridas. El siguiente bloque de código contiene los comandos necesarios para crear un ambiente conda para desarrollo de aplicaciones geoespaciales.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Actualización de Conda</span>
 conda<span class="w"> </span>update<span class="w"> </span>conda
 
@@ -496,8 +500,35 @@ conda<span class="w"> </span>deactivate
 </section>
 <section id="aplicacion-de-ejemplo">
 <h2>Aplicación de ejemplo<a class="headerlink" href="#aplicacion-de-ejemplo" title="Link to this heading">#</a></h2>
-<p>Puede ver el código fuente de una aplicación Strealit de ejemplo en:</p>
+<p>Se proporciona el código fuente de una aplicación Streamlit de ejemplo en el repositorio GitHub:</p>
 <p><a class="github reference external" href="https://github.com/gf0657-programacionsig/2024-ii-app-covid">gf0657-programacionsig/2024-ii-app-covid</a></p>
+<p>Esta aplicación despliega un <a class="reference external" href="https://es.wikipedia.org/wiki/Cuadro_de_mando">tablero de control</a> (también llamado cuadro de mando o <em>dashboard</em>) con datos de la pandemia de CODIV-19 compartidos por <a class="reference external" href="https://ourworldindata.org/">Our World in Data</a>.</p>
+<section id="ejecucion-en-la-computadora-local">
+<h3>Ejecución en la computadora local<a class="headerlink" href="#ejecucion-en-la-computadora-local" title="Link to this heading">#</a></h3>
+<p>Para ejecutar la aplicación en su computadora, clone o descargue el repositorio con el código fuente y desde la línea de comandos del sistema operativo ingrese al directorio y ejecute:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejecución de la aplicación Streamlit</span>
+streamlit<span class="w"> </span>run<span class="w"> </span>app.py
+</pre></div>
+</div>
+<p>Este comando inicializa un servidor web de desarrollo y abre la aplicación Streamlit.</p>
+</section>
+<section id="publicacion-en-streamlit-cloud">
+<h3>Publicación en Streamlit Cloud<a class="headerlink" href="#publicacion-en-streamlit-cloud" title="Link to this heading">#</a></h3>
+<p>Para publicar una aplicación en Streamlit Cloud, primero debe crear un archivo llamado <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> con la lista de las bibliotecas que usa la aplicación. Por ejemplo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">streamlit</span>
+<span class="n">pandas</span>
+<span class="n">plotly</span>
+<span class="n">geopandas</span>
+<span class="n">folium</span>
+<span class="n">streamlit</span><span class="o">-</span><span class="n">folium</span>
+<span class="n">branca</span>
+</pre></div>
+</div>
+<p>Luego, debe incluir la aplicación, y los archivos asociados (ej. datos locales), en un repositorio en GitHub.</p>
+<p>Por último, debe ingresar a <a class="reference external" href="https://streamlit.io/cloud">Streamlit Cloud</a> y crear una cuenta gratuita (puede usar su cuenta de GitHub). Ahí debe seleccionar el repositorio de GitHub en el que se encuentra la aplicación y publicarla.</p>
+<p>La aplicación sobre COVID-19 está disponible en:
+<a class="reference external" href="https://2024-ii-app-covid.streamlit.app/">https://2024-ii-app-covid.streamlit.app/</a></p>
+</section>
 </section>
 <section id="recursos-de-interes">
 <h2>Recursos de interés<a class="headerlink" href="#recursos-de-interes" title="Link to this heading">#</a></h2>
@@ -578,7 +609,11 @@ conda<span class="w"> </span>deactivate
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion">Instalación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-ejemplo">Aplicación de ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-ejemplo">Aplicación de ejemplo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecucion-en-la-computadora-local">Ejecución en la computadora local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publicacion-en-streamlit-cloud">Publicación en Streamlit Cloud</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-de-interes">Recursos de interés</a></li>
 </ul>
   </nav></div>
