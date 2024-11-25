@@ -53,6 +53,7 @@ parts:
     - file: contenido/evaluaciones/tarea-01
     - file: contenido/evaluaciones/tarea-02
     - file: contenido/evaluaciones/tarea-03
+    - file: contenido/evaluaciones/proyecto-final
   - caption: SOFTWARE
     chapters:
     - file: contenido/software/vscode
